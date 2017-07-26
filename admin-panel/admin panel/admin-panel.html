@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- IE Compatibility Meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- First Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Admin Panel | Careerea</title>
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/admin-panel-style.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' />
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script src="https://ucarecdn.com/widget/2.10.1/uploadcare/uploadcare.full.min.js" charset="utf-8"></script>
+        <script>
+          UPLOADCARE_PUBLIC_KEY = "demopublickey";
+        </script>
+    </head>
+    <body>
+        
+        <!-- Start Section View Job Details -->
+        <section class="adminPanel">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="tabsContainer">
+                            <div class="user-panel">
+                                <div class="pull-left image">
+                                    <img src="images/person1.jpg" class="img-circle" alt="User Image">
+                                </div>
+                                <div class="pull-left info">
+                                    <p>Chris Coyier</p>
+                                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                                </div>
+                            </div>
+                            <ul class="myTabs nav nav-tabs">
+                                <li id="tab1" ><i class="fa fa-dashboard"></i> Main Dashboard</li>
+                                <li id="tab2" class="inactive">Courses <span> (3000) </span></li>
+                                <li id="tab3" class="inactive">Instructors <span> (570) </span></li>
+                                <li id="tab4" class="inactive">Jobs <span> (4000) </span></li>
+                                <li id="tab5" class="inactive">Companies <span> (1500) </span></li>
+                                <li id="tab6" class="inactive">Admin Setting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                        <div class="tabsDetails">
+                            <!-- Start Tab Main Dashboard -->
+                            <div id="tab1-content">
+                                <section class="dashboard">
+                                    <div class="col-xs-6">
+                                        <div class="userBox text-center">
+                                             <div class="userIcon"><i class="fa fa-user fa-2x fa-fw"></i></div>
+                                            <div class="userInfo">
+                                                <h4>10,000</h4>
+                                                <h4>Users</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="onlineUserBox text-center">
+                                             <div class="userIcon"><i class="fa fa-user fa-2x fa-fw"></i></div>
+                                            <div class="userInfo">
+                                                <h4>4,554</h4>
+                                                <h4>Online Users</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="courseBox text-center">
+                                            <div class="courseInfo">
+                                                <h4>3,000</h4>
+                                                <h4>Course</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="enrolledCourseBox text-center">
+                                            <div class="enrolledCourseInfo">
+                                                <h4>2,000</h4>
+                                                <h4>Enrolled Courses</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="jobsBox text-center">
+                                            <div class="jobsInfo">
+                                                <h4>4,450</h4>
+                                                <h4>Jobs</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="appliedJobsBox text-center">
+                                            <div class="appliedJobsInfo">
+                                                <h4>3,000</h4>
+                                                <h4>Applied</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="text-center">This Day</h2>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersIcon"><i class="fa fa-user fa-2x fa-fw"></i></div>
+                                            <div class="newUsersInfo">
+                                                <h4>700</h4>
+                                                <h4>Users</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>17</h4>
+                                                <h4>Course Uploaded</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>400</h4>
+                                                <h4>Job Applied</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>15</h4>
+                                                <h4>CV Uploaded</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>25</h4>
+                                                <h4>Course Enrolled</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>150</h4>
+                                                <h4>Job Posted</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="text-center">This Month</h2>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersIcon"><i class="fa fa-user fa-2x fa-fw"></i></div>
+                                            <div class="newUsersInfo">
+                                                <h4>2500</h4>
+                                                <h4>Users</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>200</h4>
+                                                <h4>Course Uploaded</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>1000</h4>
+                                                <h4>Job Applied</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>800</h4>
+                                                <h4>CV Uploaded</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>800</h4>
+                                                <h4>Course Enrolled</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6">
+                                        <div class="newUsers text-center">
+                                            <div class="newUsersInfo">
+                                                <h4>2500</h4>
+                                                <h4>Job Posted</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!-- Start Tab Courses  -->
+                            <div id="tab2-content">
+                                <section class="courses">
+                                    <div class="coursesButtons">
+                                        <h1> Courses</h1>
+                                        <button class="btn btn-primary editCourseButton"> Edit/Delete Course </button>
+                                    </div>
+                                    <form class="form-inline courseForm" method="post">
+                                        <label>Course Name</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Instructor Name</label> 
+                                        <select name="instructor" class="instructorList">
+                                            <option value="Ahmed">Ahmed</option>
+                                            <option value="Mohamed">Mohamed</opion>
+                                            <option value="Ziad">Ziad</option>
+                                        </select>
+                                        <label class="coursePrequisits">Course Prequisits</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Student Will Learn</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <h3>Course Content</h3>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Course Logo</h3>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="File Path" disabled="disabled">
+                                                <div class="input-group-btn">
+                                                    <div class="fileUpload btn btn-danger fake-shadow">
+                                                        <span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-img-preview">
+                                                <img class="thumbnail img-preview" src="courseLogo.jpg" title="Preview Logo">
+                                            </div>
+                                        </div>
+                                        <div class="boxFormButton">
+                                            <button type="reset" class="btn btn-danger formButtons"> Clear </button>
+                                            <button type="submit" class="btn btn-primary formButtons"> Save</button>
+                                        </div>
+                                    </form>
+                                </section>
+                                <section class="editCourses">
+                                    <div class="coursesButtons">
+                                        <h1> Courses</h1>
+                                        <button class="btn btn-primary addCourseButton"> Add Course </button>
+                                    </div>
+                                    <form class="form-inline formSearch courseForm" method="post">
+                                        <input type="text" class="form-control input-lg searchInput" placeholder="Course Name ... "/>
+                                        <button class="btn btn-danger searchButton" type="submit"><i class="fa fa-search fa-lg fa-fw"></i> Search</button>
+                                    </form>
+                                    <form class="form-inline" method="post">
+                                        <label>Course Name</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Instructor Name</label> 
+                                        <select name="instructor" class="instructorList">
+                                            <option value="Ahmed">Ahmed</option>
+                                            <option value="Mohamed">Mohamed</opion>
+                                            <option value="Ziad">Ziad</option>
+                                        </select>
+                                        <label class="coursePrequisits">Course Prequisits</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Student Will Learn</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <h3>Course Content</h3>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Course Logo</h3>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="File Path" disabled="disabled">
+                                                <div class="input-group-btn">
+                                                    <div class="fileUpload btn btn-danger fake-shadow">
+                                                        <span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-img-preview">
+                                                <img class="thumbnail img-preview" src="courseLogo.jpg" title="Preview Logo">
+                                            </div>
+                                        </div>
+                                        <div class="boxFormButton">
+                                            <button type="reset" class="btn btn-danger formButtons"> Clear </button>
+                                            <button type="submit" class="btn btn-primary formButtons"> Save </button>
+                                            <button type="" class="btn btn-primary formButtons">Delete Full Course Data </button>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                            <!-- Start Tab Instructors -->
+                            <div id="tab3-content">
+                                <section class="instructor">
+                                    <div class="instructorButtons">
+                                        <h1> Instructors</h1>
+                                        <button class="btn btn-primary editInstructorButton"> Edit/Delete Instructor </button>
+                                    </div>
+                                    <form class="form-inline instructorForm" method="post">
+                                        <label>Instructor Name</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Instructor Job</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Facebook Link</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>LinkedIn Link</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Description</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <h3>Profile Photo</h3>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="File Path" disabled="disabled">
+                                                <div class="input-group-btn">
+                                                    <div class="fileUpload btn btn-danger fake-shadow">
+                                                        <span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-img-preview">
+                                                <img class="thumbnail img-preview" src="profileSlogan.jpg" title="Preview Logo">
+                                            </div>
+                                        </div>
+                                        <div class="boxFormButton">
+                                            <button type="reset" class="btn btn-danger formButtons"> Clear </button>
+                                            <button type="submit" class="btn  btn-primary formButtons"> Save </button>
+                                        </div>
+                                    </form>
+                                </section>
+                                <section class="editInstructor">
+                                    <h1> Instructors </h1>
+                                    <div class="editInstructorButtons">
+                                        <button class="btn btn-primary addInstructorButton"> Add Instructor</button>
+                                    </div>
+                                    <form class="form-inline formSearch" method="post">
+                                        <input type="text" class="form-control input-lg searchInput" placeholder="Instructor Name ... "/>
+                                        <button class="btn btn-danger searchButton" type="submit"><i class="fa fa-search fa-lg fa-fw"></i> Search</button>
+                                    </form>
+                                    
+                                    <form class="form-inline instructorForm" method="post">
+                                        <label>Instructor Name</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Instructor Job</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Facebook Link</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>LinkedIn Link</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Description</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <h3>Profile Photo</h3>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="File Path" disabled="disabled">
+                                                <div class="input-group-btn">
+                                                    <div class="fileUpload btn btn-danger fake-shadow">
+                                                        <span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-img-preview">
+                                                <img class="thumbnail img-preview" src="profileSlogan.jpg" title="Preview Logo">
+                                            </div>
+                                        </div>
+                                        <div class="boxFormButton">
+                                            <button type="reset" class="btn  btn-danger formButtons"> Clear </button>
+                                            <button type="submit" class="btn btn-primary formButtons"> Save </button>
+                                            <button type="" class="btn  btn-primary formButtons">Delete Full Instructor Data </button>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                            <!-- Start Tab Jobs -->
+                            <div id="tab4-content">
+                                <section class="jobs">
+                                    <div class="jobsButtons">
+                                        <h1> Jobs </h1>
+                                        <button class="btn  btn-primary editJobButton"> Edit/Delete Job </button>
+                                    </div>
+                                    <form class="form-inline jobForm" method="post">
+                                        <label>Job Title</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Company</label> 
+                                        <select name="company" class="companyList">
+                                            <option value="Ahmed">HTC</option>
+                                            <option value="Mohamed">HP</opion>
+                                            <option value="Ziad">Dell</option>
+                                        </select>
+                                        <h3>Choose Seniority Level</h3>
+                                        <div class="seniorityFilter">
+                                            <input type="checkbox" name="seni" id="seniOne" />
+                                            <label class="filterListWebLabel" for="seniOne">Junior</label>
+                                            <input type="checkbox" name="seni" id="seniTwo" />
+                                            <label class="filterListWebLabel" for="seniTwo">Senior</label>
+                                        </div>
+                                        <h3> Choose Salary</h3>
+                                        <div class="salaryFilter">
+                                            <input type="checkbox" name="salary" id="salaryOne" />
+                                            <label class="filterListWebLabel" for="salaryOne">Negotiable</label>
+                                            <input type="checkbox" name="salary" id="salaryTwo" />
+                                            <label class="filterListWebLabel" for="salaryTwo">Fixed</label>
+                                        </div>
+                                        <select name="salary" class="salaryList">
+                                            <option value="2000$">2000$</option>
+                                            <option value="4000$">4000$</option>
+                                            <option value="6000$">6000$</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label class="topSkills">Top Skills needed</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Main Requirements</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <h3>Job Description</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <button type="reset" class="btn btn-danger formButtons"> Clear </button>
+                                        <button type="submit" class="btn btn-primary formButtons"> Save</button>
+                                    </form>
+                                </section>
+                                <section class="editJobs">
+                                    <div class="jobsButtons">
+                                        <h1> Courses</h1>
+                                        <button class="btn  btn-primary addJobButton"> Add Job </button>
+                                    </div>
+                                    <form class="form-inline formSearch jobForm" method="post">
+                                        <input type="text" class="form-control input-lg searchInput" placeholder="Job Name ... "/>
+                                        <button class="btn  btn-danger searchButton" type="submit"><i class="fa fa-search fa-lg fa-fw"></i> Search</button>
+                                    </form>
+                                    <form class="form-inline jobForm" method="post">
+                                        <label>Job Title</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Company</label> 
+                                        <select name="company" class="companyList">
+                                            <option value="Ahmed">HTC</option>
+                                            <option value="Mohamed">HP</opion>
+                                            <option value="Ziad">Dell</option>
+                                        </select>
+                                        <h3>Choose Seniority Level</h3>
+                                        <div class="seniorityFilter">
+                                            <input type="checkbox" name="seni" id="seniOne" />
+                                            <label class="filterListWebLabel" for="seniOne">Junior</label>
+                                            <input type="checkbox" name="seni" id="seniTwo" />
+                                            <label class="filterListWebLabel" for="seniTwo">Senior</label>
+                                        </div>
+                                        <h3> Choose Salary</h3>
+                                        <div class="salaryFilter">
+                                            <input type="checkbox" name="salary" id="salaryOne" />
+                                            <label class="filterListWebLabel" for="salaryOne">Negotiable</label>
+                                            <input type="checkbox" name="salary" id="salaryTwo" />
+                                            <label class="filterListWebLabel" for="salaryTwo">Fixed</label>
+                                        </div>
+                                        <select name="salary" class="salaryList">
+                                            <option value="2000$">2000$</option>
+                                            <option value="4000$">4000$</option>
+                                            <option value="6000$">6000$</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label class="topSkills">Top Skills needed</label>
+                                        <input type="text" class="form-control input-lg"/>
+                                        <h3>Main Requirements</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <h3>Job Description</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <button type="reset" class="btn btn-danger formButtons"> Clear </button>
+                                        <button type="submit" class="btn btn-primary formButtons"> Save </button>
+                                        <button type="" class="btn btn-primary formButtons">Delete Full Course Data </button>
+                                    </form>
+                                </section>
+                            </div>
+                             <!-- Start Tab Compaines -->
+                            <div id="tab5-content">
+                                <section class="companies">
+                                    <div class="companiesButtons">
+                                        <h1> Companies </h1>
+                                        <button class="btn  btn-primary editCompaniesButton"> Edit/Delete Company </button>
+                                    </div>
+                                    <form class="form-inline companiesForm" method="post">
+                                        <label>Company Name</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label class="socialMediaLabel">Social Media</label> 
+                                        <input type="text" class="form-control input-lg socialMediaText"/>
+                                        <button class="btn btn-primary addSocial ">Add</button>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa fa-facebook-square fa-2x fw"></i></a>
+                                            <a href="#"><i class="fa fa-twitter-square fa-2x fw"></i></a>
+                                            <a href="#"><i class="fa fa-twitter-square fa-2x fw"></i></a>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="File Path" disabled="disabled">
+                                                <div class="input-group-btn">
+                                                    <div class="fileUpload btn btn-danger fake-shadow">
+                                                        <span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-img-preview">
+                                                <img class="thumbnail img-preview" src="companySlogan.jpg" title="Preview Logo">
+                                            </div>
+                                        </div>
+                                        <h3>Company Bio</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <div class="boxFormButton">
+                                            <button type="reset" class="btn btn-danger formButtons"> Clear </button>
+                                            <button type="submit" class="btn btn-primary formButtons"> Save</button>
+                                        </div>
+                                    </form>
+                                </section>   
+                                <section class="editCompanies">
+                                    <div class="companiesButtons">
+                                        <h1> Companies </h1>
+                                        <button class="btn btn-primary addCompaniesButton"> Add Company </button>
+                                    </div>
+                                    <form class="form-inline formSearch companiesForm" method="post">
+                                        <input type="text" class="form-control input-lg searchInput" placeholder="Company Name ... "/>
+                                        <button class="btn btn-danger searchButton" type="submit"><i class="fa fa-search fa-lg fa-fw"></i> Search</button>
+                                    </form>
+                                    <form class="form-inline companiesForm" method="post">
+                                        <label>Company Name</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label class="socialMediaLabel">Social Media</label> 
+                                        <input type="text" class="form-control input-lg socialMediaText"/>
+                                        <button class="btn btn-primary addSocial ">Add</button>
+                                        <div class="socialIcons">
+                                            <a href="#"><i class="fa fa-facebook-square fa-2x fw"></i></a>
+                                            <a href="#"><i class="fa fa-twitter-square fa-2x fw"></i></a>
+                                            <a href="#"><i class="fa fa-twitter-square fa-2x fw"></i></a>
+                                        </div>
+                                        
+                                       <div class="form-group">
+                                            <div class="input-group">
+                                                <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="File Path" disabled="disabled">
+                                                <div class="input-group-btn">
+                                                    <div class="fileUpload btn btn-danger fake-shadow">
+                                                        <span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-img-preview">
+                                                <img class="thumbnail img-preview" src="companySlogan.jpg" title="Preview Logo">
+                                            </div>
+                                        </div>
+                                        <h3>Company Bio</h3>
+                                        <textarea class="form-control"></textarea>
+                                        <button type="reset" class="btn  btn-danger formButtons"> Clear </button>
+                                        <button type="submit" class="btn  btn-primary formButtons"> Save </button>
+                                        <button type="" class="btn  btn-primary formButtons">Delete Full Course Data </button>
+                                    </form>
+                                </section>   
+                            </div>
+                             <!-- Start Tab Admin Setting -->
+                            <div id="tab6-content">
+                                <section class="adminSetting">
+                                    <h3 class="addAdminText"><i class="fa fa-arrow-right fa-lg fa-fw addAdminIconRight"></i><i class="fa fa-arrow-down fa-lg fa-fw addAdminIconDown"></i>Add Admin</h3>
+                                    <form class="adminSettingForm form-inline " method="post">
+                                        <label>Name</label> 
+                                        <input type="text" class="form-control input-lg"/>
+                                        <label>Password</label> 
+                                        <div class="passwordBox">
+                                            <input type="password" placeholder="Enter Your Password" class="form-control passwordInput input-lg"/>
+                                            <i class="fa fa-eye fa-lg" aria-hidden="true"></i>
+                                        </div>
+                                        <label>Confirm Password</label> 
+                                        <div class="passwordBox">
+                                            <input type="password" placeholder="Enter Your Password" class="form-control passwordInput input-lg"/>
+                                            <i class="fa fa-eye fa-lg" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="File Path" disabled="disabled">
+                                                <div class="input-group-btn">
+                                                    <div class="fileUpload btn btn-danger fake-shadow">
+                                                        <span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+                                                        <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-img-preview">
+                                                <img class="thumbnail img-preview" src="profileSlogan.jpg" title="Preview Logo">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary adminSettingFormButton" type="submit">Submit</button>
+                                    </form>
+                                    <h3 class="adminActivityText"><i class="fa fa-arrow-right fa-lg fa-fw adminActivityIconRight"></i><i class="fa fa-arrow-down fa-lg fa-fw adminActivityIconDown"></i>Admin Activity</h3>
+                                    <div class="allAdminsBox">
+                                        <table class="table">
+                                            <tr>
+                                                <td class="adminInfo">Username</td>
+                                                <td class="adminInfo">Last Online</td>
+                                                <td class="adminInfo">Edit</td>
+                                                <td class="adminInfo">Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ahmed</td>
+                                                <td>17-9-2017</td>
+                                                <td>
+                                                    <button class="btn btn-primary"> Edit</button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ahmed</td>
+                                                <td>17-9-2017</td>
+                                                <td>
+                                                    <button class="btn btn-primary"> Edit</button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                                    
+                                        </table>
+                                    </div>
+                                </section>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End Section View Job Details -->
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/admin-panel-script.js"></script>
+    </body>
+</html>

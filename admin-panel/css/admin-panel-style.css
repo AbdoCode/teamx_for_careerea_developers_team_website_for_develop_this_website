@@ -1,0 +1,489 @@
+/* override bootstrap */
+.form-inline .form-control {
+    display: block;
+    margin-bottom: 10px;
+}
+@media (min-width:768px) {
+    .form-inline .form-control {
+        width:500px!important;
+    }
+    
+}
+.nav-tabs {border-bottom: none!important;}
+/* end */
+
+.adminPanel .tabsContainer {
+    background:#222d32;
+    height: 400px;
+    position: fixed;
+    width:310px
+}
+@media (max-width: 1025px) {
+    .adminPanel .tabsContainer {
+        position: relative;
+        width:auto;
+    }
+}
+.adminPanel .tabsDetails label, .adminPanel .tabsDetails h3 {
+    margin-bottom: 10px; color:cornflowerblue;
+}
+.adminPanel .tabsDetails h1 {color:#E90052}
+.adminPanel .tabsDetails label, .adminPanel .tabsDetails h3 {
+    font-size: 24px; 
+}
+.adminPanel .tabsContainer, .adminPanel .tabsDetails {
+    margin-top:50px;
+}
+.adminPanel .tabsContainer ul{list-style: none; padding: 0; margin:0; }
+.adminPanel .tabsContainer ul li {
+    cursor: pointer; 
+    text-align:center; 
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    color: #FFF;
+    background:#c9302c;
+    float:none!important;
+}
+.adminPanel .tabsContainer ul li.inactive {
+    background: #222d32; 
+}
+
+.adminPanel .tabsDetails div[id^="tab"] {
+    background:#EEE;
+    padding: 10px;
+    min-height: 1200px;
+}
+.adminPanel .tabsDetails div[id^="tab"]:not(:first-of-type) {
+    display: none;
+}
+.adminPanel .tabsDetails .formButtons {
+    margin-top:10px;
+}
+.adminPanel .tabsDetails textarea {
+    height: 200px!important;
+}
+.adminPanel .tabsDetails .coursesButtons, .adminPanel .tabsDetails .instructorButtons, 
+.adminPanel .tabsDetails .jobsButtons, .adminPanel .tabsDetails .companiesButtons {
+    margin-bottom: 10px;
+}   
+
+
+.adminPanel .tabsDetails .instructorList, .adminPanel .tabsDetails .companyList, .adminPanel .tabsDetails .salaryList {
+    display: inline;
+    width: 100%;
+    cursor: pointer;
+}
+@media (min-width:1025px) {
+    .adminPanel .tabsDetails .instructorList {
+        width:49vh!important;
+    }
+}
+
+.adminPanel .tabsDetails .instructorList {
+    display: inline;
+}
+.adminPanel .tabsDetails .coursePrequisits {
+    display: block;
+}
+/* Start Tab Instructor */
+
+.adminPanel .tabsContainer .myTabs .fa-dashboard {
+    color:white;
+}
+
+/* Start Tab Main Dashboard */
+
+.adminPanel .tabsDetails .userBox, .adminPanel .tabsDetails .onlineUserBox, .adminPanel .tabsDetails .courseBox, 
+.adminPanel .tabsDetails .enrolledCourseBox, .adminPanel .tabsDetails .jobsBox, .adminPanel .tabsDetails .appliedJobsBox, 
+.adminPanel .tabsDetails .newUsers {
+    padding: 5px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background: #FFF;
+    height: 120px;
+}
+.adminPanel .tabsDetails .userBox .userIcon, .adminPanel .tabsDetails .onlineUserBox .userIcon, 
+.adminPanel .tabsDetails .newUsers .newUsersIcon{
+    display: inline-table;
+    color:#38003C; 
+} 
+.adminPanel .tabsDetails .newUsers .newUsersInfo, .adminPanel .tabsDetails .userInfo, .courseInfo, 
+.adminPanel .tabsDetails .enrolledCourseInfo, .adminPanel .tabsDetails .jobsInfo, 
+.adminPanel .tabsDetails .appliedJobsInfo {
+    display: inline-table;
+    color:#E90052;
+}
+@media (max-width:768px) {
+    .adminPanel .tabsDetails .userBox .userIcon, .adminPanel .tabsDetails .onlineUserBox .userIcon, 
+    .adminPanel .tabsDetails .newUsers .newUsersIcon{
+    display: block;
+} 
+}
+.adminPanel .tabsDetails .dashboard h2 {
+    color:#38003c;
+}
+.adminPanel .tabsDetails .editInstructor, .adminPanel .tabsDetails .editCourses, .adminPanel .tabsDetails .editJobs, 
+.adminPanel .tabsDetails .editCompanies {display: none;}
+
+.adminPanel .tabsDetails .searchInput {display: inline-block!important; margin-top:10px;}
+@media(min-width:768px) {.adminPanel .tabsDetails .searchButton {height: 45px;}}
+@media (max-width: 350px) {
+    
+    .adminPanel .tabsDetails .instructorList {
+        margin-left: 40px;
+        width:200px!important;
+    }
+    .adminPanel .tabsDetails .editInstructor .searchInput{
+        width:auto!important;
+    }
+    .adminPanel .tabsDetails .searchButton {
+        width: 150px!important;
+    }
+    .adminPanel .tabsDetails .editInstructorButton, .adminPanel .tabsDetails .addInstructorButton, 
+    .adminPanel .tabsDetails .addCourseButton, .adminPanel .tabsDetails .editCourseButton, 
+    .adminPanel .tabsDetails .addJobButton, .adminPanel .tabsDetails .editJobButton {
+        width:200px!important;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+}
+@media (max-width:360px) {
+    .adminPanel .tabsDetails .editInstructor .searchInput {
+        width:190px!important;
+    }
+}
+
+.user-panel {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+    
+}
+@media (min-width:1025px) {
+    .user-panel {
+        left:10vh;
+    }
+}
+.user-panel:before,
+.user-panel:after {
+  content: " ";
+  display: table;
+}
+.user-panel:after {
+  clear: both;
+}
+.user-panel > .image > img {
+  width: 100%;
+  max-width: 55px;
+  height: auto;
+}
+.user-panel > .info {
+  padding: 5px 5px 5px 15px;
+  line-height: 1;
+  position: absolute;
+  left: 55px;
+}
+.user-panel > .info > p {
+  font-weight: 600;
+  margin-bottom: 9px;
+    color:#FFF;
+}
+.user-panel > .info > a {
+  text-decoration: none;
+  padding-right: 5px;
+  margin-top: 3px;
+  font-size: 11px;
+}
+.user-panel > .info > a > .fa,
+.user-panel > .info > a > .ion,
+.user-panel > .info > a > .glyphicon {
+  margin-right: 3px;
+}
+
+/* start tab jobs */
+.adminPanel .tabsDetails .salaryFilter {
+    display: inline;
+}
+.adminPanel .tabsDetails .salaryList {
+    display: none;
+}
+@media (min-width:1025px){
+    .adminPanel .tabsDetails .companyList {
+        width:49vh;
+    }
+}
+.adminPanel .tabsDetails .topSkills {
+    display: block;
+}
+.adminPanel .tabsDetails .jobs .companyList {
+    display: inline;
+    
+}
+
+/* Start Toggle Buttons */
+.adminPanel .tabsDetails input[type=checkbox] {display:none;}
+input[type=checkbox] + label span
+{
+    text-align:center;
+    padding:0.25em 1em;
+}
+@media (max-width:768px) {
+    input[type=checkbox] + label span
+    {
+        padding:0.1em 0.5em;
+    }
+}
+input[type=checkbox] + label span.junior
+{
+    background:#c00;
+    color:#fff;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+input[type=checkbox] + label span.senior
+{
+    background:#999;
+    color:#666;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+input[type=checkbox]:checked + label span.junior
+{
+    background:#999;
+    color:#666;
+}
+input[type=checkbox]:checked + label span.senior
+{
+    background:#c00;
+    color:#fff;
+}
+/* second Toggle Button */
+input[type=checkbox] + label span.negotiable
+{
+    background:#c00;
+    color:#fff;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+input[type=checkbox] + label span.fixed
+{
+    background:#999;
+    color:#666;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+input[type=checkbox]:checked + label span.negotiable
+{
+    background:#999;
+    color:#666;
+}
+input[type=checkbox]:checked + label span.fixed
+{
+    background:#c00;
+    color:#fff;
+}
+
+/* End Toggle Buttons */
+
+/* start tab compaines */
+.adminPanel .tabsDetails .socialMediaText {display: inline!important;}
+.adminPanel .tabsDetails .socialMediaLabel {display: block;}
+.adminPanel .tabsDetails .addSocial {
+    display: inline;
+    margin-bottom: 10px;
+}
+.adminPanel .tabsDetails .socialIcons i {
+    cursor: pointer;
+        padding:10px;
+    
+}
+.adminPanel .tabsDetails .form-control, .adminPanel .tabsDetails .thumbnail {
+    border-radius: 2px;
+}
+
+
+/* File Upload */
+.adminPanel .tabsDetails .fake-shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.adminPanel .tabsDetails .fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin-bottom:10px; 
+}
+.adminPanel .tabsDetails .fileUpload #logo-id{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 33px;
+    cursor: pointer;
+    opacity: 0;
+}
+.adminPanel .tabsDetails .img-preview {
+    max-width: 100%;
+}
+/* start tab admin setting */
+.adminPanel .tabsDetails .addAdminIconDown, .adminPanel .tabsDetails .adminActivityIconDown {
+    display: none;
+}
+.adminPanel .tabsDetails .adminSettingForm {
+    display: none;
+    margin-bottom: 10px;
+}
+.adminPanel .tabsDetails .adminSettingFormButton {
+    display: block;
+    margin-top:10px
+}
+.adminPanel .tabsDetails .allAdminsBox {
+    display: none;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #ccc;
+    border-left:  1px solid #ccc;
+}
+.adminPanel .tabsDetails .allAdminsBox .table tr {
+    border-bottom: 1px solid #ccc;
+}
+@media (max-width:1024px) {
+    .adminPanel .tabsDetails .allAdminsBox .btn {
+    padding: 0 !important;
+    }
+}
+
+.adminPanel .tabsDetails .adminInfo {
+    color:#E90052; font-weight: bold;
+}
+.adminPanel .tabsDetails .boxFormButton{
+    display: block;
+}
+.adminPanel .tabsDetails .passwordBox
+{
+    width: 300px;
+    position: relative;
+}
+
+.adminPanel .tabsDetails .passwordBox input{
+    background-color: darkslategray;
+    border: 0;
+    color: white;
+    text-indent: 10px;
+}
+@media (max-width:1024px) {
+    .adminPanel .tabsDetails .passwordBox input {
+        width: auto!important;
+    }
+}
+.adminPanel .tabsDetails .passwordBox i{
+    position: absolute;
+    left: 158%;
+    top: 16px;
+    color: orange;
+}
+@media (max-width:420px) {
+    .adminPanel .tabsDetails .passwordBox i {
+        left:75%!important;
+    }
+}
+.adminPanel .tabsDetails .profile{
+    margin-top: 15px
+}
+.adminPanel .tabsDetails .profile img{
+    width: 400px;
+    height: 400px;
+    line-height: 390px;
+    color: #38003C;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    margin-right: 15px;
+}
+@media (max-width:768px) {.adminPanel .tabsDetails .profile img {width:200px; height: 200px; line-height: 190px;}}
+.adminPanel .tabsDetails .profile .editFile {
+    padding: 5px 10px;
+    background-color: #38003C;
+    border: 1px solid #38003C;
+    position: relative;
+    color: #FFF;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    width: 400px;
+    margin-top: 5px
+}
+@media (max-width:768px) {
+    .adminPanel .tabsDetails .profile .editFile {
+        width:200px;
+    }
+}
+.adminPanel .tabsDetails .profile .editFile .hideInput{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer
+}
+.adminPanel .tabsDetails .activityButtons {
+    margin-top:20px;
+}
+.adminPanel .tabsDetails .activityButtons .inactive 
+{background:#CCC; border:none; color:#e90052;}
+.adminPanel .tabsDetails #editCourseBox {display: none;}
+.activityButtons button {
+    margin:5px;
+    width:200px;
+}
+/**************** Start override for chosen plugin *************************/
+
+.chosen-container{
+    font-size: 14px
+}
+
+.chosen-container-single .chosen-single{
+    height: 30px;
+    padding-top: 2px
+}
+
+.chosen-container-single .chosen-search input[type="text"]{
+    background: #fff url(../images/chosen-sprite.png) no-repeat 100% -20px
+}
+
+.chosen-container-single .chosen-single div{
+    top: 2px
+}
+
+.chosen-container-single .chosen-single div b{
+    background: url(../images/chosen-sprite.png) no-repeat 0 2px
+}
+
+.chosen-container .chosen-results li.highlighted{
+    background: #E90052
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close{
+    background: url(../images/chosen-sprite.png) -42px 1px no-repeat
+}
+
+.chosen-container-multi .chosen-choices{
+    height: 36px
+}
+
+.chosen-container-multi .chosen-choices li.search-choice{
+    margin-top: 7px
+}
+
+.chosen-container-multi .chosen-choices li.search-field{
+    margin: 4px 0
+}
+
+/**************** End override for chosen plugin *************************/
+
+

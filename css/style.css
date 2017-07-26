@@ -1,0 +1,2743 @@
+/********************************** Start Overriding Bootstrap **********************************/
+
+.navbar-inverse{
+    border: none
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus{
+    background-color: #E90052
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: #FFF
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus{
+    border-top: 3px solid #E90052
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: transparent;
+    border-top: 3px solid #E90052
+}
+
+.nav-tabs > li > a{
+    color: #38003C
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{
+    color: #E90052
+}
+
+/******************************** End Overriding Bootstrap **********************************/
+
+/************************************************** Overlay For Page **************************************************/
+
+.overlayForPage{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+/************************************************** Overlay For Page **************************************************/
+
+/************************************************** Start Navbar **************************************************/
+
+.backgroundColor{
+    background-color: #38003C
+}
+
+.backgroundColor2{
+    background-color: transparent
+}
+
+.sign{
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 0;
+    outline: 0
+}
+
+.sign i{
+    color: #E90052
+}
+
+.sign span{
+    color: #FFF;
+    text-transform: uppercase
+}
+
+.dropdown{
+    margin-top: 11px;
+    margin-left: 10px;
+    display: inline-block
+}
+
+.dropdown img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%
+}
+
+.dropdown > a span:first-of-type{
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.dropdown > a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.dropdown-menu{
+    background-color: #38003C;
+    min-width: 200px
+}
+
+.navbar-right .dropdown-menu{
+    left: -16px;
+    margin-top: 22px
+}
+
+.navbar-right .dropdown-menu > i{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -28px;
+    left: 20px;
+    color: #38003C
+}
+
+.dropdown-menu > li > a{
+    color: #FFF;
+    padding: 6px 20px;
+    -webkit-transition: padding 0.4s ease;
+    -moz-transition: padding 0.4s ease;
+    -o-transition: padding 0.4s ease;
+    transition: padding 0.4s ease;
+    position: relative
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{
+    padding-left: 30px
+}
+
+.dropdown-menu > li > a i{
+    display: inline-block;
+    margin-right: 5px
+}
+
+.dropdown-menu > li > a span{
+    margin-left: 50px;
+    font-weight: bold
+}
+
+.dropdown-menu > li > a:hover i{
+    color: #262626
+}
+
+/************************************************** End Navbar **************************************************/
+
+/************************************************** Start SignIn Block **************************************************/
+
+.signInBlock{
+    width: 380px;
+    background-color: #FFF;
+    color: #FFF;
+    z-index: 9999;
+    display: none
+}
+
+.signInBlock > div{
+    background-color: #38003C;
+    padding: 20px 10px
+}
+
+.signInBlock > div span{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px
+}
+
+.signInBlock > div i{
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 5%
+}
+
+.signInBlock > div i:hover{
+    color: #E90052
+}
+
+.signInBlock form{
+    padding: 40px 30px;
+    color: #AAA
+}
+
+.signInBlock form input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px
+}
+
+.signInBlock form input:focus{
+    border: 2px solid #38003C
+}
+
+.signInBlock form input[type="text"]{
+    background: rgba(239, 236, 240, 0.8) url(../images/username.png) no-repeat scroll 7px 7px;
+    padding-left:40px;
+    color: #444
+}
+
+.signInBlock form .password{
+    position: relative
+}
+
+.signInBlock form input.passwordField{
+    margin: 15px 0 15px 0;
+    background: rgba(239, 236, 240, 0.8) url(../images/password.png) no-repeat scroll 7px 7px;
+    padding-left:40px;
+    color: #444
+}
+
+.signInBlock form .password > span{
+    position: absolute;
+    top: 30px;
+    right: 17px;
+    cursor: pointer;
+    display: none
+}
+
+.signInBlock form input[type="text"]::-webkit-input-placeholder,
+.signInBlock form input[type="password"]::-webkit-input-placeholder{
+    color: #444
+}
+
+.signInBlock form .custom-alert{
+    padding: 11px
+}
+
+.signInBlock form button{
+    width: 105px;
+    height: 40px;
+    color: #777;
+    display: block;
+    margin: 0 auto 15px
+}
+
+.signInBlock form button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.signInBlock form span a{
+    color: #444;
+    cursor: pointer
+}
+
+.signInBlock form span a:hover{
+    color: #E90052
+}
+
+/************************************************** End SignIn Block **************************************************/
+
+/************************************************** Start Header **************************************************/
+
+header{
+    background: url("../images/header2.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #FFF;
+    position: relative
+}
+
+header .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1
+}
+
+header .box{
+    text-align: center;
+    width: 70%;
+    margin: 130px auto 70px;
+    padding: 50px 0
+}
+
+header .box h1{
+    font-weight: bold;
+    margin-bottom: 40px
+}
+
+header .box h1 span:first-of-type{
+    font-size: 120px;
+    font-family: Tahoma
+}
+
+header .box h1 span:last-of-type{
+    font-size: 28px
+}
+
+header .box button{
+    margin: 10px;
+    width: 150px;
+    padding: 10px 0;
+    font-weight: bold
+}
+
+/************************************************** End Header **************************************************/
+
+/************************************************** Start AboutUs **************************************************/
+
+.aboutUs{
+    padding: 20px 0
+}
+
+.aboutUs h1{
+    margin: 30px 0 30px 0;
+    font-size: 50px
+}
+
+.aboutUs .items{
+    text-align: center
+}
+
+.aboutUs .items .item{
+    margin: 20px 0 10px
+}
+
+.aboutUs .items .item span:first-child{
+    border: 5px solid #38003C;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    line-height: 90px;
+    border-radius: 50%;
+    display: block;
+    font-size: 30px
+}
+
+.aboutUs .items .item span:first-child:hover{
+    background-color: #38003C;
+    color: #FFF;
+    cursor: default
+}
+
+.aboutUs .items .item span:last-child{
+    font-weight: bold;
+    display: block;
+    font-size: 25px
+}
+
+/************************************************** End AboutUs **************************************************/
+
+/************************************************** Start partners **************************************************/
+
+.partners{
+    padding-bottom: 30px
+}
+
+.partners h1{
+    margin: 30px 0 50px;
+    font-size: 50px
+}
+
+.partners .row{
+    position: relative
+}
+
+.partners img{
+    margin: auto;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /************************************************** For IE **************************************************/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+
+.partners img:hover{
+    opacity: 1
+}
+
+.partners .prev,
+.partners .next{
+    position: absolute;
+    top: 1px;
+    font-size: 20px
+}
+
+.partners .prev:hover,
+.partners .next:hover{
+    color: #E90052;
+    cursor: pointer
+}
+
+.partners .prev{
+    left: 0
+}
+
+.partners .next{
+    right: 0
+}
+
+/************************************************** End partners **************************************************/
+
+/************************************************** Start jobs **************************************************/
+
+.jobs{
+    padding-bottom: 30px
+}
+
+.jobs h1{
+    margin: 30px 0;
+    font-size: 50px
+}
+
+.jobs ul li{
+    display: inline-block;
+    border: 2px solid #38003C;
+    padding: 10px;
+    border-radius: 5px;
+    color: #38003C;
+    margin-right: 5px
+}
+
+.jobs ul li:hover,
+.jobs ul li.active{
+    background-color: #E90052;
+    color: #FFF;
+    border: 2px solid #E90052;
+    cursor: pointer
+}
+
+.jobs .allJobs{
+    margin-top: 50px
+}
+
+.jobs .allJobs .row > div{
+    padding: 0 10px
+}
+
+.jobs .allJobs .jobBox{
+    border: 2px solid #38003C;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 0 0 20px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    position: relative;
+    box-shadow: 5px 5px 10px #CCC;
+    max-height: 400px;
+    min-height: 308px;
+    overflow: hidden
+}
+
+.jobs .allJobs .jobBox::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #E90052;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 3px;
+    display: none
+}
+
+.jobs .allJobs .jobBox:hover{
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -o-transform: scale(1.025);
+    transform: scale(1.025)
+}
+
+.jobs .allJobs .jobBox:hover::before{
+    display: block
+}
+
+.jobs .allJobs .jobBox .imgBlock{
+    height: 110px;
+    overflow: hidden;
+    text-align: center
+}
+
+.jobs .allJobs .jobBox .imgBlock img{
+    width: auto;
+    height: 110px;
+    max-width: 100%
+}
+
+.jobs .allJobs .jobBox h5{
+    font-weight: bold
+}
+
+.jobs .allJobs .jobBox h5:nth-of-type(2){
+    color: #E90052
+}
+
+.jobs .allJobs .jobBox h5:nth-of-type(3){
+    text-align: left;
+    margin-left: 20px
+}
+
+.jobs .allJobs .jobBox p {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 122px
+}
+
+.jobs .allJobs .jobBox .allInfo{
+    padding: 0
+}
+
+.jobs .allJobs .jobBox .info{
+    margin-top: 10px;
+    width: 32.3333333%;
+    display: inline-block
+}
+
+.jobs .allJobs .jobBox .info .head{
+    font-weight: bold;
+    font-size: 16px
+}
+
+.jobs .allJobs .jobBox .info .value{
+    color: #E90052;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.jobs .allJobs .jobBox .boxHover{
+    min-height: 200px;
+    display: none;
+    position: relative;
+    margin: 42px 0
+}
+
+.jobs .allJobs .jobBox .boxHover > span{
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    cursor: pointer
+}
+
+.jobs .allJobs .jobBox .boxHover > span:hover,
+.jobs .allJobs .jobBox .boxHover > span.active{
+    color: #E90052
+}
+
+.jobs .allJobs .jobBox .boxHover .info{
+    margin-top: 45px
+}
+
+.jobs .allJobs .jobBox .boxHover button:first-of-type{
+    width: 60%;
+    margin: 20px auto 0
+}
+
+.jobs .allJobs .jobBox .boxHover button:last-of-type{
+    width: 60%;
+    margin: 10px auto 0
+}
+
+.jobs .allJobs .jobBox .boxHover button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.jobs .mix{
+    display: none
+}
+
+.jobs .seeMore{
+    float: right;
+    margin-top: 10px;
+    margin-right: -6px
+}
+
+/************************************************** End jobs **************************************************/
+
+/************************************************** Sperator between Jobs section and Courses section for style **************************************************/
+
+.sperator{
+    border: 3px solid #38003C
+}
+
+/************************************************** Start courses **************************************************/
+
+.courses{
+    padding-bottom: 30px
+}
+
+.courses h1{
+    margin: 30px 0;
+    font-size: 50px
+}
+
+.courses ul li{
+    display: inline-block;
+    border: 2px solid #38003C;
+    padding: 10px;
+    border-radius: 5px;
+    color: #38003C;
+    margin-right: 5px
+}
+
+.courses ul li:hover,
+.courses ul li.active{
+    background-color: #E90052;
+    color: #FFF;
+    border: 2px solid #E90052;
+    cursor: pointer
+}
+
+.courses .allCourses{
+    margin-top: 50px
+}
+
+.courses .allCourses .row > div{
+    padding: 0 10px
+}
+
+.courses .allCourses .courseBox{
+    border: 2px solid #38003C;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    position: relative;
+    box-shadow: 5px 5px 10px #CCC;
+    max-height: 522px;
+    min-height: 424px;
+    overflow: hidden
+}
+
+.courses .allCourses .courseBox::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #E90052;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 3px;
+    display: none
+}
+
+.courses .allCourses .courseBox:hover{
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -o-transform: scale(1.025);
+    transform: scale(1.025)
+}
+
+.courses .allCourses .courseBox:hover::before{
+    display: block
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .rateBox{
+    margin-top: 20px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .rateBox .rateWord{
+    display: block;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .rateBox .rateWord span:last-of-type{
+    color: #E90052
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .rateBox .rate .starWrapper{
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    color: #AAA;
+    font-size: 20px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .rateBox .rate .starWrapper .starTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #E90052
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .imgBlock{
+    height: 110px;
+    overflow: hidden;
+    text-align: center
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .imgBlock img{
+    width: auto;
+    height: 110px;
+    max-width: 100%
+}
+
+.courses .allCourses .courseBox .boxWithoutHover h4{
+    font-weight: bold;
+    color: #E90052
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .allItem .item{
+    margin: 15px 0;
+    display: inline-block;
+    width: 32.333333%;
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .allItem .item .value{
+    color: #E90052;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .allItem .item .head{
+    font-weight: bold;
+    font-size: 16px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover h5{
+    text-align: left;
+    font-weight: bold
+}
+
+.courses .allCourses .courseBox .boxWithoutHover p{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 122px
+}
+
+.courses .allCourses .courseBox .boxHover{
+    display: none;
+    padding: 150px 0;
+}
+
+.courses .allCourses .courseBox .boxHover > span:first-of-type{
+    font-size: 25px;
+    font-weight: bold
+}
+
+.courses .allCourses .courseBox .boxHover > span:last-of-type{
+    font-size: 25px;
+    cursor: pointer
+}
+
+.courses .allCourses .courseBox .boxHover > span:last-of-type.active,
+.courses .allCourses .courseBox .boxHover > span:last-of-type:hover{
+    color: #E90052
+}
+
+.courses .allCourses .courseBox .boxHover button{
+    width: 70%;
+    margin-top: 10px
+}
+
+.courses .allCourses .courseBox .boxHover button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.courses .mix{
+    display: none
+}
+
+.courses .seeMore{
+    float: right;
+    margin-top: 10px;
+    margin-right: -6px
+}
+
+/************************************************** End courses **************************************************/
+
+/************************************************** Start SignUp **************************************************/
+
+.signUp{
+    margin-top: 50px
+}
+
+.signUp .numbers{
+    margin: 40px
+}
+
+.signUp .numbers span{
+    border: 3px solid #38003C;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 -5px;
+    cursor: default
+}
+
+.signUp .numbers span.active{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.signUp .numbers hr{
+    border: 3px solid #38003C;
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px
+}
+
+/************************************************** Start Form1 **************************************************/
+
+.signUp .form1{
+    width: 70%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    display: block
+}
+
+.signUp .form1 .formOne{
+    float: left
+}
+
+.signUp .form1 form{
+    color: #AAA;
+    position: relative
+}
+
+.signUp .form1 form input{
+    width: 87%;
+    padding: 10px;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px;
+    background: rgba(239, 236, 240, 0.8) no-repeat scroll 7px 8px;
+    padding-left:40px;
+    color: #444;
+    float: left;
+    margin-bottom: 20px
+}
+
+.signUp .form1 form input:focus{
+    border: 2px solid #38003C
+}
+
+.signUp .form1 form input[placeholder="Username"]{
+    background-image: url(../images/username.png)
+}
+
+.signUp .form1 form input[placeholder="Birthday"]{
+    background-image: url(../images/date.png);
+    height: 44px
+}
+
+.signUp .form1 form input[placeholder="Phone Number"]{
+    background-image: url(../images/phone.png)
+}
+
+.signUp .form1 form input[type="email"]{
+    background-image: url(../images/email.png)
+}
+
+.signUp .form1 form .radioBox{
+    position: absolute;
+    bottom: 14%
+}
+
+.signUp .form1 form .inline{
+    display: inline-block;
+}
+
+.signUp .form1 form .inline + .inline{
+    margin-left: 50px;
+}
+
+.signUp .form1 form .radio{
+    color:#999;
+    font-size:15px;
+    position:relative;
+}
+
+.signUp .form1 form .radio span{
+    position:relative;
+    padding-left:20px;
+}
+
+.signUp .form1 form .radio span:after{
+    content:'';
+    width:15px;
+    height:15px;
+    border:3px solid;
+    position:absolute;
+    left:0;
+    top:1px;
+    border-radius:100%;
+    -ms-border-radius:100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.signUp .form1 form .radio input[type="radio"]{
+    cursor: pointer; 
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+.signUp .form1 form .radio input[type="radio"]:checked + span{
+    color:#E90052;  
+}
+.signUp .form1 form .radio input[type="radio"]:checked + span:before{
+    content:'';
+    width:5px;
+    height:5px;
+    position:absolute;
+    background:#E90052;
+    left:5px;
+    top:6px;
+    border-radius:100%;
+    -ms-border-radius:100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+}
+
+.signUp .form1 form input::-webkit-input-placeholder{
+    color: #444
+}
+
+.signUp .form1 form button{
+    width: 105px;
+    height: 40px;
+    margin-top: 50px;
+    margin-right: 10px;
+    color: #777
+}
+
+.signUp .form1 form button:hover{
+    background-color: #E90052;
+    color: #FFF
+}
+
+.signUp .form1 form .custom-alert{
+    float: left;
+    width: 87%;
+    height: 44px;
+    line-height: 13px;
+    margin-top: -12px;
+    display: none;
+    text-align: left
+}
+
+.signUp .form1 .formTwo{
+    float: left
+}
+
+.signUp .form1 .formTwo img{
+    margin: 0 auto;
+    height: 240px
+}
+
+@media only screen and (max-width: 991px){
+    
+    .signUp .form1 .formOne,
+    .signUp .form1 .formTwo{
+        margin-top: 20px
+    }
+    
+}
+
+/************************************************** End Form1 **************************************************/
+
+/************************************************** Start Form2 **************************************************/
+
+.signUp .form2{
+    width: 70%;
+    margin: 0 auto 20px;
+    display: none
+}
+
+.signUp .form2 .interests h2{
+    text-align: left;
+    font-weight: bold
+}
+
+.signUp .form2 .interests h4{
+    text-align: left;
+    color: #E90052;
+    margin-bottom: 20px
+}
+
+.signUp .form2 .interests .tab-content{
+    margin-top: 20px;
+    overflow: hidden
+}
+
+.signUp .form2 .interests .tab-content .field{
+    width: 31.333333%;
+    height: 40px;
+    line-height: 25px;
+    border: 1px solid #38003C;
+    text-align: left;
+    float: left;
+    margin: 1%;
+    position: relative;
+    padding: 0;
+}
+
+.signUp .form2 .interests .tab-content .field:hover,
+.signUp .form2 .interests .tab-content .field.active{
+    background-color: #E90052;
+    color: #FFF;
+    border: 1px solid #E90052
+}
+
+.signUp .form2 .interests .tab-content .field input{
+    display: none;
+}
+
+.signUp .form2 .interests .tab-content .field label.clicked{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 6px 10px
+}
+
+.signUp .form2 .interests .tab-content .field label.select{
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    display: none
+}
+
+.signUp .form2 .custom-alert{
+    width: 60%;
+    margin: 10px auto 0px;
+    height: 45px;
+    line-height: 12px;
+    display: none
+}
+
+.signUp .form2 .interests div > button{
+    width: 105px;
+    height: 40px;
+    color: #777;
+    margin-top: 20px
+}
+
+.signUp .form2 .interests div > button:hover{
+    background-color: #E90052;
+    color: #FFF
+}
+
+.signUp .form2 .interests div > button.back{
+    width: 105px;
+    height: 40px;
+    color: #777;
+    display: block
+}
+
+.signUp .form2 .interests div > button.back:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+/************************************************** End Form2 **************************************************/
+
+/************************************************** Start Form3 **************************************************/
+
+.signUp .form3{
+    width: 70%;
+    margin: 0 auto 20px;
+    display: none
+}
+
+.signUp .form3 h2{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.signUp .form3{
+    color: #AAA
+}
+
+.signUp .form3 form .profile{
+    width: 50%;
+    margin: 0 auto 20px
+}
+
+.signUp .form3 form img{
+    width: 160px;
+    height: 160px;
+    color: #444;
+    font-size: 20px;
+    line-height: 150px
+}
+
+.signUp .form3 form input[type="file"]{
+    width: 50%;
+    display: inline;
+    margin-left: 3%;
+    margin-top: 20px
+}
+
+.signUp .form3 form .password{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px
+}
+
+.signUp .form3 form .password > span{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none
+}
+
+.signUp .form3 form input[type="password"],
+.signUp .form3 form input[type="text"]{
+    background: rgba(239, 236, 240, 0.8) url(../images/password.png) no-repeat scroll 7px 7px;
+    padding: 10px;
+    padding-left: 40px;
+    color: #444;
+    width: 320px;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .signUp .form3 form input[type="file"]{
+        width: 100%;
+        margin-left: 0
+    }
+}
+
+@media only screen and (max-width: 1199px){
+       
+    .signUp .form3 form .password{
+        margin: 10px 0    
+    }
+    
+    .signUp .form3 form input[type="password"],
+    .signUp .form3 form input[type="text"]{
+        width: 100%
+    }
+    
+}
+
+.signUp .form3 form input[type="password"]:focus,
+.signUp .form3 form input[type="text"]:focus{
+    border: 2px solid #38003C
+}
+
+.signUp .form3 form input[type="password"]::-webkit-input-placeholder,
+.signUp .form3 form input[type="text"]::-webkit-input-placeholder{
+    color: #444
+}
+
+.signUp .form3 form input[type="submit"]{
+    width: 105px;
+    height: 40px;
+    color: #777;
+    margin: 20px 0
+}
+
+.signUp .form3 form input[type="submit"]:hover{
+    background-color: #E90052;
+    color: #FFF
+}
+
+.signUp .form3 button{
+    width: 130px;
+    height: 40px;
+    color: #777;
+    float: left;
+    margin-bottom: 20px
+}
+
+.signUp .form3 button:hover{
+    background-color: #38003C;
+    color: #FFF;
+}
+
+/************************************************** End Form3 **************************************************/
+
+.signUp .the-errors{
+    max-width: 28%;
+    margin-left: 185px
+}
+
+.signUp .the-errors .msg{
+    padding: 11px 15px;
+    text-align: left
+}
+
+.signUp .container > span,
+.signUp .container > a{
+    float: left;
+    margin-left: 15%;
+    color: #444;
+    cursor: pointer
+}
+
+.signUp .container > a{
+    margin-bottom: 21px
+}
+
+.signUp .container > span:hover,
+.signUp .container > a:hover{
+    color: #E90052;
+    text-decoration: underline
+}
+
+/************************************************** End SignUp **************************************************/
+
+/************************************************** Start ApplyBox **************************************************/
+
+.applyBox{
+    width: 400px;
+    background-color: #FFF;
+    color: #000;
+    z-index: 9999;
+    border-top: 3px solid #38003C;
+    border-bottom: 3px solid #38003C;
+    display: none
+}
+
+.applyBox > div{
+    background-color: #38003C;
+    padding: 15px 0
+}
+
+.applyBox i{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    color: #FFF
+}
+
+.applyBox i:hover{
+    cursor: pointer;
+    color: #E90052
+}
+
+.applyBox h1{
+    font-weight: bold;
+    color: #FFF;
+    position: relative;
+    margin: 15px 0
+}
+
+.applyBox h1:after{
+    content: "";
+    width: 57px;
+    position: absolute;
+    top: 43px;
+    left: 66px;
+    border: 3px solid #FFF
+}
+
+.applyBox form{
+    padding: 10px 20px 20px
+}
+
+.applyBox label{
+    color: #38003C;
+    display: block;
+    margin-top: 10px
+}
+
+.applyBox input[type='text'],
+.applyBox input[type='tel'],
+.applyBox input[type='email']{
+    display: block;
+    background-color: rgba(239, 236, 240, 0.8);
+    padding: 6px;
+    color: #444;
+    width: 270px;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px
+}
+
+.applyBox div{
+    width: 100%;
+    text-align: center
+}
+
+.applyBox button{
+    width: 60%;
+    margin-top: 20px
+}
+
+.applyBox button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+/************************************************** Start ApplyBox **************************************************/
+
+/************************************************** Start CompareBox **************************************************/
+
+.compareBox{
+    width: 400px;
+    background-color: #FFF;
+    color: #000;
+    padding: 0 0 20px;
+    z-index: 9999;
+    border-top: 3px solid #38003C;
+    border-bottom: 3px solid #38003C;
+    display: none
+}
+
+.compareBox div{
+    background-color: #38003C;
+    padding: 15px 0 
+}
+
+.compareBox i{
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    color: #FFF
+}
+
+.compareBox i:hover{
+    cursor: pointer;
+    color: #E90052
+}
+
+.compareBox h1{
+    font-weight: bold;
+    color: #FFF;
+    margin: 10px 0 20px;
+    position: relative
+}
+
+.compareBox h1:after{
+    content: "";
+    width: 57px;
+    position: absolute;
+    top: 40px;
+    left: 105px;
+    border: 3px solid #FFF
+}
+
+.compareBox p{
+    margin: 10px 0
+}
+
+.compareBox p span{
+    color: #E90052;
+    font-weight: bold
+}
+
+.compareBox table{
+    width: 100%
+}
+
+.compareBox table th{
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #38003C;
+    color: #FFF
+}
+
+.compareBox table th:first-of-type{
+    border-right: 3px solid #FFF
+}
+
+.compareBox ol{
+    overflow: auto;
+    max-height: 130px
+}
+
+.compareBox ol li{
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0
+}
+
+.compareBox ol a{
+    text-decoration: none;
+    color: #000
+}
+
+.compareBox ol a:hover{
+    color: #E90052
+}
+
+/************************************************** End CompareBox **************************************************/
+
+/************************************************** Start Skills **************************************************/
+
+/**************** Start Add Skills *************************/
+
+.addSkill{
+    width: 400px;
+    background-color: #FFF;
+    color: #000;
+    z-index: 9999;
+    border-top: 3px solid #38003C;
+    border-bottom: 3px solid #38003C;
+    display: none
+}
+
+.addSkill > div{
+    background-color: #38003C;
+    padding: 20px 0
+}
+
+.addSkill i{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    color: #FFF
+}
+
+.addSkill i:hover{
+    cursor: pointer;
+    color: #E90052
+}
+
+.addSkill h1{
+    font-weight: bold;
+    color: #FFF;
+    margin: 0;
+    text-align: center
+}
+
+.addSkill form{
+    padding: 30px 20px
+}
+
+.addSkill label{
+    font-weight: bold;
+    color: #38003C
+}
+
+.addSkill select{
+    display: inline-block;
+    background-color: rgba(239, 236, 240, 0.8);
+    padding: 6px;
+    color: #444;
+    width: 100%;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px
+}
+
+.addSkill button{
+    width: 30%;
+    height: 36px;
+    margin-left: 3%;
+    display: inline-block
+}
+
+.addSkill button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+/**************** End Add Skills *************************/
+
+/**************** Start Edit Skills *************************/
+
+.editSkill{
+    width: 400px;
+    background-color: #FFF;
+    color: #000;
+    z-index: 9999;
+    border-top: 3px solid #38003C;
+    border-bottom: 3px solid #38003C;
+    display: none
+}
+
+.editSkill > div{
+    background-color: #38003C;
+    padding: 20px 0
+}
+
+.editSkill i{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    color: #FFF
+}
+
+.editSkill i:hover{
+    cursor: pointer;
+    color: #E90052
+}
+
+.editSkill h1{
+    font-weight: bold;
+    color: #FFF;
+    margin: 0;
+    text-align: center
+}
+
+.editSkill form{
+    padding: 30px 20px
+}
+
+.editSkill label{
+    font-weight: bold;
+    color: #38003C
+}
+
+.editSkill select{
+    background-color: rgba(239, 236, 240, 0.8);
+    padding: 6px;
+    color: #444;
+    width: 100%;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px
+}
+
+.editSkill form > button{
+    width: 49%;
+    margin-top: 20px
+}
+
+.editSkill button:first-of-type:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.editSkill .editBox select{
+    width: 65%
+}
+
+.editSkill .editBox{
+    margin-top: 20px;
+    display: none
+}
+
+.editSkill .editBox button{
+    width: 30%;
+    margin-left: 3%
+}
+
+/**************** End Edit Skills *************************/
+
+/**************** Start pin Skills *************************/
+
+.pinSkill{
+    width: 400px;
+    background-color: #FFF;
+    color: #000;
+    z-index: 9999;
+    border-top: 3px solid #38003C;
+    border-bottom: 3px solid #38003C;
+    display: none
+}
+
+.pinSkill > div:first-of-type{
+    background-color: #38003C;
+    padding: 20px 0
+}
+
+.pinSkill i{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    color: #FFF
+}
+
+.pinSkill i:hover{
+    cursor: pointer;
+    color: #E90052
+}
+
+.pinSkill h1{
+    font-weight: bold;
+    color: #FFF;
+    margin: 0;
+    text-align: center
+}
+
+.pinSkill .form{
+    padding: 30px 20px
+}
+
+.pinSkill .form > label{
+    font-weight: bold;
+    color: #38003C
+}
+
+.pinSkill .search{
+    position: relative
+}
+
+.pinSkill .search i{
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    color: #38003C
+}
+
+.pinSkill .search input{
+    background-color: rgba(239, 236, 240, 0.8);
+    padding: 6px;
+    color: #444;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px
+}
+
+.pinSkill .pins{
+    padding: 20px 0;
+    max-height: 124px;
+    overflow: auto;
+    margin-bottom: 10px
+}
+
+.pinSkill .pins div{
+    margin: 5px 0;
+    border-bottom: 2px solid #38003C;
+    position: relative;
+    width: 49%;
+    padding-bottom: 5px;
+    display: inline-block;
+    cursor: pointer
+}
+
+.pinSkill .pins label{
+    cursor: pointer
+}
+
+.pinSkill .pins span{
+    position: absolute;
+    top: 2px;
+    right: 12px;
+    font-size: 18px;
+    cursor: pointer
+}
+
+.pinSkill .pins div:hover,
+.pinSkill .pins div.active{
+    color: #E90052;
+    border-bottom: 2px solid #E90052
+}
+
+.pinSkill button{
+    width: 49%
+}
+
+.pinSkill button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+/**************** End pin Skills *************************/
+
+/**************** Start override for chosen plugin *************************/
+
+.chosen-container{
+    font-size: 14px
+}
+
+.chosen-container-single .chosen-single{
+    height: 30px;
+    padding-top: 2px
+}
+
+.chosen-container-single .chosen-search input[type="text"]{
+    background: #fff url(../images/chosen-sprite.png) no-repeat 100% -20px
+}
+
+.chosen-container-single .chosen-single div{
+    top: 2px
+}
+
+.chosen-container-single .chosen-single div b{
+    background: url(../images/chosen-sprite.png) no-repeat 0 2px
+}
+
+.chosen-container .chosen-results li.highlighted{
+    background: #E90052
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close{
+    background: url(../images/chosen-sprite.png) -42px 1px no-repeat
+}
+
+.chosen-container-multi .chosen-choices{
+    height: 36px
+}
+
+.chosen-container-multi .chosen-choices li.search-choice{
+    margin-top: 7px
+}
+
+.chosen-container-multi .chosen-choices li.search-field{
+    margin: 4px 0
+}
+
+/**************** End override for chosen plugin *************************/
+
+/************************************************** End Skills **************************************************/
+
+/************************************************** Start takeCourse Block **************************************************/
+
+.takeCourse1{
+    width: 400px;
+    background-color: #FFF;
+    color: #000;
+    z-index: 9999;
+    border: 3px solid #38003C;
+    display: none
+}
+
+.takeCourse1 h1{
+    background-color: #38003C;
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+    font-weight: bold; 
+    padding: 25px 0 30px
+}
+
+.takeCourse1 .selectPlan{
+    padding: 0 10px;
+    margin: 20px 0 10px
+}
+
+.takeCourse1 .selectPlan p{
+    font-size: 18px;
+    margin-bottom: 0
+}
+
+.takeCourse1 .selectPlan form input{
+    margin-left: 10px
+}
+
+.takeCourse1 .selectPlan form label{
+    margin-left: 5px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer
+}
+
+.takeCourse1 .plans .tabs{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden
+}
+
+.takeCourse1 .plans .tabs li{
+    border-right: 2px solid #38003C;
+    border-top: 2px solid #38003C;
+    border-bottom: 2px solid #38003C;
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    margin: 0;
+    font-weight: bold
+}
+
+.takeCourse1 .plans .tabs li:hover,
+.takeCourse1 .plans .tabs li.active{
+    cursor: pointer;
+    color: #FFF;
+    background-color: #38003C
+}
+
+.takeCourse1 .plans .content{
+    border-top: 2px solid #38003C;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 2px;
+    
+}
+
+.takeCourse1 .plans .content .planA > span,
+.takeCourse1 .plans .content .planB > span{
+    color: #E90052;
+    font-weight: bold;
+    margin: 10px;
+    display: block
+}
+
+.takeCourse1 .plans .content .planA table,
+.takeCourse1 .plans .content .planB table{
+    width: 101%;
+    text-align: center
+}
+
+.takeCourse1 .plans .content .planA table th,
+.takeCourse1 .plans .content .planB table th{
+    text-align: center;
+    border: 2px solid #38003C;
+    border-left: 0
+}
+
+.takeCourse1 .plans .content .planA table td,
+.takeCourse1 .plans .content .planB table td{
+    width: 30%;
+    border: 2px solid #38003C;
+    border-left: 0;
+    padding: 4px 0
+}
+
+
+.takeCourse1 .plans .content .planA table td:nth-of-type(2),
+.takeCourse1 .plans .content .planB table td:nth-of-type(2){
+    width: 40%
+}
+
+.takeCourse1 .plans .content .planA table span,
+.takeCourse1 .plans .content .planB table span{
+    color: #E90052
+}
+
+.takeCourse1 .plans .content .planB{
+    display: none
+}
+
+.takeCourse1 .plans button{
+    width: 75px;
+    margin-bottom: 20px
+}
+
+.takeCourse1 .plans button:hover{
+    color: #FFF;
+    background-color: #38003C
+}
+
+.takeCourse2{
+    width: 400px;
+    height: 300px;
+    background-color: #FFF;
+    color: #000;
+    z-index: 9999;
+    border-top: 3px solid #38003C;
+    border-bottom: 3px solid #38003C;
+    display: none
+}
+
+.takeCourse2 h1{
+    background-color: #38003C;
+    color: #FFF;
+    margin: 0;
+    padding: 20px 10px;
+    font-weight: bold;
+    text-align: center
+}
+
+.takeCourse2 i{
+    color: #FFF;
+    position: absolute;
+    top: 6px;
+    right: 1px
+}
+
+.takeCourse2 i:hover{
+    color: #E90052;
+    cursor: pointer
+}
+
+.takeCourse2 > div{
+    padding: 20px  
+}
+
+.takeCourse2 div p{
+    font-size: 16px
+}
+
+.takeCourse2 div p button{
+    padding: 1px 5px;
+    margin-left: 3px
+}
+
+.takeCourse2 div p button:hover{
+    color: #FFF;
+    background-color: #38003C
+}
+
+.takeCourse2 div p a{
+    color: #E90052;
+}
+
+.takeCourse2 div div button{
+    margin-top: 33px;
+    color: #000
+}
+
+.takeCourse2 div div button:hover{
+    color: #FFF;
+    background-color: #38003C
+}
+
+/************************************************** End takeCourse Block **************************************************/
+
+/************************************************** Start EditProfile **************************************************/
+
+.editProfile{
+    margin-top: 50px    
+}
+
+.editProfile h1{
+    font-weight: bold
+}
+
+.editProfile form{
+    margin: 20px 0
+}
+
+.editProfile form label{
+    display: block;
+    font-weight: bold;
+    color: #38003C;
+    margin-top: 10px
+}
+
+.editProfile form input:not([type="file"]){
+    display: block;
+    background-color: rgba(239, 236, 240, 0.8);
+    padding: 6px;
+    color: #444;
+    width: 30%;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px
+}
+
+.editProfile form .editFile{
+    padding: 5px 10px;
+    background-color: #38003C;
+    border: 1px solid #38003C;
+    position: relative;
+    color: #FFF;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 5px
+}
+
+.editProfile form .editFile .hideInput{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer
+}
+
+.editProfile form .profile{
+    margin-top: 15px
+}
+
+.editProfile form .profile img{
+    width: 150px;
+    height: 150px;
+    line-height: 140px;
+    color: #38003C;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    margin-right: 15px
+}
+
+.editProfile form > div:last-of-type{
+    text-align: center;
+    margin-top: 20px
+}
+
+.editProfile form button{
+    width: 150px
+}
+
+.editProfile form button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+/************************************************** End EditProfile **************************************************/
+
+/************************************************** Start Settings **************************************************/
+    
+.settings{
+    margin-top: 50px
+}
+
+.settings .subSettings{
+    overflow: hidden;
+    min-height: 423px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    background-color: #EEE
+}
+
+.settings .subSettings .tabs{
+    width: 25%;
+    float: left;
+    padding: 30px 0 0;
+    margin: 0
+}
+
+.settings .subSettings .tabs li{
+    list-style: none;
+    padding: 4px 20px;
+    margin: 1px 0;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.settings .subSettings .tabs li.active,
+.settings .subSettings .tabs li:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.settings .subSettings .content{
+    width: 75%;
+    float: left;
+    padding: 20px;
+    border-left: 2px solid #000;
+    position: relative;
+    background-color: #FFF
+}
+
+/********************************************  Start .accountInfo  ****************************************************/
+
+.settings .subSettings .content .accountInfo{
+    display: block
+}
+
+.settings .subSettings .content .accountInfo h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.settings .subSettings .content .accountInfo .fa-pencil,
+.settings .subSettings .content .accountInfo .fa-pencil-square{
+    position: absolute;
+    top: 26px;
+    right: 40px;
+    cursor: pointer
+}
+
+.settings .subSettings .content .accountInfo .fa-pencil{
+    display: none
+}
+
+.settings .subSettings .content .accountInfo label{
+    margin-right: 50px;
+    width: 70px
+}
+
+.settings .subSettings .content .accountInfo input:enabled{
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #38003C;
+    outline: 0;
+    border-radius: 5px;
+    background: rgba(239, 236, 240, 0.8);
+    color: #444;
+    margin-bottom: 20px;
+    margin-right: 20px
+}
+
+.settings .subSettings .content .accountInfo input:disabled{
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px;
+    background: rgba(239, 236, 240, 0.8);
+    color: #444;
+    margin-bottom: 20px;
+    margin-right: 20px
+}
+
+.settings .subSettings .content .accountInfo form > i:last-of-type{
+    display: none
+}
+
+.settings .subSettings .content .accountInfo form > i:hover{
+    color: #E90052;
+    cursor: pointer
+}
+
+.settings .subSettings .content .accountInfo form ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 120px;
+    display: inline-block
+}
+
+
+.settings .subSettings .content .accountInfo form ul li{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #FFF;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.settings .subSettings .content .accountInfo form ul li:first-of-type{
+    background-color: #3B5998;
+}
+
+.settings .subSettings .content .accountInfo form ul li:nth-of-type(2){
+    background-color: #0077B5;
+}
+
+.settings .subSettings .content .accountInfo form ul li:nth-of-type(3){
+    background-color: #55ACEE;
+}
+
+.settings .subSettings .content .accountInfo button{
+    margin: 23px 10px;
+    width: 120px;
+    padding: 10px 0;
+    visibility: hidden
+}
+
+.settings .subSettings .content .accountInfo button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+/********************************************  End .accountInfo  ****************************************************/
+
+/********************************************  Start .security  ****************************************************/
+
+.settings .subSettings .content .security{
+    min-height: 410px;
+    display: none
+}
+
+.settings .subSettings .content .security h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.settings .subSettings .content .security .changePasswordButton{
+    height: 40px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 1px;
+}
+
+.settings .subSettings .content .security .changePasswordButton:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.settings .subSettings .content .security .accordion{
+    margin-top: 30px
+}
+
+.settings .subSettings .content .security .accordion .head{
+    cursor: pointer
+}
+
+.settings .subSettings .content .security .accordion .head:hover i{
+    color: #E90052
+}
+
+.settings .subSettings .content .security .accordion .head h5{
+    display: inline-block;
+    font-weight: bold
+}
+
+.settings .subSettings .content .security .accordion .subContent{
+    padding: 0 50px;
+    display: none
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(2) label{
+    margin-left: 10px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(2) input[type="email"],
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(2) input[type="tel"]{
+    background: rgba(239, 236, 240, 0.8);
+    color: #444;
+    width: 40%;
+    height: 34px;
+    padding: 10px;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px;
+    margin: 5px 0
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(2) button:hover{
+    color: #FFF;
+    background-color: #38003C
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(4) span{
+    margin-bottom: 10px;
+    display: block
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(4) label{
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
+    cursor: pointer
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(4) button{
+    width: 75px   
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(4) button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table,
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table tr,
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table th,
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table td{
+    border: 2px solid #38003C
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table{
+    width: 100%;
+    text-align: center
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table th{
+    text-align: center;
+    width: 25%
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table td{
+    padding: 5px 0
+}
+
+.settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table td button:first-of-type:hover{
+    color: #FFF;
+    background-color: #38003C
+}
+
+/********************************************  End .security  ****************************************************/
+
+/********************************************  End .notification  ****************************************************/
+
+.settings .subSettings .content .notification{
+    display: none;
+    min-height: 410px
+}
+
+.settings .subSettings .content .notification h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.settings .subSettings .content .notification .accordion{
+    margin-top: 30px
+}
+
+.settings .subSettings .content .notification .accordion .head{
+    cursor: pointer
+}
+
+.settings .subSettings .content .notification .accordion .head:hover i{
+    color: #E90052
+}
+
+.settings .subSettings .content .notification .accordion .head h5{
+    display: inline-block;
+    font-weight: bold
+}
+
+.settings .subSettings .content .notification .accordion .subContent{
+    padding: 0 50px;
+    display: none
+}
+
+.settings .subSettings .content .notification .accordion .subContent label{
+    margin-left: 10px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer
+}
+
+.settings .subSettings .content .notification .accordion .subContent button{
+    width: 75px
+}
+
+.settings .subSettings .content .notification .accordion .subContent button:hover{
+    color: #FFF;
+    background-color: #38003C
+
+}
+
+/********************************************  End .notification  ****************************************************/
+
+/********************************************  End .language  ****************************************************/
+
+.settings .subSettings .content .language{
+    display: none;
+    min-height: 410px
+}
+
+.settings .subSettings .content .language h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.settings .subSettings .content .language form{
+    margin-top: 30px
+}
+
+.settings .subSettings .content .language form label{
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+.settings .subSettings .content .language form button{
+    width: 75px
+}
+
+.settings .subSettings .content .language form button:hover{
+    color: #FFF;
+    background-color: #38003C
+}
+
+/********************************************  End .language  ****************************************************/
+
+/************************************************** End Settings **************************************************/
+
+/************************************************** Start About Page **************************************************/
+
+.aboutPage{
+    background: url("../images/aboutHeader.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #FFF;
+    height: 320px
+}
+
+.aboutDescription{
+    padding: 50px 0
+}
+
+.aboutDescription p{
+    text-indent: 20px
+}
+
+/************************************************** End About Page **************************************************/
+
+/************************************************** End About Page **************************************************/
+
+.changePassword{
+    width: 400px;
+    background-color: #FFF;
+    color: #000;
+    z-index: 9999;
+    border: 3px solid #38003C;
+    padding: 20px;
+    display: none
+}
+
+.changePassword i{
+    position: absolute;
+    top: 6px;
+    right: 3px
+}
+
+.changePassword i:hover{
+    cursor: pointer;
+    color: #E90052
+}
+
+.changePassword label{
+    display: block
+}
+
+.changePassword input{
+    display: block;
+    background: rgba(239, 236, 240, 0.8);
+    color: #444;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #CCC;
+    outline: 0;
+    border-radius: 5px
+}
+
+.changePassword button{
+    margin-top: 15px;
+    width: 50%
+}
+
+.changePassword button:hover{
+    background-color: #38003C;
+    color: #FFF
+}
+
+/************************************************** End About Page **************************************************/
+
+/* button scroll top */
+
+#scrollTop {
+    width: 50px;
+    height: 50px;
+    color: #38003C;
+    background-color: #EEE;
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    line-height: 50px;
+    right: 15px;
+    bottom: 10px;
+    z-index: 9997;
+    border: 2px solid #38003C;
+    border-radius: 50%;
+    display: none
+}
+
+/* button scroll top */
+
+/************************************************** Start Footer **************************************************/
+
+footer{
+    background-color: #38003C;
+    padding: 30px 0 30px;
+    overflow: hidden
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+    float: right
+}
+
+footer .social{
+    float: left;
+    line-height: 48px;
+    margin-bottom: 30px
+}
+
+footer .social i{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #FFF;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer
+}
+
+footer .social .fa-facebook{
+    background-color: #3B5998
+}
+
+footer .social .fa-twitter{
+    background-color: #55ACEE
+}
+
+footer .social .fa-youtube{
+    background-color: #C4302B
+}
+
+footer .social .fa-linkedin{
+    background-color: #0077B5
+}
+
+footer .copyRight{
+    color: #FFF;
+}
+
+footer .copyRight span{
+    color: #E90052;
+    font-weight: bold
+}
+
+/************************************************** End Footer **************************************************/
+
+/************************************************** End media query **************************************************/
+
+@media (max-width: 767px) {
+
+    .navbar-inverse .navbar-nav > li > a{
+        color: #FFF;
+        margin-bottom: 5px;
+        border: 2px solid transparent
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus{
+        background-color: #E90052
+    }
+
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus{
+        background-color: #E90052
+    }
+
+    .sign,
+    .dropdown{
+        margin-bottom: 30px;
+        margin-left: 0
+    }
+
+    header .box h1{
+        font-size: 23px
+    }
+
+    header .box button{
+        margin: 10px auto
+    }
+
+    .aboutUs h1,
+    .partners h1,
+    .jobs h1,
+    .courses h1{
+        font-size: 30px
+    }
+
+    .jobs ul li,
+    .courses ul li{
+        margin-bottom: 5px
+    }
+
+    .jobs .allJobs .jobBox h5:nth-of-type(3){
+        margin-left: 12px
+    }
+
+    .jobs .allJobs .jobBox,
+    .courses .allCourses .courseBox{
+        max-height: none;
+        min-height: auto
+    }
+
+    .courses .allCourses .courseBox .boxWithoutHover .allItem .item{
+        width: 31.333333%
+    }
+
+    .courses .allCourses .courseBox .boxWithoutHover p{
+        margin-bottom: 15px
+    }
+
+    .courses .allCourses .courseBox .boxHover{
+        padding: 0;
+        margin-top: 20px
+    }
+
+    .courses .allCourses .courseBox .boxHover > span:first-of-type,
+    .courses .allCourses .courseBox .boxHover > span:last-of-type{
+        font-size: 20px
+    }
+
+    .courses .allCourses .courseBox .boxHover button{
+        margin: 10px auto;
+        display: block
+    }
+
+    .compareBox,
+    .applyBox,
+    .changePassword,
+    .addSkill,
+    .editSkill,
+    .pinSkill,
+    .takeCourse1,
+    .takeCourse2,
+    .signInBlock{
+        max-width: 100%
+    }
+
+    .takeCourse1{
+        margin: 20px auto
+    }
+
+    .takeCourse2 div p{
+        margin: 5px;
+    }
+
+    .takeCourse2 div div button{
+        margin-top: 10px
+    }
+
+    .signUp .form1,
+    .signUp .form2{
+        width: 100%
+    }
+
+    .signUp .form1 form input{
+        width: 100%
+    }
+
+    .signUp .form3 img{
+        line-height: 0;
+    }
+
+    .settings .subSettings .content,
+    .settings .subSettings .tabs{
+        width: 100%
+    }
+
+    .settings .subSettings .content .security > form .password{
+        margin-left: 0;
+        width: 100%
+    }
+
+    .settings .subSettings .content .accountInfo input:disabled,
+    .settings .subSettings .content .accountInfo input:enabled{
+        display: inline-block;
+        width: 85%;
+        margin-right: 0;
+        margin-bottom: 5px
+    }
+
+    .settings .subSettings .content .accountInfo button{
+        margin: 5px 10px
+    }
+
+    .settings .subSettings .content .accountInfo form ul{
+        margin-left: 0
+    }
+
+    .settings .subSettings .content .notification .accordion .subContent label,
+    .settings .subSettings .content .security .accordion .subContent:nth-of-type(2) label{
+        display: inline;
+        margin-left: 5px
+    }
+
+    .settings .subSettings .content .security .accordion .subContent,
+    .settings .subSettings .content .notification .accordion .subContent{
+        padding: 0
+    }
+
+    .settings .subSettings .content .security .accordion .subContent:nth-of-type(2) input[type="email"],
+    .settings .subSettings .content .security .accordion .subContent:nth-of-type(2) input[type="tel"]{
+        width: 65%
+    }
+
+    .settings{
+        margin-top: 40px
+    }
+
+    .jobs .allJobs .jobBox .boxHover .info{
+        margin-top: 10px
+    }
+
+    .jobs .allJobs .jobBox .boxHover > span{
+        top: -210px;
+        right: 10px
+    }
+
+    .courses .allCourses .courseBox .boxHover{
+        min-height: auto;
+        max-height: none
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .courses .allCourses .courseBox .boxWithoutHover .allItem .item{
+        width: 31.3333333333%
+    }
+
+    .courses .allCourses .courseBox .boxHover > span:first-of-type,
+    .courses .allCourses .courseBox .boxHover > span:last-of-type{
+        font-size: 20px
+    }
+
+}
+
+
+/************************************************** End media query **************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
