@@ -47,8 +47,6 @@
         $updateSkillId = $connect->prepare("UPDATE applicant_skills SET skill_ID = ? WHERE skill_ID = ? AND applicant_ID = ?");
         $updateSkillId->execute(array($newSkillId, $skillId, $_SESSION['userID']));
 
-
-
     }
 
 

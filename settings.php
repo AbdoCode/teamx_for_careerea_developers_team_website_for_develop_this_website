@@ -63,7 +63,9 @@
                                         <ul>
                                             <li><i class="fa fa-facebook fa-fw fa-lg"></i></li>
                                             <li><i class="fa fa-linkedin fa-fw fa-lg"></i></li>
+                                            <li><i class="fa fa-google-plus fa-fw fa-lg"></i></li>
                                             <li><i class="fa fa-twitter fa-fw fa-lg"></i></li>
+                                            <li><i class="fa fa-github fa-fw fa-lg"></i></li>
                                         </ul>
                                         <div class="text-center">
                                             <button type="button" class="btn">Cancel</button>

@@ -11,9 +11,15 @@ $(document).ready(function () {
 
         overlay.add();
 
-        $(".signInBlock div i, .compareBox i, .applyBox i, .takeCourse1 .plans button:first-of-type, .takeCourse2 i, .addSkill i, .editSkill i, .pinSkill div > i, .changePassword i, .signInBlock form button").on("click", function () {
+        $(".overlayForPage, .signInBlock div i, .compareBox i, .applyBox i, .takeCourse1 .plans button:first-of-type, .takeCourse2 i, .addSkill i, .editSkill i, .pinSkill div > i, .changePassword i, .signInBlock form button").on("click", function () {
 
             overlay.remove();
+
+        });
+
+        $(".overlayForPage").on('click', function() {
+
+            $(".compareBox, .applyBox, .changePassword, .takeCourse1, .takeCourse2, .addSkill, .editSkill, .pinSkill, .signInBlock").hide(0);
 
         });
 

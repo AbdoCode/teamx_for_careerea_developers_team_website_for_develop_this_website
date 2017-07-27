@@ -168,13 +168,13 @@
                                                 <h5>'. $companyName .'</h5>
                                                 <h5>'. $jobTitle .'</h5>
                                                 <h5>Top Requirment</h5>
-                                                <p>';
+                                                <div class="topRequirment">';
 
                                                 foreach($skills as $skillName){
-                                                    echo $skillName . ' - ';
+                                                    echo '<span>'. $skillName . '</span>';
                                                 }
 
-                                                echo '</p>
+                                                echo '</div>
                                                 <div class="allInfo">
                                                     <div class="info">
                                                         <span class="head">Salary</span><br />
@@ -291,19 +291,13 @@
                                                         <h5>' . $companyName . '</h5>
                                                         <h5>' . $jobTitle . '</h5>
                                                         <h5>Top Requirment</h5>
-                                                        <p>';
+                                                        <div class="topRequirment">';
 
-                                    foreach ($skills as $skillName) {
+                                                            foreach($skills as $skillName){
+                                                                echo '<span>'. $skillName . '</span>';
+                                                            }
 
-                                        if (key($skills) == count($skills) - 1) {
-                                            echo $skillName;
-                                        } else {
-                                            echo $skillName . ' - ';
-                                        }
-
-                                    }
-
-                                    echo '</p>
+                                                        echo '</div>
                                                         <div class="allInfo">
                                                             <div class="info">
                                                                 <span class="head">Salary</span><br />
@@ -454,20 +448,15 @@
                                                     </div>
                                                 </div>
                                                 <h5>Prerequisites</h5>
-                                                <p>';
-
+                                                <div class="topPrerequisites">';
 
                                                     foreach($prerequisites as $prerequisiteName){
 
-                                                        if (key($prerequisites) == count($prerequisites)-1){
-                                                            echo $prerequisiteName;
-                                                        } else {
-                                                            echo $prerequisiteName . ' - ';
-                                                        }
+                                                        echo '<span>'. $prerequisiteName .'</span>';
 
                                                     }
 
-                                                echo '</p>
+                                                echo '</div>
                                                 <div class="rateBox">
                                                     <div class="rate">
                                                         <div class="starWrapper">
@@ -567,20 +556,15 @@
                                                     </div>
                                                 </div>
                                                 <h5>Prerequisites</h5>
-                                                <p>';
-
+                                                <div class="topPrerequisites">';
 
                                                     foreach($prerequisites as $prerequisiteName){
 
-                                                        if (key($prerequisites) == count($prerequisites)-1){
-                                                            echo $prerequisiteName;
-                                                        } else {
-                                                            echo $prerequisiteName . ' - ';
-                                                        }
+                                                        echo '<span>'. $prerequisiteName .'</span>';
 
                                                     }
 
-                                                echo '</p>
+                                                echo '</div>
                                                 <div class="rateBox">
                                                     <div class="rate">
                                                         <div class="starWrapper">

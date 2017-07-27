@@ -59,7 +59,7 @@
     background-color: transparent
 }
 
-.sign{
+.sign, .signupLink{
     margin-left: 15px;
     margin-top: 15px;
     background-color: transparent;
@@ -67,11 +67,13 @@
     outline: 0
 }
 
-.sign i{
+.sign i,
+.signupLink i{
     color: #E90052
 }
 
-.sign span{
+.sign span,
+.signupLink span{
     color: #FFF;
     text-transform: uppercase
 }
@@ -511,11 +513,19 @@ header .box button{
     margin-left: 20px
 }
 
-.jobs .allJobs .jobBox p {
+.jobs .allJobs .jobBox div.topRequirment{
     width: 80%;
     margin: auto;
-    overflow: hidden;
-    max-height: 122px
+    overflow: hidden
+}
+
+.jobs .allJobs .jobBox div.topRequirment span{
+    margin: 2px;
+    background-color: #EEE;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    padding: 1px 3px;
+    display: inline-block
 }
 
 .jobs .allJobs .jobBox .allInfo{
@@ -741,11 +751,19 @@ header .box button{
     font-weight: bold
 }
 
-.courses .allCourses .courseBox .boxWithoutHover p{
+.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites{
     width: 80%;
     margin: auto;
-    overflow: hidden;
-    max-height: 122px
+    overflow: hidden
+}
+
+.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites span{
+    margin: 2px;
+    background-color: #EEE;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    padding: 1px 3px;
+    display: inline-block
 }
 
 .courses .allCourses .courseBox .boxHover{
@@ -2143,15 +2161,23 @@ header .box button{
 }
 
 .settings .subSettings .content .accountInfo form ul li:first-of-type{
-    background-color: #3B5998;
+    background-color: #3B5998
 }
 
 .settings .subSettings .content .accountInfo form ul li:nth-of-type(2){
-    background-color: #0077B5;
+    background-color: #0077B5
 }
 
 .settings .subSettings .content .accountInfo form ul li:nth-of-type(3){
-    background-color: #55ACEE;
+    background-color: #D34836
+}
+
+.settings .subSettings .content .accountInfo form ul li:nth-of-type(4){
+    background-color: #55ACEE
+}
+
+.settings .subSettings .content .accountInfo form ul li:nth-of-type(5){
+    background-color: #24292E
 }
 
 .settings .subSettings .content .accountInfo button{

@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                 <span>Login</span>
             </button>
             <a href="signUp.php">
-                <button type="button" class="sign navbar-right navbar-btn">
+                <button type="button" class="signupLink navbar-right navbar-btn">
                     <i class="fa fa-user-plus fa-fw fa-lg" aria-hidden="true"></i>
                     <span>Sign Up</span>
                 </button>
@@ -78,6 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
 <!-- End Navbar -->
 
 <!-- Start SignIn Block -->
+
 <div class="signInBlock">
     <div>
         <span>Login</span>
@@ -100,4 +101,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
         <span>Not a member? <a href="signUp.php">Sign up now <i class="fa fa-arrow-right"></i></a></span>
     </form>
 </div>
+
 <!-- End SignIn Block -->
