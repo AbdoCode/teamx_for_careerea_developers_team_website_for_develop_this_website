@@ -4,5 +4,6 @@
 <script src="js/slick.min.js"></script>
 <script src="js/chosen.jquery.min.js"></script>
 <script src="js/jquery.countTo.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/script2.js"></script>
 <script src="js/script.js"></script>

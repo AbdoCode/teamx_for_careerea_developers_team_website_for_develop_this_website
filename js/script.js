@@ -813,7 +813,12 @@ $(document).ready(function () {
 
     // Trigger nicescroll plugin
 
-    $("body").niceScroll();
+    $("body").niceScroll({
+        cursorcolor: "#38003C",
+        cursorborder: "0",
+        cursorborderradius: "0",
+        autohidemode: "leave"
+    });
 
     // Trigger slick plugin
     
