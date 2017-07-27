@@ -7,7 +7,6 @@
 ?>
 
 <!-- From site -->
-<!-- From site 2 -->
 <!-- From phpstorm -->
 
 <!DOCTYPE html>
