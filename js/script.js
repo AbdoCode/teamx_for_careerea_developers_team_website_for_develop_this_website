@@ -811,6 +811,10 @@ $(document).ready(function () {
 
     });
 
+    // Trigger nicescroll plugin
+
+    $("body").niceScroll();
+
     // Trigger slick plugin
     
     $(".partners .slider").slick({
