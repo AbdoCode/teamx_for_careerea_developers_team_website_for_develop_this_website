@@ -5,10 +5,6 @@
     $pageTitle = "Home";
 
 ?>
-
-<!-- From site -->
-<!-- From phpstorm -->
-
 <!DOCTYPE html>
 <html lang="en">
     <?php require 'head.php'; ?>
