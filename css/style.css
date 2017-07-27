@@ -289,16 +289,20 @@ header .box{
 
 header .box h1{
     font-weight: bold;
-    margin-bottom: 40px
+    margin: 0
 }
 
-header .box h1 span:first-of-type{
-    font-size: 120px;
+header .box h1:first-of-type{
     font-family: Tahoma
 }
 
-header .box h1 span:last-of-type{
-    font-size: 28px
+header .box h1:last-of-type{
+    font-size: 26px;
+    margin-bottom: 40px
+}
+
+header .box br{
+    border: 0;
 }
 
 header .box button{

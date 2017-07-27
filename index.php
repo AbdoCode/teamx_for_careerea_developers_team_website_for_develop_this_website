@@ -17,10 +17,8 @@
             <div class="overlay">
                 <div class="container">
                     <div class="box">
-                        <h1>
-                            <span>Careerea</span><br />
-                            <span>Recruitment site in Egypt</span>
-                        </h1>
+                        <h1 id="heading-fit">Careerea</h1><br />
+                        <h1>Recruitment site in Egypt</h1>
                         <a href="jobs.php"><button class="btn btn-success">Jobs</button></a>
                         <a href="courses.php"><button class="btn btn-danger">Courses</button></a>
                     </div>

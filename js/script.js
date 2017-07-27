@@ -820,6 +820,15 @@ $(document).ready(function () {
         autohidemode: "leave"
     });
 
+    // Trigger FitText plugin
+
+    $("#heading-fit").fitText(0.6, {
+
+        minFontSize: '45px',
+        maxFontSize: '140px'
+
+    });
+
     // Trigger slick plugin
     
     $(".partners .slider").slick({
