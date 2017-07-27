@@ -4,7 +4,7 @@
     include "php/init.php";
     $pageTitle = "Courses";
 ?>
-<b>abdo code</b>
+<b>abdo code from php storm</b>
 <!DOCTYPE html>
 <html lang="en">
     <?php require 'head.php'; ?>
