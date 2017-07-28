@@ -196,7 +196,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="boxHover visible-xs">
-                                                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                    <span>Add to favorite: <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                                                     <div class="allInfo">
                                                         <div class="info">
                                                             <span class="head">viewed</span><br />

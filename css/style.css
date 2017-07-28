@@ -548,11 +548,10 @@ header .box button{
 }
 
 .jobs .allJobs .jobBox .allInfo{
-    padding: 0
+    padding-top: 10px
 }
 
 .jobs .allJobs .jobBox .info{
-    margin-top: 10px;
     width: 32.3333333%;
     display: inline-block
 }
@@ -2643,12 +2642,6 @@ footer .copyRight span{
         margin-left: 12px
     }
 
-    .jobs .allJobs .jobBox,
-    .courses .allCourses .courseBox{
-        max-height: none;
-        min-height: auto
-    }
-
     .courses .allCourses .courseBox .boxWithoutHover .allItem .item{
         width: 31.333333%
     }
@@ -2755,18 +2748,32 @@ footer .copyRight span{
         margin-top: 40px
     }
 
+    .jobs .allJobs .jobBox{
+        height: 500px
+    }
+
+    .jobs .allJobs .jobBox .allInfo{
+        padding-top: 0
+    }
+
+    .jobs .allJobs .jobBox .boxWithoutHover > .allInfo .info{
+        height: 71px;
+        max-height: 71px;
+        overflow: hidden
+    }
+
+    .jobs .allJobs .jobBox .boxHover{
+        padding-top: 15px;
+        height: auto;
+    }
+
     .jobs .allJobs .jobBox .boxHover .info{
-        margin-top: 10px
+        margin-top: 0
     }
 
     .jobs .allJobs .jobBox .boxHover > span{
-        top: -210px;
-        right: 10px
-    }
-
-    .courses .allCourses .courseBox .boxHover{
-        min-height: auto;
-        max-height: none
+        top: 175px;
+        left: 22px
     }
 
 }
@@ -2784,24 +2791,4 @@ footer .copyRight span{
 
 }
 
-
 /************************************************** End media query **************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
