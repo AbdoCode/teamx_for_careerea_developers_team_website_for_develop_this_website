@@ -848,7 +848,7 @@ header .box button{
     width: 70%;
     margin: 0 auto 20px;
     overflow: hidden;
-    display: block
+    display: none
 }
 
 .signUp .form1 .formOne{
@@ -1109,7 +1109,7 @@ header .box button{
 .signUp .form3{
     width: 70%;
     margin: 0 auto 20px;
-    display: none
+    display: block
 }
 
 .signUp .form3 h2{
@@ -1129,7 +1129,7 @@ header .box button{
 
 .signUp .form3 form img{
     width: 160px;
-    height: 160px;
+    height: auto;
     color: #444;
     font-size: 20px;
     line-height: 150px
@@ -2039,7 +2039,7 @@ header .box button{
 
 .settings .subSettings{
     overflow: hidden;
-    min-height: 423px;
+    min-height: 492px;
     border-left: 2px solid #000;
     border-right: 2px solid #000;
     background-color: #EEE
@@ -2072,7 +2072,8 @@ header .box button{
     padding: 20px;
     border-left: 2px solid #000;
     position: relative;
-    background-color: #FFF
+    background-color: #FFF;
+    min-height: inherit
 }
 
 /********************************************  Start .accountInfo  ****************************************************/
@@ -2197,7 +2198,6 @@ header .box button{
 /********************************************  Start .security  ****************************************************/
 
 .settings .subSettings .content .security{
-    min-height: 410px;
     display: none
 }
 
@@ -2318,8 +2318,7 @@ header .box button{
 /********************************************  End .notification  ****************************************************/
 
 .settings .subSettings .content .notification{
-    display: none;
-    min-height: 410px
+    display: none
 }
 
 .settings .subSettings .content .notification h1{
@@ -2372,8 +2371,7 @@ header .box button{
 /********************************************  End .language  ****************************************************/
 
 .settings .subSettings .content .language{
-    display: none;
-    min-height: 410px
+    display: none
 }
 
 .settings .subSettings .content .language h1{
@@ -2505,20 +2503,13 @@ header .box button{
 
 footer{
     background-color: #38003C;
-    padding: 30px 0 30px;
-    overflow: hidden
-}
-
-footer img{
-    width: 60px;
-    height: 60px;
-    float: right
+    padding: 30px 0 10px;
+    text-align: center
 }
 
 footer .social{
-    float: left;
-    line-height: 48px;
-    margin-bottom: 30px
+    display: block;
+    margin-bottom: 15px
 }
 
 footer .social i{
@@ -2528,22 +2519,23 @@ footer .social i{
     color: #FFF;
     border-radius: 50%;
     margin-left: 10px;
-    cursor: pointer
+    cursor: pointer;
+    background-color: #888
 }
 
-footer .social .fa-facebook{
+footer .social .fa-facebook:hover{
     background-color: #3B5998
 }
 
-footer .social .fa-twitter{
+footer .social .fa-twitter:hover{
     background-color: #55ACEE
 }
 
-footer .social .fa-youtube{
+footer .social .fa-youtube:hover{
     background-color: #C4302B
 }
 
-footer .social .fa-linkedin{
+footer .social .fa-linkedin:hover{
     background-color: #0077B5
 }
 
