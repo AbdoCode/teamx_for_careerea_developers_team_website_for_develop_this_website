@@ -118,7 +118,7 @@ $(document).ready(function () {
 
         $("html, body").animate({
 
-            scrollTop: $("#" + $(this).data('id')).offset().top - 53
+            scrollTop: $("#partners").offset().top - 53
 
         }, 1000);
 
