@@ -72,22 +72,22 @@
                 <div class="row">
                     <div class="slider">
                         <div>
-                            <img class="img-responsive" src="images/partners/bbc.png" alt="BBC" />
+                            <a href="#"><img class="img-responsive" src="images/partners/bbc.png" alt="BBC" /></a>
                         </div>
                         <div>
-                            <img class="img-responsive" src="images/partners/cnn.png" alt="CNN" />
+                            <a href="#"><img class="img-responsive" src="images/partners/cnn.png" alt="CNN" /></a>
                         </div>
                         <div>
-                            <img class="img-responsive" src="images/partners/forbes.png" alt="Forbes" />
+                            <a href="#"><img class="img-responsive" src="images/partners/forbes.png" alt="Forbes" /></a>
                         </div>
                         <div>
-                            <img class="img-responsive" src="images/partners/techradar.png" alt="Techradar" />
+                            <a href="#"><img class="img-responsive" src="images/partners/techradar.png" alt="Techradar" /></a>
                         </div>
                         <div>
-                            <img class="img-responsive" src="images/partners/wired.png" alt="Wired" />
+                            <a href="#"><img class="img-responsive" src="images/partners/wired.png" alt="Wired" /></a>
                         </div>
                         <div>
-                            <img class="img-responsive" src="images/partners/wsj.png" alt="Wsj" />
+                            <a href="#"><img class="img-responsive" src="images/partners/wsj.png" alt="Wsj" /></a>
                         </div>
                     </div>
                     <div class="prev">

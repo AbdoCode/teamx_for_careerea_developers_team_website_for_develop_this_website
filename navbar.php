@@ -65,11 +65,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                         <ul class="dropdown-menu">
                             <i class="fa fa-caret-down fa-fw fa-3x"></i>
                             <li><a href="profile.php"><i class="fa fa-user fa-fw fa-lg"></i>Profile</a></li>
-                            <li><a href="notification.php"><i class="fa fa-globe fa-fw fa-lg"></i>Notification<span>4</span></a></li>
                             <li><a href="settings.php"><i class="fa fa-wrench fa-fw fa-lg"></i>Settings</a></li>
                             <li><a href="php/logout.php"><i class="fa fa-sign-out fa-fw fa-lg"></i>Logout</a></li>
                         </ul>
-                    </div>';
+                    </div>
+                    <a class="notificationGlobe" href="notification.php"><i class="fa fa-globe fa-fw fa-2x"></i><span>4</span></a>';
             endif; ?>
         </div>
     </div>

@@ -115,7 +115,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    top: -28px;
+    top: -30px;
     left: 20px;
     color: #38003C
 }
@@ -147,6 +147,24 @@
 
 .dropdown-menu > li > a:hover i{
     color: #262626
+}
+
+.navbar .notificationGlobe{
+    color: #FFF;
+    position: relative;
+    top: 4px
+}
+
+.navbar .notificationGlobe span{
+    position: absolute;
+    top: 0px;
+    left: 19px;
+    width: auto;
+    height: 20px;
+    background-color: #F00;
+    padding: 0 4px;
+    text-align: center;
+    border-radius: 2px
 }
 
 /************************************************** End Navbar **************************************************/
