@@ -4,7 +4,6 @@
     <list default="true" id="1576ea6f-7b43-4d85-9988-5770d0450a28" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="Careerea.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="2761" column="24" selection-start-line="2761" selection-start-column="24" selection-end-line="2761" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="2645" column="19" selection-start-line="2645" selection-start-column="19" selection-end-line="2645" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -45,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+            <state relative-caret-position="546">
+              <caret line="342" column="62" selection-start-line="342" selection-start-column="62" selection-end-line="342" selection-end-column="62" />
               <folding>
                 <marker date="1501238799535" expanded="true" signature="4992:5015" ph="SELECT job_I... jobs" />
                 <marker date="1501238799535" expanded="true" signature="5287:6107" ph="SELECT COUNT... jobs" />
@@ -356,7 +355,7 @@
       <workItem from="1501136816176" duration="476000" />
       <workItem from="1501137307381" duration="2056000" />
       <workItem from="1501139367329" duration="10597000" />
-      <workItem from="1501214505688" duration="21930000" />
+      <workItem from="1501214505688" duration="22867000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1501137085310</created>
@@ -435,11 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501238448137</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Mohamed edit">
+      <created>1501238849932</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1501238849932</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201288000" />
+    <option name="totallyTimeSpent" value="202225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -893,10 +899,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="2645" column="19" selection-start-line="2645" selection-start-column="19" selection-end-line="2645" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="342" column="62" selection-start-line="342" selection-start-column="62" selection-end-line="342" selection-end-column="62" />
           <folding>
             <marker date="1501238799535" expanded="true" signature="4992:5015" ph="SELECT job_I... jobs" />
             <marker date="1501238799535" expanded="true" signature="5287:6107" ph="SELECT COUNT... jobs" />
@@ -988,14 +1002,6 @@
             <marker date="1501238799535" expanded="true" signature="40914:41269" ph="..." />
             <marker date="1501238799535" expanded="true" signature="41387:41726" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="2761" column="24" selection-start-line="2761" selection-start-column="24" selection-end-line="2761" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>

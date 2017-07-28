@@ -2642,6 +2642,10 @@ footer .copyRight span{
         margin-left: 12px
     }
 
+    .courses .allCourses .courseBox{
+        height: 445px
+    }
+
     .courses .allCourses .courseBox .boxWithoutHover .allItem .item{
         width: 31.333333%
     }
@@ -2763,7 +2767,7 @@ footer .copyRight span{
     }
 
     .jobs .allJobs .jobBox .boxHover{
-        padding-top: 15px;
+        padding-top: 0;
         height: auto;
     }
 
@@ -2772,7 +2776,7 @@ footer .copyRight span{
     }
 
     .jobs .allJobs .jobBox .boxHover > span{
-        top: 175px;
+        top: 166px;
         left: 22px
     }
 
