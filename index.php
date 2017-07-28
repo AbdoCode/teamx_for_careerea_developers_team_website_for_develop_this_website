@@ -115,6 +115,7 @@
                         }
                     ?>
                     <li class="filter" data-filter=".mostViewed">Most viewed</li>
+                    <li class="filter" data-filter=".latestAdded">Latest added</li>
                 </ul>
                 <div id="mixItJobs" class="allJobs text-center">
                     <div class="row">
@@ -162,11 +163,16 @@
                                 echo '<div class="col-md-4 col-sm-6 col-xs-12 mix">
                                         <div class="jobBox">
                                             <div class="boxWithoutHover">
-                                                <div class="imgBlock">
-                                                    <img src="companies/pics/'. $companyLogo .'" />
+                                                <div class="simpleContainer">
+                                                    <div class="imgBlock">
+                                                        <img src="companies/pics/'. $companyLogo .'" />
+                                                    </div>
+                                                    <div class="headersInfo">
+                                                        <h5>'. $jobTitle .'</h5>
+                                                        <h5>'. $companyName .'</h5>
+                                                    </div>
                                                 </div>
-                                                <h5>'. $companyName .'</h5>
-                                                <h5>'. $jobTitle .'</h5>
+                                                <div class="clearfix"></div>
                                                 <h5>Top Requirment</h5>
                                                 <div class="topRequirment">';
 
@@ -211,7 +217,7 @@
                                                 </div>
                                             </div>
                                             <div class="boxHover">
-                                                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                <span>Add to favorite: <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                                                 <div class="allInfo">
                                                     <div class="info">
                                                         <span class="head">viewed</span><br />
@@ -285,11 +291,16 @@
                                     echo '<div class="col-md-4 col-sm-6 col-xs-12 mix interests">
                                                 <div class="jobBox">
                                                     <div class="boxWithoutHover">
-                                                        <div class="imgBlock">
-                                                            <img src="companies/pics/'. $companyLogo .'" />
+                                                        <div class="simpleContainer">
+                                                            <div class="imgBlock">
+                                                                <img src="companies/pics/'. $companyLogo .'" />
+                                                            </div>
+                                                            <div class="headersInfo">
+                                                                <h5>'. $jobTitle .'</h5>
+                                                                <h5>'. $companyName .'</h5>
+                                                            </div>
                                                         </div>
-                                                        <h5>' . $companyName . '</h5>
-                                                        <h5>' . $jobTitle . '</h5>
+                                                        <div class="clearfix"></div>
                                                         <h5>Top Requirment</h5>
                                                         <div class="topRequirment">';
 
@@ -333,7 +344,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="boxHover">
-                                                        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                        <span>Add to favorite: <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                                                         <div class="allInfo">
                                                             <div class="info">
                                                                 <span class="head">viewed</span><br />
@@ -381,7 +392,8 @@
                     ?>
                     <li class="filterc" data-filter=".topRated">Top Rated</li>
                     <li class="filterc" data-filter=".mostPopular">Most viewed</li>
-                </ul>   
+                    <li class="filterc" data-filter=".latestAdded">Latest added</li>
+                </ul>
                 <div id="mixItCourses" class="allCourses text-center">
                     <div class="row">
                         <?php
@@ -429,10 +441,14 @@
                                 echo '<div class="col-md-4 col-sm-6 col-xs-12 mix">
                                         <div class="courseBox">
                                             <div class="boxWithoutHover">
-                                                <div class="imgBlock">
-                                                    <img src="courses/pics/'. $courseLogo .'" />
+                                                <div class="simpleContainer">
+                                                    <div class="imgBlock">
+                                                        <img src="courses/pics/'. $courseLogo .'" />
+                                                    </div>
+                                                    <div class="headersInfo">
+                                                        <h4>'. $courseTitle .'</h4>
+                                                    </div>
                                                 </div>
-                                                <h4>'. $courseTitle .'</h4>
                                                 <div class="allItem">
                                                     <div class="item">
                                                         <span class="value">'. $courseHours .'</span><br />
@@ -537,10 +553,14 @@
                                 echo '<div class="col-md-4 col-sm-6 col-xs-12 mix interests">
                                         <div class="courseBox">
                                             <div class="boxWithoutHover">
-                                                <div class="imgBlock">
-                                                    <img src="courses/pics/'. $courseLogo .'" />
+                                                <div class="simpleContainer">
+                                                    <div class="imgBlock">
+                                                        <img src="courses/pics/'. $courseLogo .'" />
+                                                    </div>
+                                                    <div class="headersInfo">
+                                                        <h4>'. $courseTitle .'</h4>
+                                                    </div>
                                                 </div>
-                                                <h4>'. $courseTitle .'</h4>
                                                 <div class="allItem">
                                                     <div class="item">
                                                         <span class="value">'. $courseHours .'</span><br />

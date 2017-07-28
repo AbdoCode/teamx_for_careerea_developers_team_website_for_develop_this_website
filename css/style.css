@@ -452,22 +452,19 @@ header .box button{
     border: 2px solid #38003C;
     border-radius: 5px;
     margin: 10px 0;
-    padding: 0 0 20px;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
     position: relative;
     box-shadow: 5px 5px 10px #CCC;
-    max-height: 400px;
-    min-height: 308px;
     overflow: hidden
 }
 
 .jobs .allJobs .jobBox::before{
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: #E90052;
     position: absolute;
     top: 0;
@@ -488,27 +485,48 @@ header .box button{
     display: block
 }
 
-.jobs .allJobs .jobBox .imgBlock{
-    height: 110px;
+.jobs .allJobs .jobBox .boxWithoutHover{
+    padding: 15px 0;
+    height: 270px
+}
+
+.jobs .allJobs .jobBox .boxWithoutHover .simpleContainer{
     overflow: hidden;
-    text-align: center
+    height: 75px;
+    margin-bottom: 15px
+}
+
+.jobs .allJobs .jobBox .imgBlock{
+    width: 36%;
+    overflow: hidden;
+    text-align: center;
+    border-right: 2px solid #38003C;
+    float: left;
 }
 
 .jobs .allJobs .jobBox .imgBlock img{
-    width: auto;
-    height: 110px;
+    width: 100%;
+    height: auto;
     max-width: 100%
+}
+
+.jobs .allJobs .jobBox .headersInfo{
+    float: left;
+    width: 64%;
+    height: 100%;
+    max-height: 100%
+}
+
+.jobs .allJobs .jobBox .headersInfo h5:first-of-type{
+    font-size: 18px;
+    color: #E90052;
 }
 
 .jobs .allJobs .jobBox h5{
     font-weight: bold
 }
 
-.jobs .allJobs .jobBox h5:nth-of-type(2){
-    color: #E90052
-}
-
-.jobs .allJobs .jobBox h5:nth-of-type(3){
+.jobs .allJobs .jobBox .boxWithoutHover > h5{
     text-align: left;
     margin-left: 20px
 }
@@ -516,7 +534,8 @@ header .box button{
 .jobs .allJobs .jobBox div.topRequirment{
     width: 80%;
     margin: auto;
-    overflow: hidden
+    overflow: hidden;
+    height: 56px
 }
 
 .jobs .allJobs .jobBox div.topRequirment span{
@@ -550,22 +569,23 @@ header .box button{
 }
 
 .jobs .allJobs .jobBox .boxHover{
-    min-height: 200px;
     display: none;
     position: relative;
-    margin: 42px 0
+    padding-top: 33px;
+    height: 270px
 }
 
 .jobs .allJobs .jobBox .boxHover > span{
     position: absolute;
     font-size: 25px;
-    right: 20px;
-    cursor: pointer
+    top: 16px;
+    left: 34px
 }
 
-.jobs .allJobs .jobBox .boxHover > span:hover,
-.jobs .allJobs .jobBox .boxHover > span.active{
-    color: #E90052
+.jobs .allJobs .jobBox .boxHover > span span:hover,
+.jobs .allJobs .jobBox .boxHover > span span.active{
+    color: #E90052;
+    cursor: pointer
 }
 
 .jobs .allJobs .jobBox .boxHover .info{
@@ -645,22 +665,20 @@ header .box button{
     border: 2px solid #38003C;
     border-radius: 5px;
     margin: 10px 0;
-    padding: 20px;
+    padding: 20px 0;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
     position: relative;
     box-shadow: 5px 5px 10px #CCC;
-    max-height: 522px;
-    min-height: 424px;
     overflow: hidden
 }
 
 .courses .allCourses .courseBox::before{
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: #E90052;
     position: absolute;
     top: 0;
@@ -681,8 +699,85 @@ header .box button{
     display: block
 }
 
+.courses .allCourses .courseBox .boxWithoutHover{
+    height: 305px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .simpleContainer{
+    overflow: hidden;
+    height: 75px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .imgBlock{
+    width: 36%;
+    overflow: hidden;
+    text-align: center;
+    border-right: 2px solid #38003C;
+    float: left
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .imgBlock img{
+    width: 100%;
+    height: auto;
+    max-width: 100%
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .headersInfo{
+    float: left;
+    width: 64%;
+    height: 100%;
+    max-height: 100%
+}
+
+.courses .allCourses .courseBox .boxWithoutHover h4{
+    font-weight: bold;
+    color: #E90052
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .allItem{
+    padding: 15px 0
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .allItem .item{
+    display: inline-block;
+    width: 32.333333%;
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .allItem .item .value{
+    color: #E90052;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover .allItem .item .head{
+    font-weight: bold;
+    font-size: 16px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover h5{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 20px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    height: 56px
+}
+
+.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites span{
+    margin: 2px;
+    background-color: #EEE;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    padding: 1px 3px;
+    display: inline-block
+}
+
 .courses .allCourses .courseBox .boxWithoutHover .rateBox{
-    margin-top: 20px
+    margin-top: 5px;
 }
 
 .courses .allCourses .courseBox .boxWithoutHover .rateBox .rateWord{
@@ -712,63 +807,10 @@ header .box button{
     color: #E90052
 }
 
-.courses .allCourses .courseBox .boxWithoutHover .imgBlock{
-    height: 110px;
-    overflow: hidden;
-    text-align: center
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .imgBlock img{
-    width: auto;
-    height: 110px;
-    max-width: 100%
-}
-
-.courses .allCourses .courseBox .boxWithoutHover h4{
-    font-weight: bold;
-    color: #E90052
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .allItem .item{
-    margin: 15px 0;
-    display: inline-block;
-    width: 32.333333%;
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .allItem .item .value{
-    color: #E90052;
-    font-weight: bold;
-    font-size: 20px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .allItem .item .head{
-    font-weight: bold;
-    font-size: 16px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover h5{
-    text-align: left;
-    font-weight: bold
-}
-
-.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites{
-    width: 80%;
-    margin: auto;
-    overflow: hidden
-}
-
-.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites span{
-    margin: 2px;
-    background-color: #EEE;
-    border: 1px solid #AAA;
-    border-radius: 3px;
-    padding: 1px 3px;
-    display: inline-block
-}
-
 .courses .allCourses .courseBox .boxHover{
     display: none;
-    padding: 150px 0;
+    padding-top: 108px;
+    height: 305px
 }
 
 .courses .allCourses .courseBox .boxHover > span:first-of-type{

@@ -299,7 +299,7 @@ $(document).ready(function () {
     }
     //active favorite star in job box
 
-    $(".jobs .allJobs .jobBox .boxHover > span").click(function () {
+    $(".jobs .allJobs .jobBox .boxHover > span span").click(function () {
 
         $(this).toggleClass("glyphicon-star").toggleClass("glyphicon-star-empty").toggleClass("active");
 
