@@ -4,7 +4,7 @@
     <list default="true" id="1576ea6f-7b43-4d85-9988-5770d0450a28" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.php" afterPath="$PROJECT_DIR$/settings.php" />
     </list>
     <ignored path="Careerea.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="2819" column="25" selection-start-line="2819" selection-start-column="25" selection-end-line="2819" selection-end-column="25" />
+            <state relative-caret-position="189">
+              <caret line="2195" column="0" selection-start-line="2195" selection-start-column="0" selection-end-line="2195" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,11 +38,14 @@
       <file leaf-file-name="settings.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="155">
+              <caret line="55" column="98" selection-start-line="55" selection-start-column="98" selection-end-line="55" selection-end-column="98" />
               <folding>
-                <marker date="1501153969891" expanded="true" signature="317:389" ph="UPDATE appli... " />
-                <marker date="1501153969891" expanded="true" signature="1578:1625" ph="SELECT * FRO... applicants" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1501327957544" expanded="true" signature="317:389" ph="UPDATE appli... " />
+                <marker date="1501327957544" expanded="true" signature="1578:1625" ph="SELECT * FRO... applicants" />
               </folding>
             </state>
           </provider>
@@ -75,7 +78,6 @@
         <option value="$PROJECT_DIR$/jobs.php" />
         <option value="$PROJECT_DIR$/scripts.php" />
         <option value="$PROJECT_DIR$/skills.php" />
-        <option value="$PROJECT_DIR$/settings.php" />
         <option value="$PROJECT_DIR$/courses.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/signUp.php" />
@@ -83,6 +85,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/settings.php" />
       </list>
     </option>
   </component>
@@ -259,7 +262,7 @@
       <workItem from="1501136816176" duration="476000" />
       <workItem from="1501137307381" duration="2056000" />
       <workItem from="1501139367329" duration="10597000" />
-      <workItem from="1501214505688" duration="35499000" />
+      <workItem from="1501214505688" duration="36647000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1501137085310</created>
@@ -373,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501269094896</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Mohamed edit">
+      <created>1501324447382</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1501324447382</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214857000" />
+    <option name="totallyTimeSpent" value="216005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -921,19 +931,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="2819" column="25" selection-start-line="2819" selection-start-column="25" selection-end-line="2819" selection-end-column="25" />
+        <state relative-caret-position="189">
+          <caret line="2195" column="0" selection-start-line="2195" selection-start-column="0" selection-end-line="2195" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="155">
+          <caret line="55" column="98" selection-start-line="55" selection-start-column="98" selection-end-line="55" selection-end-column="98" />
           <folding>
-            <marker date="1501153969891" expanded="true" signature="317:389" ph="UPDATE appli... " />
-            <marker date="1501153969891" expanded="true" signature="1578:1625" ph="SELECT * FRO... applicants" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1501327957544" expanded="true" signature="317:389" ph="UPDATE appli... " />
+            <marker date="1501327957544" expanded="true" signature="1578:1625" ph="SELECT * FRO... applicants" />
           </folding>
         </state>
       </provider>

@@ -53,13 +53,13 @@
                                         <input type="text" name="name" disabled value="'. $ApplicantName .'"/><br />
                                         <label>Phone</label>
                                         <input type="tel" name="phone" disabled value="'. $ApplicantPhone .'"/>
-                                        <i class="fa fa-lock fa-fw fa-lg"></i><br />
+                                        <i class="fa fa-lock fa-fw fa-lg" title="Hide number phone from your profile"></i><br />
                                         <label>E-mail</label>
                                         <input type="email" name="email" disabled value="'. $ApplicantEmail .'"/>
-                                        <i class="fa fa-lock fa-fw fa-lg"></i><br />
+                                        <i class="fa fa-lock fa-fw fa-lg" title="Hide email from your profile"></i><br />
                                         <label>Networks</label>
                                         <input type="text" disabled/>
-                                        <i class="fa fa-plus-circle fa-fw fa-lg"></i><br />
+                                        <i class="fa fa-plus-circle fa-fw fa-lg" title="Add Network"></i><br />
                                         <ul>
                                             <li><i class="fa fa-facebook fa-fw fa-lg"></i></li>
                                             <li><i class="fa fa-linkedin fa-fw fa-lg"></i></li>

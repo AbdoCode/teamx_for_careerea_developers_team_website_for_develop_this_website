@@ -2192,6 +2192,10 @@ header .box button{
     margin-right: 20px
 }
 
+.settings .subSettings .content .accountInfo form > i:after{
+
+}
+
 .settings .subSettings .content .accountInfo form > i:last-of-type{
     display: none
 }
