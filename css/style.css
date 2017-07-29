@@ -91,7 +91,7 @@
 }
 
 .dropdown > a span:first-of-type{
-    margin: 0 5px;
+    margin: 0 2px;
     font-weight: bold;
 }
 
@@ -152,13 +152,15 @@
 .navbar .notificationGlobe{
     color: #FFF;
     position: relative;
-    top: 4px
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .navbar .notificationGlobe span{
     position: absolute;
-    top: 0px;
-    left: 19px;
+    top: 11px;
+    left: 18px;
     width: auto;
     height: 20px;
     background-color: #F00;
@@ -2796,6 +2798,32 @@ footer .copyRight span{
     .jobs .allJobs .jobBox .boxHover > span{
         top: 166px;
         left: 22px
+    }
+
+    .navbar .notificationGlobe{
+        position: absolute;
+        right: 20%
+    }
+
+    .navbar .dropdown .caret{
+        display: none
+    }
+
+    .dropdown{
+        display: block
+    }
+
+    .dropdown .dropdown-menu{
+        display: block;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        margin-top: 10px;
+        left: -20px
+    }
+
+    .dropdown .dropdown-menu .fa-caret-down{
+        display: none
     }
 
 }

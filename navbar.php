@@ -27,6 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
 
 <nav class="navbar navbar-fixed-top navbar-inverse backgroundColor">
     <div class="container">
+        <?php if(isset($_SESSION['userID'])):
+            echo '<a class="notificationGlobe navbar-right" href="notification.php"><i class="fa fa-globe fa-fw fa-2x"></i><span>4</span></a>';
+        endif; ?>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#our-nav">
                 <span class="sr-only"></span>
@@ -68,8 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                             <li><a href="settings.php"><i class="fa fa-wrench fa-fw fa-lg"></i>Settings</a></li>
                             <li><a href="php/logout.php"><i class="fa fa-sign-out fa-fw fa-lg"></i>Logout</a></li>
                         </ul>
-                    </div>
-                    <a class="notificationGlobe" href="notification.php"><i class="fa fa-globe fa-fw fa-2x"></i><span>4</span></a>';
+                    </div>';
             endif; ?>
         </div>
     </div>
