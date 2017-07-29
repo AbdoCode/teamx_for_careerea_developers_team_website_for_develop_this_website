@@ -769,6 +769,66 @@ $(document).ready(function () {
 
     }
 
+    // Valid contact form
+
+    var contactuserError = true,
+        contactemailError = true,
+        contactmsgError = true;
+
+    $('.about .contactUsSection .contact-form .username').blur(function () {
+
+        if ($(this).val().length < 4) {
+
+            $(this).css('border', '1px solid #F00').parent().find('.custom-alert').fadeIn(200).end().find('.astrisx').fadeIn(100);
+            contactuserError = true;
+        } else {
+
+            $(this).css('border', '1px solid #080').parent().find('.custom-alert').fadeOut(200).end().find('.astrisx').fadeOut(100);
+            contactuserError = false;
+        }
+
+    });
+
+    $('.about .contactUsSection .contact-form .email').blur(function () {
+
+        if ($(this).val() === '') {
+
+            $(this).css('border', '1px solid #F00').parent().find('.custom-alert').fadeIn(200).end().find('.astrisx').fadeIn(100);
+            contactemailError = true;
+        } else {
+
+            $(this).css('border', '1px solid #080').parent().find('.custom-alert').fadeOut(200).end().find('.astrisx').fadeOut(100);
+            contactemailError = false;
+        }
+
+    });
+
+    $('.about .contactUsSection .contact-form .message').blur(function () {
+
+        if ($(this).val().length < 10) {
+
+            $(this).css('border', '1px solid #F00').parent().find('.custom-alert').fadeIn(200).end().find('.astrisx').fadeIn(100);
+            contactmsgError = true;
+        } else {
+
+            $(this).css('border', '1px solid #080').parent().find('.custom-alert').fadeOut(200).end().find('.astrisx').fadeOut(100);
+            contactmsgError = false;
+        }
+
+    });
+
+    $('.about .contactUsSection .contact-form').submit(function (event) {
+
+        if (contactuserError === true || contactemailError === true || contactmsgError === true) {
+
+            event.preventDefault();
+            $('.about .contactUsSection .contact-form .username, .about .contactUsSection .contact-form .email, .about .contactUsSection .contact-form .message').blur();
+
+        }
+
+    });
+
+
     // Trigger chosen plugin on add skills
 
     $(".chosen-select1").chosen({

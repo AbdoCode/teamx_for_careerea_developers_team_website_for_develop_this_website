@@ -2472,27 +2472,96 @@ header .box button{
 
 /************************************************** Start About Page **************************************************/
 
-.aboutPage{
-    background: url("../images/aboutHeader.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #FFF;
-    height: 320px
-}
-
-.aboutDescription{
+.about{
+    margin-top: 50px;
     padding: 50px 0
 }
 
-.aboutDescription p{
-    text-indent: 20px
+.about .aboutUsSection{
+    margin-bottom: 30px
+}
+
+.about .discription{
+    padding: 50px 0 0 30px
+}
+
+.about .contactUsSection{
+    padding-top: 20px
+}
+
+.about .contactUsSection .alert{
+    margin-bottom: 10px;
+}
+
+.about .contactUsSection h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 50px
+}
+
+.about .contactUsSection .contact-form{
+    max-width: 700px;
+    margin: 20px auto
+}
+
+.about .contactUsSection .contact-form .form-group{
+    margin-bottom: 0;
+    position: relative
+}
+
+.about .contactUsSection .contact-form input,
+.about .contactUsSection .contact-form textarea{
+    margin-bottom: 5px
+}
+
+.about .contactUsSection .contact-form textarea{
+    height: 180px !important;
+    resize: none
+}
+
+.about .contactUsSection .contact-form input:not([type='submit']) + i{
+    height: 0;
+    float: left;
+    position: relative;
+    top: -28px;
+    left: 10px;
+    color: #999
+}
+
+.about .contactUsSection .contact-form .astrisx{
+    height: 0;
+    font-size: 22px;
+    color: #B90D0D;
+    position: absolute;
+    right: 10px;
+    top: 6px
+}
+
+.about .contactUsSection .contact-form input{
+    padding-left: 32px
+}
+
+.about .contactUsSection .contact-form .send-icon{
+    display: block;
+    position: relative;
+    top: -29px;
+    left: 10px;
+    color: #FFF
+}
+
+.about .contactUsSection .contact-form input[type="submit"]{
+    background-color: #38003C;
+    color: #FFF;
+}
+
+.about .contactUsSection .contact-form .custom-alert{
+    padding: 5px 10px;
+    display: none;
 }
 
 /************************************************** End About Page **************************************************/
 
-/************************************************** End About Page **************************************************/
+/************************************************** Start change password box **************************************************/
 
 .changePassword{
     width: 400px;
@@ -2541,7 +2610,7 @@ header .box button{
     color: #FFF
 }
 
-/************************************************** End About Page **************************************************/
+/************************************************** End change password box **************************************************/
 
 /* button scroll top */
 
