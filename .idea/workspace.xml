@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1576ea6f-7b43-4d85-9988-5770d0450a28" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signUp.php" afterPath="$PROJECT_DIR$/signUp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts.php" afterPath="$PROJECT_DIR$/scripts.php" />
     </list>
     <ignored path="Careerea.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="signUp.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signUp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signUp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="153" column="39" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
+            <state relative-caret-position="138">
+              <caret line="316" column="29" selection-start-line="316" selection-start-column="29" selection-end-line="316" selection-end-column="29" />
               <folding>
                 <marker date="1501412630259" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
                 <marker date="1501412630259" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
@@ -41,14 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="409" column="0" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="395" column="2" selection-start-line="395" selection-start-column="2" selection-end-line="395" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,7 +88,6 @@
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/applyBox-compareBox.php" />
         <option value="$PROJECT_DIR$/jobs.php" />
-        <option value="$PROJECT_DIR$/scripts.php" />
         <option value="$PROJECT_DIR$/skills.php" />
         <option value="$PROJECT_DIR$/courses.php" />
         <option value="$PROJECT_DIR$/footer.php" />
@@ -86,8 +96,9 @@
         <option value="$PROJECT_DIR$/settings.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/about.php" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/signUp.php" />
+        <option value="$PROJECT_DIR$/scripts.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -251,7 +262,7 @@
       <workItem from="1501137307381" duration="2056000" />
       <workItem from="1501139367329" duration="10597000" />
       <workItem from="1501214505688" duration="45850000" />
-      <workItem from="1501408560776" duration="3856000" />
+      <workItem from="1501408560776" duration="5786000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1501137085310</created>
@@ -407,11 +418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501412469446</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Mohamed edit">
+      <created>1501416756282</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1501416756282</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229064000" />
+    <option name="totallyTimeSpent" value="230994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -750,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applyBox-compareBox.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -966,20 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="409" column="0" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="153" column="39" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
+        <state relative-caret-position="138">
+          <caret line="316" column="29" selection-start-line="316" selection-start-column="29" selection-end-line="316" selection-end-column="29" />
           <folding>
             <marker date="1501412630259" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
             <marker date="1501412630259" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
@@ -987,6 +988,24 @@
             <marker date="1501412630259" expanded="true" signature="3348:3515" ph="INSERT INTO applicant_interests... " />
             <marker date="1501412630259" expanded="true" signature="8031:8067" ph="SELECT Inter... interests" />
             <marker date="1501412630259" expanded="true" signature="8390:8857" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="395" column="2" selection-start-line="395" selection-start-column="2" selection-end-line="395" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

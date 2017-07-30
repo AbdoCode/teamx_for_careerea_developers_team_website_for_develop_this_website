@@ -6,5 +6,6 @@
 <script src="js/jquery.countTo.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/jquery.fittext.js"></script>
+<script src="js/load-image-orientation.js"></script>
 <script src="js/script2.js"></script>
 <script src="js/script.js"></script>
