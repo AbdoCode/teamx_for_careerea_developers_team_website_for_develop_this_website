@@ -27,7 +27,7 @@
 .adminPanel .tabsDetails label, .adminPanel .tabsDetails h3 {
     margin-bottom: 10px; color:cornflowerblue;
 }
-.adminPanel .tabsDetails h1 {color:#E90052}
+.adminPanel .tabsDetails h1 {color:#C0392B}
 .adminPanel .tabsDetails label, .adminPanel .tabsDetails h3 {
     font-size: 24px; 
 }
@@ -106,13 +106,13 @@
 .adminPanel .tabsDetails .userBox .userIcon, .adminPanel .tabsDetails .onlineUserBox .userIcon, 
 .adminPanel .tabsDetails .newUsers .newUsersIcon{
     display: inline-table;
-    color:#38003C; 
+    color:#34495E; 
 } 
 .adminPanel .tabsDetails .newUsers .newUsersInfo, .adminPanel .tabsDetails .userInfo, .courseInfo, 
 .adminPanel .tabsDetails .enrolledCourseInfo, .adminPanel .tabsDetails .jobsInfo, 
 .adminPanel .tabsDetails .appliedJobsInfo {
     display: inline-table;
-    color:#E90052;
+    color:#C0392B;
 }
 @media (max-width:768px) {
     .adminPanel .tabsDetails .userBox .userIcon, .adminPanel .tabsDetails .onlineUserBox .userIcon, 
@@ -121,7 +121,7 @@
 } 
 }
 .adminPanel .tabsDetails .dashboard h2 {
-    color:#38003c;
+    color:#34495E;
 }
 .adminPanel .tabsDetails .editInstructor, .adminPanel .tabsDetails .editCourses, .adminPanel .tabsDetails .editJobs, 
 .adminPanel .tabsDetails .editCompanies {display: none;}
@@ -357,7 +357,7 @@ input[type=checkbox]:checked + label span.fixed
 }
 
 .adminPanel .tabsDetails .adminInfo {
-    color:#E90052; font-weight: bold;
+    color:#C0392B; font-weight: bold;
 }
 .adminPanel .tabsDetails .boxFormButton{
     display: block;
@@ -397,7 +397,7 @@ input[type=checkbox]:checked + label span.fixed
     width: 400px;
     height: 400px;
     line-height: 390px;
-    color: #38003C;
+    color: #34495E;
     font-weight: bold;
     text-align: center;
     display: inline-block;
@@ -406,8 +406,8 @@ input[type=checkbox]:checked + label span.fixed
 @media (max-width:768px) {.adminPanel .tabsDetails .profile img {width:200px; height: 200px; line-height: 190px;}}
 .adminPanel .tabsDetails .profile .editFile {
     padding: 5px 10px;
-    background-color: #38003C;
-    border: 1px solid #38003C;
+    background-color: #34495E;
+    border: 1px solid #34495E;
     position: relative;
     color: #FFF;
     border-radius: 4px;
@@ -435,7 +435,7 @@ input[type=checkbox]:checked + label span.fixed
     margin-top:20px;
 }
 .adminPanel .tabsDetails .activityButtons .inactive 
-{background:#CCC; border:none; color:#e90052;}
+{background:#CCC; border:none; color:#C0392B;}
 .adminPanel .tabsDetails #editCourseBox {display: none;}
 .activityButtons button {
     margin:5px;
@@ -465,7 +465,7 @@ input[type=checkbox]:checked + label span.fixed
 }
 
 .chosen-container .chosen-results li.highlighted{
-    background: #E90052
+    background: #C0392B
 }
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close{

@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         });
 
-        $(".overlayForPage").on('click', function() {
+        $(".overlayForPage").on('click', function () {
 
             $(".compareBox, .applyBox, .changePassword, .takeCourse1, .takeCourse2, .addSkill, .editSkill, .pinSkill, .signInBlock").hide(0);
 
@@ -390,7 +390,7 @@ $(document).ready(function () {
     $(function () {
         $('#profileImage').change(function (e) {
             var img = URL.createObjectURL(e.target.files[0]);
-            $('.signUp .form3 form img, .editProfile form .profile img').attr('src', img);
+            $('.signUp .form3 form img').attr('src', img);
         });
     });
 
@@ -880,7 +880,7 @@ $(document).ready(function () {
     // Trigger nicescroll plugin
 
     $("body").niceScroll({
-        cursorcolor: "#38003C",
+        cursorcolor: "#34495E",
         cursorborder: "0",
         cursorborderradius: "0",
         autohidemode: "leave"

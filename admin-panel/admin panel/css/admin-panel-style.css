@@ -71,7 +71,7 @@
 .adminPanel .tabsDetails .instructorList, .adminPanel .tabsDetails .companyList, .adminPanel .tabsDetails .salaryList {
     display: block;
     background: #EEE;
-    color: #E90052;
+    color: #C0392B;
     border: 3px solid #CCC;
     padding: 4px;
     width:100px;
@@ -110,13 +110,13 @@
 .adminPanel .tabsDetails .userBox .userIcon, .adminPanel .tabsDetails .onlineUserBox .userIcon, 
 .adminPanel .tabsDetails .newUsers .newUsersIcon{
     display: inline-table;
-    color:#38003C; 
+    color:#34495E; 
 } 
 .adminPanel .tabsDetails .newUsers .newUsersInfo, .adminPanel .tabsDetails .userInfo, .courseInfo, 
 .adminPanel .tabsDetails .enrolledCourseInfo, .adminPanel .tabsDetails .jobsInfo, 
 .adminPanel .tabsDetails .appliedJobsInfo {
     display: inline-table;
-    color:#E90052;
+    color:#C0392B;
 }
 @media (max-width:768px) {
     .adminPanel .tabsDetails .userBox .userIcon, .adminPanel .tabsDetails .onlineUserBox .userIcon, 
@@ -125,7 +125,7 @@
 } 
 }
 .adminPanel .tabsDetails .dashboard h2 {
-    color:#38003c;
+    color:#34495E;
 }
 
 /* */
@@ -302,7 +302,7 @@
 }
 
 .adminPanel .tabsDetails .adminInfo {
-    color:#E90052; font-weight: bold;
+    color:#C0392B; font-weight: bold;
 }
 .adminPanel .tabsDetails .boxFormButton{
     display: block;

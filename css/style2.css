@@ -30,7 +30,7 @@
 }
 
 .coursesPage hr, .formMobileSearch hr{
-    border: 1px solid #E90052; width:150px;
+    border: 1px solid #C0392B; width:150px;
 }
 /* End Main Classes  */
 
@@ -52,14 +52,14 @@
     text-align: center;
 }
 .coursesPage .mainSearchBox .mainSearchButtonBox .searchButton {
-    background:#E90052; 
+    background:#C0392B; 
     color:#FFF; 
     display: inline-block;
 }
 
-.coursesPage .mainSearchBox .mainSearchButtonBox .showFilterMobile {background:#E90052; color:#FFF; margin-top:5px;}
+.coursesPage .mainSearchBox .mainSearchButtonBox .showFilterMobile {background:#C0392B; color:#FFF; margin-top:5px;}
 
-.coursesPage .mainSearchBox .mainSearchButtonBox .showFilterMobile:hover {color:#38003C;}
+.coursesPage .mainSearchBox .mainSearchButtonBox .showFilterMobile:hover {color:#34495E;}
 
 .coursesPage .mainSearchBox .mainSearchButtonBox .fa-search {color:#FFF}
 .coursesPage .coursesContainer .itemHidden {display: none;}
@@ -80,7 +80,7 @@
     height: 450px;
 }
 .coursesPage .coursesContainer .activityCourseTitle h4 {
-    color:#e90052;
+    color:#C0392B;
     text-align: center;
 }
 .coursesPage .coursesContainer .activityCourseOver
@@ -88,7 +88,7 @@
     position: absolute; 
     top:0; left:0; bottom:0; right:0; width: 100%; height: 100%; 
     background-color: rgba(237, 241, 243, 0.6);
-    color:#e90052;
+    color:#C0392B;
     padding-top: 170px;
     text-align: center;font-weight: bold;font-size:20px;
     display: none;
@@ -117,7 +117,7 @@
 }
 .coursesPage .coursesContainer .itemHidden {display:none;} 
 .coursesPage .coursesContainer .showMore {
-    background:#38003c;
+    background:#34495E;
     color:#eee;
     box-shadow: 0 0 2px 1px #fff;
     width: 130px;padding: 10px;border-radius: 10px;margin-top: 20px;
@@ -128,7 +128,7 @@
     border:none;
     margin-bottom:10px;
 }
-.coursesPage .coursesContainer .showMore:hover{box-shadow: 0 2px 10px 2px #E90052;
+.coursesPage .coursesContainer .showMore:hover{box-shadow: 0 2px 10px 2px #C0392B;
     -webkit-transition: .4s all ease-in-out;
     transition: .4s all ease-in-out;}
 .coursesPage .coursesContainer .activityCourse .table .jobInfo,
@@ -145,7 +145,7 @@
 /* Start mainFilterSearch */
 
 .coursesPage .mainFilterSearch{
-    background:#38003c;
+    background:#34495E;
     color:#FFF;
     padding-left:10px;
     padding-right: 10px;
@@ -204,7 +204,7 @@
   display: block;
   width: 15px;
   height: 15px;
-  border: 2px solid #E90052;
+  border: 2px solid #C0392B;
   border-radius: 50px;
   z-index: 2;
 }
@@ -247,7 +247,7 @@
 .formMobileSearch .filterMobile {
     display: none;
     box-shadow:#EEE 20px 20px ;
-    background: #38003c;
+    background: #34495E;
     color: #FFF;
     padding: 10px;
     margin-bottom: 40px;
@@ -309,7 +309,7 @@
 }
 
 .formMobileSearch .inputFilterMobile{width:100%!important; margin-bottom: 5px;}
-.formMobileSearch .searchFilterMobile {background:#E90052;color:#FFF; display: inline-block;}
+.formMobileSearch .searchFilterMobile {background:#C0392B;color:#FFF; display: inline-block;}
 .formMobileSearch .searchFilterMobile:hover {background:#E90042; color:#FFF;}
 
 /* End filterMobile */
@@ -354,7 +354,7 @@
     
 }
 .coursesPage .jobsContainer .activityCourseTitle h4 {
-    color:#e90052;
+    color:#C0392B;
     text-align: center;
 }
 .coursesPage .jobsContainer .activityCourseOver
@@ -362,7 +362,7 @@
     position: absolute; 
     top:0; left:0; bottom:0; right:0; width: 100%; height: 100%; 
     background-color: rgba(237, 241, 243, 0.6);
-    color:#e90052;
+    color:#C0392B;
     padding-top: 170px;
     text-align: center;font-weight: bold;font-size:20px;
     display: none;
@@ -389,7 +389,7 @@
 }
 .coursesPage .jobsContainer .itemHidden {display:none;} 
 .coursesPage .jobsContainer .showMore {
-    background:#38003c;
+    background:#34495E;
     color:#eee;
     box-shadow: 0 0 2px 1px #fff;
     width: 130px;padding: 10px;border-radius: 10px;margin-top: 20px;
@@ -400,11 +400,11 @@
     border:none;
     margin-bottom:10px;
 }
-.coursesPage .jobsContainer .showMore:hover{box-shadow: 0 2px 10px 2px #E90052;
+.coursesPage .jobsContainer .showMore:hover{box-shadow: 0 2px 10px 2px #C0392B;
     -webkit-transition: .4s all ease-in-out;
     transition: .4s all ease-in-out;}
 .coursesPage .jobsContainer .activityCourse .table .jobInfo,
-.coursesPage .jobsContainer .activityCourse .table .courseInfo{color:#E90052; font-weight: bold;}
+.coursesPage .jobsContainer .activityCourse .table .courseInfo{color:#C0392B; font-weight: bold;}
 
 @media (max-width: 767px) {
     .coursesPage .jobsContainer .activityCourse {
@@ -558,10 +558,10 @@
     width:100%;   
 }
 .profile .profileInfo .profileContent .profileUsername h2 {
-    color:#e90052
+    color:#C0392B
 }
 .profile .profileInfo .profileContent .profileUsername h4 {
-    color:#38003c;
+    color:#34495E;
     font-size: 20px!important;
 }
 /* End Section Profile Username */
@@ -570,7 +570,7 @@
 .profile .profileInfo .profileContent .userContactInfo a, 
 .profile .profileInfo .profileContent .userContactInfo h4 {
     text-decoration: none;
-    color:#38003c;
+    color:#34495E;
     font-size:16px!important;
 }
 .profile .profileInfo .profileContent .userContactInfo h4 i {
@@ -578,7 +578,7 @@
     font-size: 20px;
 }
 
-.profile .profileInfo .profileContent .userContactInfo .fa-phone {color:#38003c}
+.profile .profileInfo .profileContent .userContactInfo .fa-phone {color:#34495E}
 .profile .profileInfo .profileContent .userContactInfo .profileSocial i {
     width: 25px;
     height: 25px;
@@ -688,7 +688,7 @@
     margin-top:20px;
     min-height: 400px;
 }  
-.profile .profileInfo .profileContent .profileAbout .profileAboutTabs ul li.inactive {background:#CCC; color:#e90052;}
+.profile .profileInfo .profileContent .profileAbout .profileAboutTabs ul li.inactive {background:#CCC; color:#C0392B;}
 .profile .profileInfo .profileContent .profileAbout .tabsDetails div[id^="tab"]:not(:first-of-type) {display: none;}
 .profile .profileInfo .profileContent .profileAbout .profileAboutTabs .myTabs {width:100%;}
 .profile .profileInfo .profileContent .profileAbout .profileAboutTabs .myTabs li {
@@ -743,19 +743,19 @@
 }
 .profile .profileInfo .profileContent .profileAbout .tabsDetails .activityCourse .activityCourseTitle h4
 {
-    color:#e90052;
+    color:#C0392B;
     text-align: center;
 }
 .profile .profileInfo .profileContent .profileAbout .tabsDetails .activityCourse .activityCoursePrerequisites {color: cadetblue;}
 .profile .profileInfo .profileContent .profileAbout .tabsDetails .activityCourse .table .jobInfo,
-.profile .profileInfo .profileContent .profileAbout .tabsDetails .activityCourse .table .courseInfo {color: #E90052; font-weight: bold;}
+.profile .profileInfo .profileContent .profileAbout .tabsDetails .activityCourse .table .courseInfo {color: #C0392B; font-weight: bold;}
 .profile .profileInfo .profileContent .profileAbout .tabsDetails .activityCourse .activityCourseOver, 
 .profile .profileInfo .profileContent .profileAbout .tabsDetails .activityCourse .activityCourseOver
 {
     position: absolute; 
     top:0; left:0; bottom:0; right:0; width: 100%; height: 100%; 
     background-color: rgba(237, 241, 243, 0.6);
-    color:#e90052;
+    color:#C0392B;
     padding-top: 170px;
     text-align: center;font-weight: bold;font-size:20px;
     display: none;
@@ -819,7 +819,7 @@
   
 }
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .skillBox:hover {  
-    box-shadow: 0 1px 10px 1px #E90052;
+    box-shadow: 0 1px 10px 1px #C0392B;
     -webkit-transition: .4s all ease-in-out;
     transition: .4s all ease-in-out;
 }
@@ -832,7 +832,7 @@
 
 /* Start Activity Tab Main Style ==> tab2Content  */
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab2Content .activityButtons .inactive 
-{background:#CCC; border:none; color:#e90052;}
+{background:#CCC; border:none; color:#C0392B;}
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab2Content .activityButtons #activityCourses, 
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab2Content .activityButtons #activityJobs, 
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab2Content .activityButtons #activityProfiles, 
@@ -892,7 +892,7 @@
 
 /* Start Favourits Tab */
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab6Content .favouritButtons { margin-bottom: 10px;}
-.profile .profileInfo .profileContent .profileAbout .tabsDetails #tab6Content .favouritButtons .inactive {background: #CCC; border:none; color:#e90052;}
+.profile .profileInfo .profileContent .profileAbout .tabsDetails #tab6Content .favouritButtons .inactive {background: #CCC; border:none; color:#C0392B;}
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab6Content .activityBoxs #favouritJobsBox {display: none;}
 .profile .profileInfo .profileContent .profileAbout .tabsDetails #favouritJobsBox .activityButton {
     width:150px;
@@ -926,7 +926,7 @@
 }
 .viewCourseDetails .viewCourseFormMobile {margin-bottom: 10px;}
 .viewCourseDetails .viewCourseForm {
-    background:#38003c;
+    background:#34495E;
     color:#FFF;
     padding-left:10px;
     padding-right: 10px;
@@ -944,9 +944,9 @@
     margin-top:10px;
     margin-bottom:10px;
 }
-.viewCourseDetails .courseInfo {color:#E90052;}
+.viewCourseDetails .courseInfo {color:#C0392B;}
 .viewCourseDetails .table .courseInfo {font-weight: bold;}
-.viewCourseDetails .viewCourseTabs ul li.inactive {background:#CCC; color:#e90052;}
+.viewCourseDetails .viewCourseTabs ul li.inactive {background:#CCC; color:#C0392B;}
 .viewCourseDetails .tabsDetails div[id^="tab"]:not(:first-of-type) {display: none;}
 
 .viewCourseDetails .viewCourseTabs .myTabs {width:100%;}
@@ -963,8 +963,8 @@
 }
 .viewCourseDetails .tabsDetails #tab1Course {margin-top:10px; border: 1px solid #ccc;} 
 /* Start Tab Course Prerequisites*/
-.viewCourseDetails .tabsDetails #tab1Course .tabHeader h1 {color:#E90052;}
-.viewCourseDetails .tabsDetails #tab1Course .viewCoursDetailsHR {border:1px solid #38003C; width:80%;}
+.viewCourseDetails .tabsDetails #tab1Course .tabHeader h1 {color:#C0392B;}
+.viewCourseDetails .tabsDetails #tab1Course .viewCoursDetailsHR {border:1px solid #34495E; width:80%;}
 .viewCourseDetails .tabsDetails #tab1Course i { margin-top:30px;}
 /* End Tab Course PreRequisites*/
 
@@ -1091,7 +1091,7 @@
 
 /* Start Tab Rate Course */
 .viewCourseDetails .tabsDetails #tab5Course .RateCourse .form-group textarea {height: 108px;}
-.viewCourseDetails .tabsDetails #tab6Course .RateCourse h1 {color:#E90052;}
+.viewCourseDetails .tabsDetails #tab6Course .RateCourse h1 {color:#C0392B;}
 .viewCourseDetails .tabsDetails #tab6Course .RateCourse .wrapper{
   right: 85%;
 }
@@ -1183,7 +1183,7 @@
     display: none;
 }
 .viewJobDetails .viewCourseForm {
-    background:#38003c;
+    background:#34495E;
     color:#FFF;
     padding-left:10px;
     padding-right: 10px;
@@ -1196,9 +1196,9 @@
     transition: .9s all ease-in-out;
     height:auto;
 }
-.viewJobDetails .viewCourseTabs ul li.inactive {background:#CCC; color:#e90052;}
+.viewJobDetails .viewCourseTabs ul li.inactive {background:#CCC; color:#C0392B;}
 .viewJobDetails .table .courseInfo {font-weight: bold;}
-.viewJobDetails .courseInfo {color:#E90052;}
+.viewJobDetails .courseInfo {color:#C0392B;}
 .viewJobDetails .viewCourseTabs h3 {color:#337ab7;}
 .viewJobDetails .tabsDetails div[id^="tab"]:not(:first-of-type) {display: none;}
 .viewJobDetails .viewCourseTabs .myTabs {width:100%;}
@@ -1243,7 +1243,7 @@
     width:15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #2c3e50;
+    background-color: #C0392B;
     border:2px solid #CCC;
     position: absolute;
     top:10px;
@@ -1260,15 +1260,15 @@
     left:-17px;
     top:10px;
 }
-.viewJobDetails .tabsDetails #tab1Job .jobRequirements .jobRequirementsButtons .inactive {background: #CCC; border:none; color:#e90052;}
+.viewJobDetails .tabsDetails #tab1Job .jobRequirements .jobRequirementsButtons .inactive {background: #CCC; border:none; color:#C0392B;}
 .viewJobDetails .tabsDetails #tab1Job .jobRequirements .activityBoxs #skillsNeededBox .viewCoursDetailsHR 
-{border:1px solid #38003C; width:80%;}
+{border:1px solid #34495E; width:80%;}
 /* End Button main Requirements */
 
 /* Start Button Skills Needed */
 .viewJobDetails .tabsDetails #tab1Job .jobRequirements .activityBoxs #skillsNeededBox {border: 1px solid #ccc; display: none;}
 .viewJobDetails .tabsDetails #tab1Job .jobRequirements .activityBoxs #skillsNeededBox i { margin-top:30px;}
-.viewJobDetails .tabsDetails #tab1Job .jobRequirements .activityBoxs #skillsNeededBox .tabHeader h1 {color:#E90052;}
+.viewJobDetails .tabsDetails #tab1Job .jobRequirements .activityBoxs #skillsNeededBox .tabHeader h1 {color:#C0392B;}
 /* End Button Skills Needed */
 
 /* Start Tab Job Description*/
@@ -1291,7 +1291,7 @@
     width:15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #2c3e50;
+    background-color: #C0392B;
     border:2px solid #CCC;
     position: absolute;
     top:10px;
@@ -1328,7 +1328,7 @@
     padding-right: 20px;
 
 }  
-.notification .notificationContent .notificationTabs ul li.inactive {background:#CCC; color:#e90052;}
+.notification .notificationContent .notificationTabs ul li.inactive {background:#CCC; color:#C0392B;}
 .notification .notificationContent .tabsDetails div[id^="tab"]:not(:first-of-type) {display: none;}
 .notification .notificationContent .notificationTabs .myTabs {width:100%;}
 .notification .notificationContent .notificationTabs .myTabs li {
@@ -1368,7 +1368,7 @@
 
 .notification .notificationContent .tabsDetails .activityCourse .activityCourseTitle h4
 {
-    color:#e90052;
+    color:#C0392B;
     text-align: center;
 }
 .courseTime {
@@ -1380,17 +1380,17 @@
     .courseTime {width: 52px;}
     .courseTime h3 {font-size: 20px!important;}
 }
-.courseTime h3 span {color:#E90052}
+.courseTime h3 span {color:#C0392B}
 .notification .notificationContent .tabsDetails .activityCourse .activityCoursePrerequisites {color: cadetblue;}
 .notification .notificationContent .tabsDetails .activityCourse .table .jobInfo,
-.notification .notificationContent .tabsDetails .activityCourse .table .courseInfo {color: #E90052; font-weight: bold;}
+.notification .notificationContent .tabsDetails .activityCourse .table .courseInfo {color: #C0392B; font-weight: bold;}
 .notification .notificationContent .tabsDetails .activityCourse .activityCourseOver, 
 .notification .notificationContent .tabsDetails .activityCourse .activityCourseOver
 {
     position: absolute; 
     top:0; left:0; bottom:0; right:0; width: 100%; height: 100%; 
     background-color: rgba(237, 241, 243, 0.6);
-    color:#e90052;
+    color:#C0392B;
     padding-top: 170px;
     text-align: center;font-weight: bold;font-size:20px;
     display: none;

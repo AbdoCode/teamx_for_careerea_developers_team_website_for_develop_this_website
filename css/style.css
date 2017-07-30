@@ -6,7 +6,7 @@
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus{
-    background-color: #E90052
+    background-color: #C0392B
 }
 
 .navbar-inverse .navbar-nav > li > a{
@@ -15,24 +15,24 @@
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus{
-    border-top: 3px solid #E90052
+    border-top: 3px solid #C0392B
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus{
     background-color: transparent;
-    border-top: 3px solid #E90052
+    border-top: 3px solid #C0392B
 }
 
 .nav-tabs > li > a{
-    color: #38003C
+    color: #34495E
 }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus{
-    color: #E90052
+    color: #C0392B
 }
 
 /******************************** End Overriding Bootstrap **********************************/
@@ -52,7 +52,7 @@
 /************************************************** Start Navbar **************************************************/
 
 .backgroundColor{
-    background-color: #38003C
+    background-color: #34495E
 }
 
 .backgroundColor2{
@@ -69,7 +69,7 @@
 
 .sign i,
 .signupLink i{
-    color: #E90052
+    color: #C0392B
 }
 
 .sign span,
@@ -101,7 +101,7 @@
 }
 
 .dropdown-menu{
-    background-color: #38003C;
+    background-color: #34495E;
     min-width: 200px
 }
 
@@ -117,7 +117,7 @@
     height: 20px;
     top: -30px;
     left: 20px;
-    color: #38003C
+    color: #34495E
 }
 
 .dropdown-menu > li > a{
@@ -182,7 +182,7 @@
 }
 
 .signInBlock > div{
-    background-color: #38003C;
+    background-color: #34495E;
     padding: 20px 10px
 }
 
@@ -200,7 +200,7 @@
 }
 
 .signInBlock > div i:hover{
-    color: #E90052
+    color: #C0392B
 }
 
 .signInBlock form{
@@ -217,7 +217,7 @@
 }
 
 .signInBlock form input:focus{
-    border: 2px solid #38003C
+    border: 2px solid #34495E
 }
 
 .signInBlock form input[type="text"]{
@@ -263,7 +263,7 @@
 }
 
 .signInBlock form button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -273,7 +273,7 @@
 }
 
 .signInBlock form span a:hover{
-    color: #E90052
+    color: #C0392B
 }
 
 /************************************************** End SignIn Block **************************************************/
@@ -356,7 +356,7 @@ header .box button{
 }
 
 .aboutUs .items .item span:first-child{
-    border: 5px solid #38003C;
+    border: 5px solid #34495E;
     width: 100px;
     height: 100px;
     margin: 0 auto 15px;
@@ -367,7 +367,7 @@ header .box button{
 }
 
 .aboutUs .items .item span:first-child:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF;
     cursor: default
 }
@@ -418,7 +418,7 @@ header .box button{
 
 .partners .prev:hover,
 .partners .next:hover{
-    color: #E90052;
+    color: #C0392B;
     cursor: pointer
 }
 
@@ -445,18 +445,18 @@ header .box button{
 
 .jobs ul li{
     display: inline-block;
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     padding: 10px;
     border-radius: 5px;
-    color: #38003C;
+    color: #34495E;
     margin-right: 5px
 }
 
 .jobs ul li:hover,
 .jobs ul li.active{
-    background-color: #E90052;
+    background-color: #C0392B;
     color: #FFF;
-    border: 2px solid #E90052;
+    border: 2px solid #C0392B;
     cursor: pointer
 }
 
@@ -469,7 +469,7 @@ header .box button{
 }
 
 .jobs .allJobs .jobBox{
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     border-radius: 5px;
     margin: 10px 0;
     -webkit-transition-duration: 0.4s;
@@ -485,7 +485,7 @@ header .box button{
     content: "";
     width: 30px;
     height: 30px;
-    background-color: #E90052;
+    background-color: #C0392B;
     position: absolute;
     top: 0;
     left: 0;
@@ -520,7 +520,7 @@ header .box button{
     width: 36%;
     overflow: hidden;
     text-align: center;
-    border-right: 2px solid #38003C;
+    border-right: 2px solid #34495E;
     float: left;
 }
 
@@ -539,7 +539,7 @@ header .box button{
 
 .jobs .allJobs .jobBox .headersInfo h5:first-of-type{
     font-size: 18px;
-    color: #E90052;
+    color: #C0392B;
 }
 
 .jobs .allJobs .jobBox h5{
@@ -582,7 +582,7 @@ header .box button{
 }
 
 .jobs .allJobs .jobBox .info .value{
-    color: #E90052;
+    color: #C0392B;
     font-weight: bold;
     font-size: 18px
 }
@@ -603,7 +603,7 @@ header .box button{
 
 .jobs .allJobs .jobBox .boxHover > span span:hover,
 .jobs .allJobs .jobBox .boxHover > span span.active{
-    color: #E90052;
+    color: #C0392B;
     cursor: pointer
 }
 
@@ -622,7 +622,7 @@ header .box button{
 }
 
 .jobs .allJobs .jobBox .boxHover button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -641,7 +641,7 @@ header .box button{
 /************************************************** Sperator between Jobs section and Courses section for style **************************************************/
 
 .sperator{
-    border: 3px solid #38003C
+    border: 3px solid #34495E
 }
 
 /************************************************** Start courses **************************************************/
@@ -657,18 +657,18 @@ header .box button{
 
 .courses ul li{
     display: inline-block;
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     padding: 10px;
     border-radius: 5px;
-    color: #38003C;
+    color: #34495E;
     margin-right: 5px
 }
 
 .courses ul li:hover,
 .courses ul li.active{
-    background-color: #E90052;
+    background-color: #C0392B;
     color: #FFF;
-    border: 2px solid #E90052;
+    border: 2px solid #C0392B;
     cursor: pointer
 }
 
@@ -681,7 +681,7 @@ header .box button{
 }
 
 .courses .allCourses .courseBox{
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     border-radius: 5px;
     margin: 10px 0;
     padding: 20px 0;
@@ -698,7 +698,7 @@ header .box button{
     content: "";
     width: 30px;
     height: 30px;
-    background-color: #E90052;
+    background-color: #C0392B;
     position: absolute;
     top: 0;
     left: 0;
@@ -731,7 +731,7 @@ header .box button{
     width: 36%;
     overflow: hidden;
     text-align: center;
-    border-right: 2px solid #38003C;
+    border-right: 2px solid #34495E;
     float: left
 }
 
@@ -750,7 +750,7 @@ header .box button{
 
 .courses .allCourses .courseBox .boxWithoutHover h4{
     font-weight: bold;
-    color: #E90052
+    color: #C0392B
 }
 
 .courses .allCourses .courseBox .boxWithoutHover .allItem{
@@ -763,7 +763,7 @@ header .box button{
 }
 
 .courses .allCourses .courseBox .boxWithoutHover .allItem .item .value{
-    color: #E90052;
+    color: #C0392B;
     font-weight: bold;
     font-size: 20px
 }
@@ -806,7 +806,7 @@ header .box button{
 }
 
 .courses .allCourses .courseBox .boxWithoutHover .rateBox .rateWord span:last-of-type{
-    color: #E90052
+    color: #C0392B
 }
 
 .courses .allCourses .courseBox .boxWithoutHover .rateBox .rate .starWrapper{
@@ -823,7 +823,7 @@ header .box button{
     left: 0;
     overflow: hidden;
     white-space: nowrap;
-    color: #E90052
+    color: #C0392B
 }
 
 .courses .allCourses .courseBox .boxHover{
@@ -844,7 +844,7 @@ header .box button{
 
 .courses .allCourses .courseBox .boxHover > span:last-of-type.active,
 .courses .allCourses .courseBox .boxHover > span:last-of-type:hover{
-    color: #E90052
+    color: #C0392B
 }
 
 .courses .allCourses .courseBox .boxHover button{
@@ -853,7 +853,7 @@ header .box button{
 }
 
 .courses .allCourses .courseBox .boxHover button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -880,7 +880,7 @@ header .box button{
 }
 
 .signUp .numbers span{
-    border: 3px solid #38003C;
+    border: 3px solid #34495E;
     width: 50px;
     height: 50px;
     line-height: 45px;
@@ -892,12 +892,12 @@ header .box button{
 }
 
 .signUp .numbers span.active{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
 .signUp .numbers hr{
-    border: 3px solid #38003C;
+    border: 3px solid #34495E;
     display: inline-block;
     width: 150px;
     margin-bottom: 10px
@@ -935,7 +935,7 @@ header .box button{
 }
 
 .signUp .form1 form input:focus{
-    border: 2px solid #38003C
+    border: 2px solid #34495E
 }
 
 .signUp .form1 form input[placeholder="Username"]{
@@ -1007,14 +1007,14 @@ header .box button{
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
 }
 .signUp .form1 form .radio input[type="radio"]:checked + span{
-    color:#E90052;  
+    color:#C0392B;  
 }
 .signUp .form1 form .radio input[type="radio"]:checked + span:before{
     content:'';
     width:5px;
     height:5px;
     position:absolute;
-    background:#E90052;
+    background:#C0392B;
     left:5px;
     top:6px;
     border-radius:100%;
@@ -1036,7 +1036,7 @@ header .box button{
 }
 
 .signUp .form1 form button:hover{
-    background-color: #E90052;
+    background-color: #C0392B;
     color: #FFF
 }
 
@@ -1085,7 +1085,7 @@ header .box button{
 
 .signUp .form2 .interests h4{
     text-align: left;
-    color: #E90052;
+    color: #C0392B;
     margin-bottom: 20px
 }
 
@@ -1098,7 +1098,7 @@ header .box button{
     width: 31.333333%;
     height: 40px;
     line-height: 25px;
-    border: 1px solid #38003C;
+    border: 1px solid #34495E;
     text-align: left;
     float: left;
     margin: 1%;
@@ -1108,9 +1108,9 @@ header .box button{
 
 .signUp .form2 .interests .tab-content .field:hover,
 .signUp .form2 .interests .tab-content .field.active{
-    background-color: #E90052;
+    background-color: #C0392B;
     color: #FFF;
-    border: 1px solid #E90052
+    border: 1px solid #C0392B
 }
 
 .signUp .form2 .interests .tab-content .field input{
@@ -1147,7 +1147,7 @@ header .box button{
 }
 
 .signUp .form2 .interests div > button:hover{
-    background-color: #E90052;
+    background-color: #C0392B;
     color: #FFF
 }
 
@@ -1159,7 +1159,7 @@ header .box button{
 }
 
 .signUp .form2 .interests div > button.back:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -1252,7 +1252,7 @@ header .box button{
 
 .signUp .form3 form input[type="password"]:focus,
 .signUp .form3 form input[type="text"]:focus{
-    border: 2px solid #38003C
+    border: 2px solid #34495E
 }
 
 .signUp .form3 form input[type="password"]::-webkit-input-placeholder,
@@ -1268,7 +1268,7 @@ header .box button{
 }
 
 .signUp .form3 form input[type="submit"]:hover{
-    background-color: #E90052;
+    background-color: #C0392B;
     color: #FFF
 }
 
@@ -1281,7 +1281,7 @@ header .box button{
 }
 
 .signUp .form3 button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF;
 }
 
@@ -1311,7 +1311,7 @@ header .box button{
 
 .signUp .container > span:hover,
 .signUp .container > a:hover{
-    color: #E90052;
+    color: #C0392B;
     text-decoration: underline
 }
 
@@ -1324,13 +1324,13 @@ header .box button{
     background-color: #FFF;
     color: #000;
     z-index: 9999;
-    border-top: 3px solid #38003C;
-    border-bottom: 3px solid #38003C;
+    border-top: 3px solid #34495E;
+    border-bottom: 3px solid #34495E;
     display: none
 }
 
 .applyBox > div{
-    background-color: #38003C;
+    background-color: #34495E;
     padding: 15px 0
 }
 
@@ -1343,7 +1343,7 @@ header .box button{
 
 .applyBox i:hover{
     cursor: pointer;
-    color: #E90052
+    color: #C0392B
 }
 
 .applyBox h1{
@@ -1367,7 +1367,7 @@ header .box button{
 }
 
 .applyBox label{
-    color: #38003C;
+    color: #34495E;
     display: block;
     margin-top: 10px
 }
@@ -1396,7 +1396,7 @@ header .box button{
 }
 
 .applyBox button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -1410,13 +1410,13 @@ header .box button{
     color: #000;
     padding: 0 0 20px;
     z-index: 9999;
-    border-top: 3px solid #38003C;
-    border-bottom: 3px solid #38003C;
+    border-top: 3px solid #34495E;
+    border-bottom: 3px solid #34495E;
     display: none
 }
 
 .compareBox div{
-    background-color: #38003C;
+    background-color: #34495E;
     padding: 15px 0 
 }
 
@@ -1429,7 +1429,7 @@ header .box button{
 
 .compareBox i:hover{
     cursor: pointer;
-    color: #E90052
+    color: #C0392B
 }
 
 .compareBox h1{
@@ -1453,7 +1453,7 @@ header .box button{
 }
 
 .compareBox p span{
-    color: #E90052;
+    color: #C0392B;
     font-weight: bold
 }
 
@@ -1468,7 +1468,7 @@ header .box button{
     border-bottom: 3px solid #FFF;
     padding: 10px 0;
     text-align: center;
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -1493,7 +1493,7 @@ header .box button{
 }
 
 .compareBox ol a:hover{
-    color: #E90052
+    color: #C0392B
 }
 
 /************************************************** End CompareBox **************************************************/
@@ -1507,13 +1507,13 @@ header .box button{
     background-color: #FFF;
     color: #000;
     z-index: 9999;
-    border-top: 3px solid #38003C;
-    border-bottom: 3px solid #38003C;
+    border-top: 3px solid #34495E;
+    border-bottom: 3px solid #34495E;
     display: none
 }
 
 .addSkill > div{
-    background-color: #38003C;
+    background-color: #34495E;
     padding: 20px 0
 }
 
@@ -1526,7 +1526,7 @@ header .box button{
 
 .addSkill i:hover{
     cursor: pointer;
-    color: #E90052
+    color: #C0392B
 }
 
 .addSkill h1{
@@ -1542,7 +1542,7 @@ header .box button{
 
 .addSkill label{
     font-weight: bold;
-    color: #38003C
+    color: #34495E
 }
 
 .addSkill select{
@@ -1564,7 +1564,7 @@ header .box button{
 }
 
 .addSkill button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -1577,13 +1577,13 @@ header .box button{
     background-color: #FFF;
     color: #000;
     z-index: 9999;
-    border-top: 3px solid #38003C;
-    border-bottom: 3px solid #38003C;
+    border-top: 3px solid #34495E;
+    border-bottom: 3px solid #34495E;
     display: none
 }
 
 .editSkill > div{
-    background-color: #38003C;
+    background-color: #34495E;
     padding: 20px 0
 }
 
@@ -1596,7 +1596,7 @@ header .box button{
 
 .editSkill i:hover{
     cursor: pointer;
-    color: #E90052
+    color: #C0392B
 }
 
 .editSkill h1{
@@ -1612,7 +1612,7 @@ header .box button{
 
 .editSkill label{
     font-weight: bold;
-    color: #38003C
+    color: #34495E
 }
 
 .editSkill select{
@@ -1631,7 +1631,7 @@ header .box button{
 }
 
 .editSkill button:first-of-type:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -1658,13 +1658,13 @@ header .box button{
     background-color: #FFF;
     color: #000;
     z-index: 9999;
-    border-top: 3px solid #38003C;
-    border-bottom: 3px solid #38003C;
+    border-top: 3px solid #34495E;
+    border-bottom: 3px solid #34495E;
     display: none
 }
 
 .pinSkill > div:first-of-type{
-    background-color: #38003C;
+    background-color: #34495E;
     padding: 20px 0
 }
 
@@ -1677,7 +1677,7 @@ header .box button{
 
 .pinSkill i:hover{
     cursor: pointer;
-    color: #E90052
+    color: #C0392B
 }
 
 .pinSkill h1{
@@ -1693,7 +1693,7 @@ header .box button{
 
 .pinSkill .form > label{
     font-weight: bold;
-    color: #38003C
+    color: #34495E
 }
 
 .pinSkill .search{
@@ -1704,7 +1704,7 @@ header .box button{
     position: absolute;
     top: 9px;
     right: 8px;
-    color: #38003C
+    color: #34495E
 }
 
 .pinSkill .search input{
@@ -1727,7 +1727,7 @@ header .box button{
 
 .pinSkill .pins div{
     margin: 5px 0;
-    border-bottom: 2px solid #38003C;
+    border-bottom: 2px solid #34495E;
     position: relative;
     width: 49%;
     padding-bottom: 5px;
@@ -1749,8 +1749,8 @@ header .box button{
 
 .pinSkill .pins div:hover,
 .pinSkill .pins div.active{
-    color: #E90052;
-    border-bottom: 2px solid #E90052
+    color: #C0392B;
+    border-bottom: 2px solid #C0392B
 }
 
 .pinSkill button{
@@ -1758,7 +1758,7 @@ header .box button{
 }
 
 .pinSkill button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -1788,7 +1788,7 @@ header .box button{
 }
 
 .chosen-container .chosen-results li.highlighted{
-    background: #E90052
+    background: #C0392B
 }
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close{
@@ -1818,12 +1818,12 @@ header .box button{
     background-color: #FFF;
     color: #000;
     z-index: 9999;
-    border: 3px solid #38003C;
+    border: 3px solid #34495E;
     display: none
 }
 
 .takeCourse1 h1{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF;
     margin: 0;
     text-align: center;
@@ -1860,9 +1860,9 @@ header .box button{
 }
 
 .takeCourse1 .plans .tabs li{
-    border-right: 2px solid #38003C;
-    border-top: 2px solid #38003C;
-    border-bottom: 2px solid #38003C;
+    border-right: 2px solid #34495E;
+    border-top: 2px solid #34495E;
+    border-bottom: 2px solid #34495E;
     display: block;
     float: left;
     padding: 10px 15px;
@@ -1874,11 +1874,11 @@ header .box button{
 .takeCourse1 .plans .tabs li.active{
     cursor: pointer;
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 }
 
 .takeCourse1 .plans .content{
-    border-top: 2px solid #38003C;
+    border-top: 2px solid #34495E;
     margin-bottom: 20px;
     position: relative;
     bottom: 2px;
@@ -1887,7 +1887,7 @@ header .box button{
 
 .takeCourse1 .plans .content .planA > span,
 .takeCourse1 .plans .content .planB > span{
-    color: #E90052;
+    color: #C0392B;
     font-weight: bold;
     margin: 10px;
     display: block
@@ -1902,14 +1902,14 @@ header .box button{
 .takeCourse1 .plans .content .planA table th,
 .takeCourse1 .plans .content .planB table th{
     text-align: center;
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     border-left: 0
 }
 
 .takeCourse1 .plans .content .planA table td,
 .takeCourse1 .plans .content .planB table td{
     width: 30%;
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     border-left: 0;
     padding: 4px 0
 }
@@ -1922,7 +1922,7 @@ header .box button{
 
 .takeCourse1 .plans .content .planA table span,
 .takeCourse1 .plans .content .planB table span{
-    color: #E90052
+    color: #C0392B
 }
 
 .takeCourse1 .plans .content .planB{
@@ -1936,7 +1936,7 @@ header .box button{
 
 .takeCourse1 .plans button:hover{
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 }
 
 .takeCourse2{
@@ -1945,13 +1945,13 @@ header .box button{
     background-color: #FFF;
     color: #000;
     z-index: 9999;
-    border-top: 3px solid #38003C;
-    border-bottom: 3px solid #38003C;
+    border-top: 3px solid #34495E;
+    border-bottom: 3px solid #34495E;
     display: none
 }
 
 .takeCourse2 h1{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF;
     margin: 0;
     padding: 20px 10px;
@@ -1967,7 +1967,7 @@ header .box button{
 }
 
 .takeCourse2 i:hover{
-    color: #E90052;
+    color: #C0392B;
     cursor: pointer
 }
 
@@ -1986,11 +1986,11 @@ header .box button{
 
 .takeCourse2 div p button:hover{
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 }
 
 .takeCourse2 div p a{
-    color: #E90052;
+    color: #C0392B;
 }
 
 .takeCourse2 div div button{
@@ -2000,97 +2000,10 @@ header .box button{
 
 .takeCourse2 div div button:hover{
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 }
 
 /************************************************** End takeCourse Block **************************************************/
-
-/************************************************** Start EditProfile **************************************************/
-
-.editProfile{
-    margin-top: 50px    
-}
-
-.editProfile h1{
-    font-weight: bold
-}
-
-.editProfile form{
-    margin: 20px 0
-}
-
-.editProfile form label{
-    display: block;
-    font-weight: bold;
-    color: #38003C;
-    margin-top: 10px
-}
-
-.editProfile form input:not([type="file"]){
-    display: block;
-    background-color: rgba(239, 236, 240, 0.8);
-    padding: 6px;
-    color: #444;
-    width: 30%;
-    border: 2px solid #CCC;
-    outline: 0;
-    border-radius: 5px
-}
-
-.editProfile form .editFile{
-    padding: 5px 10px;
-    background-color: #38003C;
-    border: 1px solid #38003C;
-    position: relative;
-    color: #FFF;
-    border-radius: 4px;
-    text-align: center;
-    cursor: pointer;
-    width: 150px;
-    margin-top: 5px
-}
-
-.editProfile form .editFile .hideInput{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    opacity: 0;
-    cursor: pointer
-}
-
-.editProfile form .profile{
-    margin-top: 15px
-}
-
-.editProfile form .profile img{
-    width: 150px;
-    height: 150px;
-    line-height: 140px;
-    color: #38003C;
-    font-weight: bold;
-    text-align: center;
-    display: inline-block;
-    margin-right: 15px
-}
-
-.editProfile form > div:last-of-type{
-    text-align: center;
-    margin-top: 20px
-}
-
-.editProfile form button{
-    width: 150px
-}
-
-.editProfile form button:hover{
-    background-color: #38003C;
-    color: #FFF
-}
-
-/************************************************** End EditProfile **************************************************/
 
 /************************************************** Start Settings **************************************************/
     
@@ -2123,7 +2036,7 @@ header .box button{
 
 .settings .subSettings .tabs li.active,
 .settings .subSettings .tabs li:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -2170,7 +2083,7 @@ header .box button{
     width: 40%;
     height: 40px;
     padding: 10px;
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     outline: 0;
     border-radius: 5px;
     background: rgba(239, 236, 240, 0.8);
@@ -2201,7 +2114,7 @@ header .box button{
 }
 
 .settings .subSettings .content .accountInfo form > i:hover{
-    color: #E90052;
+    color: #C0392B;
     cursor: pointer
 }
 
@@ -2254,7 +2167,7 @@ header .box button{
 }
 
 .settings .subSettings .content .accountInfo button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -2280,7 +2193,7 @@ header .box button{
 }
 
 .settings .subSettings .content .security .changePasswordButton:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -2293,7 +2206,7 @@ header .box button{
 }
 
 .settings .subSettings .content .security .accordion .head:hover i{
-    color: #E90052
+    color: #C0392B
 }
 
 .settings .subSettings .content .security .accordion .head h5{
@@ -2328,7 +2241,7 @@ header .box button{
 
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(2) button:hover{
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 }
 
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(4) span{
@@ -2348,7 +2261,7 @@ header .box button{
 }
 
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(4) button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -2356,7 +2269,7 @@ header .box button{
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table tr,
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table th,
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table td{
-    border: 2px solid #38003C
+    border: 2px solid #34495E
 }
 
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table{
@@ -2375,7 +2288,7 @@ header .box button{
 
 .settings .subSettings .content .security .accordion .subContent:nth-of-type(6) table td button:first-of-type:hover{
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 }
 
 /********************************************  End .security  ****************************************************/
@@ -2401,7 +2314,7 @@ header .box button{
 }
 
 .settings .subSettings .content .notification .accordion .head:hover i{
-    color: #E90052
+    color: #C0392B
 }
 
 .settings .subSettings .content .notification .accordion .head h5{
@@ -2427,7 +2340,7 @@ header .box button{
 
 .settings .subSettings .content .notification .accordion .subContent button:hover{
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 
 }
 
@@ -2463,7 +2376,7 @@ header .box button{
 
 .settings .subSettings .content .language form button:hover{
     color: #FFF;
-    background-color: #38003C
+    background-color: #34495E
 }
 
 /********************************************  End .language  ****************************************************/
@@ -2550,7 +2463,7 @@ header .box button{
 }
 
 .about .contactUsSection .contact-form input[type="submit"]{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF;
 }
 
@@ -2568,7 +2481,7 @@ header .box button{
     background-color: #FFF;
     color: #000;
     z-index: 9999;
-    border: 3px solid #38003C;
+    border: 3px solid #34495E;
     padding: 20px;
     display: none
 }
@@ -2581,7 +2494,7 @@ header .box button{
 
 .changePassword i:hover{
     cursor: pointer;
-    color: #E90052
+    color: #C0392B
 }
 
 .changePassword label{
@@ -2606,7 +2519,7 @@ header .box button{
 }
 
 .changePassword button:hover{
-    background-color: #38003C;
+    background-color: #34495E;
     color: #FFF
 }
 
@@ -2617,7 +2530,7 @@ header .box button{
 #scrollTop {
     width: 50px;
     height: 50px;
-    color: #38003C;
+    color: #34495E;
     background-color: #EEE;
     cursor: pointer;
     position: fixed;
@@ -2626,7 +2539,7 @@ header .box button{
     right: 15px;
     bottom: 10px;
     z-index: 9997;
-    border: 2px solid #38003C;
+    border: 2px solid #34495E;
     border-radius: 50%;
     display: none
 }
@@ -2636,7 +2549,7 @@ header .box button{
 /************************************************** Start Footer **************************************************/
 
 footer{
-    background-color: #38003C;
+    background-color: #34495E;
     padding: 30px 0 10px;
     text-align: center
 }
@@ -2678,7 +2591,7 @@ footer .copyRight{
 }
 
 footer .copyRight span{
-    color: #E90052;
+    color: #C0392B;
     font-weight: bold
 }
 
@@ -2696,13 +2609,13 @@ footer .copyRight span{
 
     .navbar-inverse .navbar-nav > li > a:hover,
     .navbar-inverse .navbar-nav > li > a:focus{
-        background-color: #E90052
+        background-color: #C0392B
     }
 
     .navbar-inverse .navbar-nav > .active > a,
     .navbar-inverse .navbar-nav > .active > a:hover,
     .navbar-inverse .navbar-nav > .active > a:focus{
-        background-color: #E90052
+        background-color: #C0392B
     }
 
     .sign,
