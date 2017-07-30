@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1576ea6f-7b43-4d85-9988-5770d0450a28" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signUp.php" afterPath="$PROJECT_DIR$/signUp.php" />
     </list>
     <ignored path="Careerea.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,24 +24,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="signUp.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signUp.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/signUp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="315" column="46" selection-start-line="315" selection-start-column="46" selection-end-line="315" selection-end-column="46" />
+            <state relative-caret-position="34">
+              <caret line="153" column="39" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
               <folding>
-                <marker date="1501226342684" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
-                <marker date="1501226342684" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
-                <marker date="1501226342684" expanded="true" signature="3029:3088" ph="SELECT inter... interests" />
-                <marker date="1501226342684" expanded="true" signature="3348:3515" ph="INSERT INTO applicant_interests... " />
-                <marker date="1501226342684" expanded="true" signature="8028:8064" ph="SELECT Inter... interests" />
-                <marker date="1501226342684" expanded="true" signature="8387:8854" ph="..." />
+                <marker date="1501412630259" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
+                <marker date="1501412630259" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
+                <marker date="1501412630259" expanded="true" signature="3029:3088" ph="SELECT inter... interests" />
+                <marker date="1501412630259" expanded="true" signature="3348:3515" ph="INSERT INTO applicant_interests... " />
+                <marker date="1501412630259" expanded="true" signature="8031:8067" ph="SELECT Inter... interests" />
+                <marker date="1501412630259" expanded="true" signature="8390:8857" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="572">
@@ -85,8 +86,8 @@
         <option value="$PROJECT_DIR$/settings.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/about.php" />
-        <option value="$PROJECT_DIR$/signUp.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/signUp.php" />
       </list>
     </option>
   </component>
@@ -250,7 +251,7 @@
       <workItem from="1501137307381" duration="2056000" />
       <workItem from="1501139367329" duration="10597000" />
       <workItem from="1501214505688" duration="45850000" />
-      <workItem from="1501408560776" duration="2894000" />
+      <workItem from="1501408560776" duration="3856000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1501137085310</created>
@@ -399,11 +400,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501412451977</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Mohamed edit">
+      <created>1501412469446</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1501412469446</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228102000" />
+    <option name="totallyTimeSpent" value="229064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -480,12 +488,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1501226342684" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
-            <marker date="1501226342684" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
-            <marker date="1501226342684" expanded="true" signature="3029:3088" ph="SELECT inter... interests" />
-            <marker date="1501226342684" expanded="true" signature="3348:3515" ph="INSERT INTO applicant_interests... " />
-            <marker date="1501226342684" expanded="true" signature="8028:8064" ph="SELECT Inter... interests" />
-            <marker date="1501226342684" expanded="true" signature="8387:8854" ph="..." />
+            <marker date="1501412630259" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
+            <marker date="1501412630259" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
+            <marker date="1501412630259" expanded="true" signature="3029:3088" ph="SELECT inter... interests" />
+            <marker date="1501412630259" expanded="true" signature="3348:3515" ph="INSERT INTO applicant_interests... " />
+            <marker date="1501412630259" expanded="true" signature="8031:8067" ph="SELECT Inter... interests" />
+            <marker date="1501412630259" expanded="true" signature="8390:8857" ph="..." />
           </folding>
         </state>
       </provider>
@@ -958,27 +966,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="315" column="46" selection-start-line="315" selection-start-column="46" selection-end-line="315" selection-end-column="46" />
-          <folding>
-            <marker date="1501226342684" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
-            <marker date="1501226342684" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
-            <marker date="1501226342684" expanded="true" signature="3029:3088" ph="SELECT inter... interests" />
-            <marker date="1501226342684" expanded="true" signature="3348:3515" ph="INSERT INTO applicant_interests... " />
-            <marker date="1501226342684" expanded="true" signature="8028:8064" ph="SELECT Inter... interests" />
-            <marker date="1501226342684" expanded="true" signature="8387:8854" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="409" column="0" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="153" column="39" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
+          <folding>
+            <marker date="1501412630259" expanded="true" signature="1978:2182" ph="INSERT INTO applicants... " />
+            <marker date="1501412630259" expanded="true" signature="2622:2673" ph="SELECT appli... applicants" />
+            <marker date="1501412630259" expanded="true" signature="3029:3088" ph="SELECT inter... interests" />
+            <marker date="1501412630259" expanded="true" signature="3348:3515" ph="INSERT INTO applicant_interests... " />
+            <marker date="1501412630259" expanded="true" signature="8031:8067" ph="SELECT Inter... interests" />
+            <marker date="1501412630259" expanded="true" signature="8390:8857" ph="..." />
           </folding>
         </state>
       </provider>

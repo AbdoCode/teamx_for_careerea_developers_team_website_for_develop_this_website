@@ -168,7 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signUp'])) {
                             </div>
                             <input class="birthday" name="birthday" type="text" placeholder="Birthday" required onfocus="(this.type='date')" />
                             <div class="alert alert-danger custom-alert">
-                                Email can't be <strong>empty</strong>.
+                                Birthday can't be <strong>empty</strong>.
                             </div>
                             <div class="radioBox">
                                 <label class="radio inline"> 
