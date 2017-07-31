@@ -6,7 +6,7 @@
 
 ?>
 <!DOCTYPE html>
-abdo code from linux
+
 <html lang="en">
     <?php require 'head.php'; ?>
     <body>
