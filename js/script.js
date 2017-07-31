@@ -386,23 +386,11 @@ $(document).ready(function () {
     });
 
     // profile image
-/*
-    $(function () {
-        $('#profileImage').change(function (e) {
-            var img = URL.createObjectURL(e.target.files[0]);
-            $('.signUp .form3 form img').attr('src', img);
-        });
+
+    $('#profileImage').change(function (e) {
+        var img = URL.createObjectURL(e.target.files[0]);
+        $('.signUp .form3 form img').attr('src', img);
     });
-*/
-    document.getElementById('#profileImage').onchange = function (e) {
-        loadImage(
-            e.target.files[0],
-            function (img) {
-                $('.signUp .form3 form img').attr('src', img);
-            },
-            {maxWidth: 600} // Options
-        );
-    };
 
     // to color chooses in signUp Form2
 
