@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
             <ul class="nav navbar-nav">
                 <li <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') echo 'class="active"' ?>><a href="index.php">Home</a></li>
                 <li <?php if (basename($_SERVER['PHP_SELF']) == 'about.php') echo 'class="active"' ?>><a href="about.php">About US</a></li>
-                <li onclick="offsetToPartners()"><a href="index.php#partners">Partners</a></li>
+                <li><a href="index.php#partners">Partners</a></li>
                 <li <?php if (basename($_SERVER['PHP_SELF']) == 'jobs.php') echo 'class="active"' ?>><a href="jobs.php">Jobs</a></li>
                 <li <?php if (basename($_SERVER['PHP_SELF']) == 'courses.php') echo 'class="active"' ?>><a href="courses.php">Courses</a></li>
             </ul>
