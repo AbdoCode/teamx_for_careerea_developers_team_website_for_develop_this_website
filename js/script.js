@@ -1,5 +1,4 @@
 /*global $, console, smoothScroll, alert, WOW, URL, windos*/
-
 $(document).ready(function () {
     'use strict';
 
@@ -123,7 +122,6 @@ $(document).ready(function () {
         }, 1000);
 
     });
-
 
     //Adjust Navbar Links
 
