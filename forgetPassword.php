@@ -3,7 +3,7 @@
 session_start();
 include "php/init.php";
 $pageTitle = "Sign Up";
-
+/*
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signUp'])) {
 
     $formErrors = array();
@@ -34,8 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signUp'])) {
     }
 
 }
+*/
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <?php require 'head.php'; ?>
@@ -88,10 +88,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signUp'])) {
                         <button type="submit" class="btn">Confirm</button>
                     </form>
                 </div>
-                <div class="clearfix"></div>
                 <div class="the-errors">
-                    <?php
 
+                    <?php
+                    /*
                     if (!empty($formErrors)) {
 
                         foreach ($formErrors as $error) {
@@ -101,8 +101,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signUp'])) {
                         }
 
                     }
-
+                    */
                     ?>
+
                 </div>
             </div>
         </section>
