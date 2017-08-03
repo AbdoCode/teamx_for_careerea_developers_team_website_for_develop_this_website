@@ -869,17 +869,93 @@ header .box button{
 
 /************************************************** End courses **************************************************/
 
+/************************************************** Start forget password **************************************************/
+
+.forgetPassword .form2,
+.forgetPassword .form3{
+    display: none;
+}
+
+.forgetPassword .form1,
+.forgetPassword .form2,
+.forgetPassword .form3{
+    padding-top: 30px
+}
+
+.forgetPassword .form1 form,
+.forgetPassword .form2 form{
+    width: 40%;
+    position: relative;
+    margin-bottom: 134px
+}
+
+.forgetPassword .form1 form span,
+.forgetPassword .form2 form span{
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    color: #C0392B;
+    display: none
+}
+
+.forgetPassword .form1 form button,
+.forgetPassword .form2 form button,
+.forgetPassword .form3 form button{
+    width: 105px;
+    height: 40px
+}
+
+.forgetPassword .form1 form button:hover,
+.forgetPassword .form2 form button:hover,
+.forgetPassword .form3 form button:hover{
+    color: #FFF;
+    background-color: #34495E
+}
+
+.forgetPassword .form1 > span,
+.forgetPassword .form2 > span,
+.forgetPassword .form1 > a{
+    color: #444;
+    display: inline-block
+}
+
+.forgetPassword .form1 > a,
+.forgetPassword .form2 > span:last-of-type{
+    margin-bottom: 20px
+}
+
+.forgetPassword .form1 > span:hover,
+.forgetPassword .form2 > span:hover,
+.forgetPassword .form1 > a:hover{
+    color: #C0392B;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.forgetPassword .form3 form{
+    width: 40%;
+    margin-bottom: 150px
+}
+
+.forgetPassword .form3 form input:first-of-type{
+    margin-bottom: 10px
+}
+
+/************************************************** End forget password **************************************************/
+
 /************************************************** Start SignUp **************************************************/
 
-.signUp{
+.signUp, .forgetPassword{
     margin-top: 50px
 }
 
-.signUp .numbers{
+.signUp .numbers,
+.forgetPassword .numbers{
     margin: 40px
 }
 
-.signUp .numbers span{
+.signUp .numbers span,
+.forgetPassword .numbers span{
     border: 3px solid #34495E;
     width: 50px;
     height: 50px;
@@ -891,12 +967,14 @@ header .box button{
     cursor: default
 }
 
-.signUp .numbers span.active{
+.signUp .numbers span.active,
+.forgetPassword .numbers span.active{
     background-color: #34495E;
     color: #FFF
 }
 
-.signUp .numbers hr{
+.signUp .numbers hr,
+.forgetPassword .numbers hr{
     border: 3px solid #34495E;
     display: inline-block;
     width: 150px;
@@ -1287,11 +1365,13 @@ header .box button{
 
 /************************************************** End Form3 **************************************************/
 
+.forgetPassword .the-errors,
 .signUp .the-errors{
     max-width: 28%;
     margin-left: 185px
 }
 
+.forgetPassword .the-errors .msg,
 .signUp .the-errors .msg{
     padding: 11px 15px;
     text-align: left

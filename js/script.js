@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     // overlay for whole page
 
-    $(".sign:first-of-type, .jobs .allJobs .jobBox .boxHover button:last-of-type, .jobs .allJobs .jobBox .boxHover button:first-of-type, .courses .allCourses .courseBox .boxHover button, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .addSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .arrangeSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .editSkillButton, .signUp .container > span, .settings .subSettings .content .security .changePasswordButton, .coursesPage .coursesContainer .activityCourse .takeCourse, .viewCourseDetails .takeCourse, .viewJobDetails .applyJob, .viewJobDetails .compareSkills, .notification .notificationContent .tabsDetails #tab1Content .takeCourse, .notification .notificationContent .tabsDetails #tab2Content .compareSkills, .notification .notificationContent .tabsDetails #tab2Content .applyJob, .coursesPage .jobsContainer .activityCourse .applyJob, .coursesPage .jobsContainer .activityCourse .compareSkills, .profile .profileInfo .profileContent .profileAbout .tabsDetails .takeCourse, .profile .profileInfo .profileContent .profileAbout .tabsDetails .applyJob, .profile .profileInfo .profileContent .profileAbout .tabsDetails .compareSkills").on("click", function () {
+    $(".forgetPassword .form1 > span, .sign:first-of-type, .jobs .allJobs .jobBox .boxHover button:last-of-type, .jobs .allJobs .jobBox .boxHover button:first-of-type, .courses .allCourses .courseBox .boxHover button, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .addSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .arrangeSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .editSkillButton, .signUp .container > span, .settings .subSettings .content .security .changePasswordButton, .coursesPage .coursesContainer .activityCourse .takeCourse, .viewCourseDetails .takeCourse, .viewJobDetails .applyJob, .viewJobDetails .compareSkills, .notification .notificationContent .tabsDetails #tab1Content .takeCourse, .notification .notificationContent .tabsDetails #tab2Content .compareSkills, .notification .notificationContent .tabsDetails #tab2Content .applyJob, .coursesPage .jobsContainer .activityCourse .applyJob, .coursesPage .jobsContainer .activityCourse .compareSkills, .profile .profileInfo .profileContent .profileAbout .tabsDetails .takeCourse, .profile .profileInfo .profileContent .profileAbout .tabsDetails .applyJob, .profile .profileInfo .profileContent .profileAbout .tabsDetails .compareSkills").on("click", function () {
 
         var overlay = $('<div></div>').prependTo('body').attr('class', 'overlayForPage');
 
@@ -113,7 +113,7 @@ $(document).ready(function () {
 
     // Smooth Scroll To Div
 
-    $(".navbar ul li").on('click', function () {
+    $(".navbar ul li:nth-of-type(3)").on('click', function () {
 
         $("html, body").animate({
 
@@ -133,7 +133,7 @@ $(document).ready(function () {
 
     //show signIn Block
 
-    $("nav .sign, .signUp .container > span").on('click', function () {
+    $("nav .sign, .signUp .container > span, .forgetPassword .form1 > span").on('click', function () {
 
         $(".signInBlock").fadeIn();
 
@@ -388,6 +388,35 @@ $(document).ready(function () {
     $('#profileImage').change(function (e) {
         var img = URL.createObjectURL(e.target.files[0]);
         $('.signUp .form3 form img').attr('src', img);
+    });
+
+    // Mobility forget password
+
+    $(".forgetPassword .form1 form button").on('click', function () {
+
+        $(".forgetPassword .form1").hide();
+        $(".forgetPassword .form2").show();
+        $(".forgetPassword .form3").hide();
+        $(".forgetPassword .numbers > span:nth-of-type(2)").addClass('active').siblings().removeClass('active');
+
+    });
+
+    $(".forgetPassword .form2 form button").on('click', function () {
+
+        $(".forgetPassword .form1").hide();
+        $(".forgetPassword .form2").hide();
+        $(".forgetPassword .form3").show();
+        $(".forgetPassword .numbers > span:nth-of-type(3)").addClass('active').siblings().removeClass('active');
+
+    });
+
+    $(".forgetPassword .form2 > span:last-of-type").on('click', function () {
+
+        $(".forgetPassword .form1").show();
+        $(".forgetPassword .form2").hide();
+        $(".forgetPassword .form3").hide();
+        $(".forgetPassword .numbers > span:first-of-type").addClass('active').siblings().removeClass('active');
+
     });
 
     // to color chooses in signUp Form2
