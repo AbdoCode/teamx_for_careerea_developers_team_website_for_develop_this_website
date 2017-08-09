@@ -18,7 +18,7 @@
                 <div class="container">
                     <div class="box">
                         <h1 id="heading-fit">Careerea</h1><br />
-                        <h1>Recruitment site in Egypt</h1>
+                        <h1>Find and learn more skills to apply for most convenient job</h1>
                         <a href="jobs.php"><button class="btn btn-success">Jobs</button></a>
                         <a href="courses.php"><button class="btn btn-danger">Courses</button></a>
                     </div>
