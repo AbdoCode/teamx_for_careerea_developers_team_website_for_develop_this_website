@@ -27,9 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
 
 <nav class="navbar navbar-fixed-top navbar-inverse backgroundColor">
     <div class="container">
-        <?php if(isset($_SESSION['userID'])):
-            echo '<a class="notificationGlobe navbar-right" href="notification.php"><i class="fa fa-globe fa-fw fa-2x"></i><span>4</span></a>';
-        endif; ?>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#our-nav">
                 <span class="sr-only"></span>
@@ -45,7 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                 <li <?php if (basename($_SERVER['PHP_SELF']) == 'about.php') echo 'class="active"' ?>><a href="about.php">About US</a></li>
                 <li><a href="index.php#partners">Partners</a></li>
                 <li <?php if (basename($_SERVER['PHP_SELF']) == 'jobs.php') echo 'class="active"' ?>><a href="jobs.php">Jobs</a></li>
-                <li <?php if (basename($_SERVER['PHP_SELF']) == 'courses.php') echo 'class="active"' ?>><a href="courses.php">Courses</a></li>
             </ul>
             <?php if(!isset($_SESSION['userID'])): ?>
             <button type="button" class="sign navbar-right navbar-btn">
@@ -65,11 +61,76 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                             <span>'. $ApplicantName .'</span>
                             <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menuProfile">
                             <i class="fa fa-caret-down fa-fw fa-3x"></i>
                             <li><a href="profile.php"><i class="fa fa-user fa-fw fa-lg"></i>Profile</a></li>
                             <li><a href="settings.php"><i class="fa fa-wrench fa-fw fa-lg"></i>Settings</a></li>
                             <li><a href="php/logout.php"><i class="fa fa-sign-out fa-fw fa-lg"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown notificationGlobe">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe fa-fw fa-2x"></i>
+                            <span>4</span>
+                        </a>
+                        <i class="fa fa-caret-down fa-fw fa-3x"></i>
+                        <ul class="dropdown-menu dropdown-menuNotification">
+                            <li>
+                                <h4>You Accepted in Job in Egypt</h4>
+                                <p>you accepted in java developer job for go to interview in company to final stage to apply this job. please contact with company to more details.</p>
+                                <div class="itemInfo">
+                                    <i class="fa fa-globe fa-fw"></i>
+                                    <span class="itemDate">10:43AM</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>You Accepted in Job in Egypt</h4>
+                                <p>you accepted in java developer job for go to interview in company to final stage to apply this job. please contact with company to more details.</p>
+                                <div class="itemInfo">
+                                    <i class="fa fa-globe fa-fw"></i>
+                                    <span class="itemDate">10:43AM</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>You Accepted in Job in Egypt</h4>
+                                <p>you accepted in java developer job for go to interview in company to final stage to apply this job. please contact with company to more details.</p>
+                                <div class="itemInfo">
+                                    <i class="fa fa-globe fa-fw"></i>
+                                    <span class="itemDate">10:43AM</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>You Accepted in Job in Egypt</h4>
+                                <p>you accepted in java developer job for go to interview in company to final stage to apply this job. please contact with company to more details.</p>
+                                <div class="itemInfo">
+                                    <i class="fa fa-globe fa-fw"></i>
+                                    <span class="itemDate">10:43AM</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>You Accepted in Job in Egypt</h4>
+                                <p>you accepted in java developer job for go to interview in company to final stage to apply this job. please contact with company to more details.</p>
+                                <div class="itemInfo">
+                                    <i class="fa fa-globe fa-fw"></i>
+                                    <span class="itemDate">10:43AM</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>You Accepted in Job in Egypt</h4>
+                                <p>you accepted in java developer job for go to interview in company to final stage to apply this job. please contact with company to more details.</p>
+                                <div class="itemInfo">
+                                    <i class="fa fa-globe fa-fw"></i>
+                                    <span class="itemDate">10:43AM</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>You Accepted in Job in Egypt</h4>
+                                <p>you accepted in java developer job for go to interview in company to final stage to apply this job. please contact with company to more details.</p>
+                                <div class="itemInfo">
+                                    <i class="fa fa-globe fa-fw"></i>
+                                    <span class="itemDate">10:43AM</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>';
             endif; ?>

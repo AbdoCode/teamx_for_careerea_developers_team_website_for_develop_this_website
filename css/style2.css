@@ -327,22 +327,7 @@
 .formMobileSearch .inputFilterMobile{
     width:100%!important; margin-bottom: 5px; margin-left:-5px;
 }
-/* placeholder center */
-::-webkit-input-placeholder {
-    text-align: center;
-}
 
-:-moz-placeholder { /* Firefox 18- */
-    text-align: center;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-    text-align: center;
-}
-
-:-ms-input-placeholder {
-    text-align: center;
-}
 .formMobileSearch .searchFilterMobile {background:#E90052;color:#FFF; display: inline-block;}
 .formMobileSearch .searchFilterMobile:hover {background:#E90052; color:#FFF;}
 
@@ -704,7 +689,7 @@
     -webkit-transition: .5s all ease-in-out;
     transition: .5s all ease-in-out;
     box-shadow: 0 2px 20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.4);
-    background:rgba()
+    background: rgba()
 }
 
 @media (min-width:467px) and (max-width:767px) {
@@ -729,7 +714,7 @@
 .profile .profileInfo .profileContent .profileAbout .profileAboutTabs .myTabs li {
     
     display: inline-block;
-    width:16.66%;
+    width:20%;
     padding:10px;
     text-align: center;
     cursor: pointer;
@@ -815,7 +800,7 @@
 }
 .profile .profileInfo .profileContent .profileAbout .tabsDetails .portfolioItem .portfolioOver {
     display: none;
-    position: absolute; 
+    position: absolute;
     top:0; left:0; bottom:0; right:0; width: 100%; height: 100%; 
     background-color: rgba(237, 241, 243, 0.6);
     padding-top: 100px;
@@ -1351,125 +1336,6 @@
 
 /* End View Job Details Page*/
 
-/* start notification page */
-.notification {
-    margin-top:50px;
-}
-
-/* Start Main Style For Tabs ==> include Enrolled Courses Tab , Applied Jobs Tab , Portfolio Tab */
-.notification .notificationContent {
-    background:#eee;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}  
-.notification .notificationContent .notificationTabs ul li.inactive {background:#CCC; color:#C0392B;}
-.notification .notificationContent .tabsDetails div[id^="tab"]:not(:first-of-type) {display: none;}
-.notification .notificationContent .notificationTabs .myTabs {width:100%;}
-.notification .notificationContent .notificationTabs .myTabs li {
-    
-    display: inline-block;
-    width:16.66%;
-    padding:10px;
-    text-align: center;
-    cursor: pointer;
-    background:#c9302c;
-    color:#FFF;
-    
-}
-
-.notification .notificationContent .tabsDetails {
-    margin-top:30px;
-    padding-bottom: 30px;
-}
-.notification .notificationContent .tabsDetails .activityCourse
-{
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-    -webkit-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-    box-shadow: 0 0 5px 0 #eee;
-    vertical-align: top;
-    overflow: hidden;
-    position: relative;
-}
-.notification .notificationContent .tabsDetails #tab1Content .activityCourse {height: 280px;}
-.notification .notificationContent .tabsDetails #tab2Content .activityCourse {height: 315px;}
-
-
-.notification .notificationContent .tabsDetails .activityCourse .activityCourseTitle h4
-{
-    color:#C0392B;
-    text-align: center;
-}
-.courseTime {
-    position: absolute;
-    top:-15px;
-    right:5px;
-}
-@media (max-width:768px) {
-    .courseTime {width: 52px;}
-    .courseTime h3 {font-size: 20px!important;}
-}
-.courseTime h3 span {color:#C0392B}
-.notification .notificationContent .tabsDetails .activityCourse .activityCoursePrerequisites {color: cadetblue;}
-.notification .notificationContent .tabsDetails .activityCourse .table .jobInfo,
-.notification .notificationContent .tabsDetails .activityCourse .table .courseInfo {color: #C0392B; font-weight: bold;}
-.notification .notificationContent .tabsDetails .activityCourse .activityCourseOver, 
-.notification .notificationContent .tabsDetails .activityCourse .activityCourseOver
-{
-    position: absolute; 
-    top:0; left:0; bottom:0; right:0; width: 100%; height: 100%; 
-    background-color: rgba(237, 241, 243, 0.6);
-    color:#C0392B;
-    padding-top: 170px;
-    text-align: center;font-weight: bold;font-size:20px;
-    display: none;
-}
-.notification .notificationContent .tabsDetails .activityCourse .activityCourseOver button, 
-.notification .notificationContent .tabsDetails .activityCourse .activityCourseOver button {
-    margin-top:10px;
-}
-.notification .notificationContent .tabsDetails .portfolioItem {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-    -webkit-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-    box-shadow: 0 0 5px 0 #eee;
-    vertical-align: top;
-    overflow: hidden;
-    position: relative;
-}
-.notification .notificationContent .tabsDetails .portfolioItem .portfolioOver {
-    display: none;
-    position: absolute; 
-    top:0; left:0; bottom:0; right:0; width: 100%; height: 100%; 
-    background-color: rgba(237, 241, 243, 0.6);
-    padding-top: 100px;
-    text-align: center;font-weight: bold;font-size:20px;
-}
-.notification .notificationContent .tabsDetails .portfolioItem .portfolioMobileButtons  .portfolioButtons  {
-    margin-bottom: 10px;
-}
-@media (max-width: 767px) {
-    .notification .notificationContent .tabsDetails #favouritJobsBox .activityCourse,
-    .notification .notificationContent .tabsDetails #activityJobsBox .activityCourse,
-    .notification .notificationContent .tabsDetails #tab4Content .activityCourse{
-        height: 600px;
-    }
-}
-
-/* End Main style for tabs */
-
-/* end notification page */
 .gridrow:before,
 .gridrow:after {
   content: "";

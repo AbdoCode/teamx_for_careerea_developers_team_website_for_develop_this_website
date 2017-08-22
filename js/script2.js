@@ -20,8 +20,6 @@ $(document).ready(function () {
         iconCamera = $(".profile .profileInfo .profileContent .profileImage .profileOver .fileUploader .iconCamera"),
         profileOver = $(".profile .profileInfo .profileContent .profileImage .profileOver"),
         
-        /* notification page */
-        itemNotification = $(".notification .notificationContent .tabsDetails .activityCourse"),
         /* Filter search variables  */
         categoryTitle = $(".coursesPage .mainFilterSearch .categoryTitle"),
         categoryTitleSpan = $(".coursesPage .mainFilterSearch .categoryTitle span"),
@@ -134,13 +132,6 @@ $(document).ready(function () {
             }).on("mouseleave.large", function () {
                 $(this).children(".portfolioOver").fadeOut(500);
             });
-            $(itemNotification).on("mouseenter.large", function () {
-                $(this).children(".activityCourseOver").fadeIn(500);
-            }).on("mouseleave.large", function () {
-                $(this).children(".activityCourseOver").fadeOut(500);
-            });
-            
-            
             
         } else {
             $(itemCoursePage).off("mouseenter.large mouseleave.large");
@@ -148,14 +139,10 @@ $(document).ready(function () {
             $(itemProfilePage).off("mouseenter.large mouseleave.large");
             $(activityAvatar).off("mouseenter.large mouseleave.large");
             $(portfolioItem).off("mouseenter.large mouseleave.large");
-            $(itemNotification).off("mouseenter.large mouseleave.large");
         }
     }).resize();
     
     /*open view course details
-    itemCoursePage.click(function () {
-        window.open("View-Course-Details.php", "_blank");
-    });
     itemJobPage.click(function () {
         window.open("View-Job-Details.php", "_blank");
     });
@@ -552,7 +539,7 @@ $(document).ready(function () {
     
     // Make Box ==> Filter Search up when get footer when make scroll
     
-    if (filename2 === "courses.php" || filename2 === "jobs.php") {
+    if (filename2 === "jobs.php") {
         
         $(window).scroll(function () {
             var windowTopPos = $(window).scrollTop(),
@@ -602,16 +589,6 @@ $(document).ready(function () {
         
     }
     
-    /* start notification page */
-    
-    $(".notification .notificationContent .notificationTabs .myTabs li").click(function () {
-        var notificationTabID = $(this).attr("id");
-        $(this).removeClass("inactive").siblings().addClass("inactive");
-        $(".notification .notificationContent .tabsDetails div[id^=tab]").hide(); // id start with tab 
-        $("#" + notificationTabID + "Content").fadeIn(500);
-    });
-    
-    /* end notification page */
     if (filename2 === "View-Course-Details.php") {
         var videoCount = $(".viewCourseDetails .tabsDetails #tab3Course .agentVideo .gridrow .content div[class^=pages]").size();
         var loop = function loop(i) {

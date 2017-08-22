@@ -4,13 +4,13 @@ $(document).ready(function () {
 
     // overlay for whole page
 
-    $(".forgetPassword .form1 > span, .sign:first-of-type, .jobs .allJobs .jobBox .boxHover button:last-of-type, .jobs .allJobs .jobBox .boxHover button:first-of-type, .courses .allCourses .courseBox .boxHover button, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .addSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .arrangeSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .editSkillButton, .signUp .container > span, .settings .subSettings .content .security .changePasswordButton, .coursesPage .coursesContainer .activityCourse .takeCourse, .viewCourseDetails .takeCourse, .viewJobDetails .applyJob, .viewJobDetails .compareSkills, .notification .notificationContent .tabsDetails #tab1Content .takeCourse, .notification .notificationContent .tabsDetails #tab2Content .compareSkills, .notification .notificationContent .tabsDetails #tab2Content .applyJob, .coursesPage .jobsContainer .activityCourse .applyJob, .coursesPage .jobsContainer .activityCourse .compareSkills, .profile .profileInfo .profileContent .profileAbout .tabsDetails .takeCourse, .profile .profileInfo .profileContent .profileAbout .tabsDetails .applyJob, .profile .profileInfo .profileContent .profileAbout .tabsDetails .compareSkills").on("click", function () {
+    $(".forgetPassword .form1 > span, .sign:first-of-type, .jobs .allJobs .jobBox .boxHover button:last-of-type, .jobs .allJobs .jobBox .boxHover button:first-of-type, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .addSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .arrangeSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .editSkillButton, .signUp .container > span, .settings .subSettings .content .security .changePasswordButton, .viewJobDetails .applyJob, .viewJobDetails .compareSkills, .profile .profileInfo .profileContent .profileAbout .tabsDetails .applyJob, .profile .profileInfo .profileContent .profileAbout .tabsDetails .compareSkills").on("click", function () {
 
         var overlay = $('<div></div>').prependTo('body').attr('class', 'overlayForPage');
 
         overlay.add();
 
-        $(".overlayForPage, .signInBlock div i, .compareBox i, .applyBox i, .takeCourse1 .plans button:first-of-type, .takeCourse2 i, .addSkill i, .editSkill i, .pinSkill div > i, .changePassword i, .signInBlock form button").on("click", function () {
+        $(".overlayForPage, .signInBlock div i, .compareBox i, .applyBox i, .addSkill i, .editSkill i, .pinSkill div > i, .changePassword i, .signInBlock form button").on("click", function () {
 
             overlay.remove();
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         $(".overlayForPage").on('click', function () {
 
-            $(".compareBox, .applyBox, .changePassword, .takeCourse1, .takeCourse2, .addSkill, .editSkill, .pinSkill, .signInBlock").hide(0);
+            $(".compareBox, .applyBox, .changePassword, .addSkill, .editSkill, .pinSkill, .signInBlock").hide(0);
 
         });
 
@@ -145,6 +145,14 @@ $(document).ready(function () {
 
     });
 
+    // caret for notification dropdownMenu
+
+    $(".navbar .notificationGlobe a > i, .navbar .notificationGlobe a > span").on("click", function () {
+
+        $(".navbar .notificationGlobe > i").toggle();
+
+    });
+
     // center boxes
 
     $.fn.centerBox = function () {
@@ -167,8 +175,6 @@ $(document).ready(function () {
     $(".addSkill").centerBox();
     $(".editSkill").centerBox();
     $(".pinSkill").centerBox();
-    $(".takeCourse1").centerBox();
-    $(".takeCourse2").centerBox();
     $(".signInBlock").centerBox();
 
     //control eye button in password field for signIn
@@ -256,12 +262,6 @@ $(document).ready(function () {
 
     $("#mixItJobs").mixItUp();
 
-    $("#mixItCourses").mixItUp({
-        selectors: {
-            filter: '.filterc'
-        }
-    });
-
     // disable hover in mobile
 
     if (window.innerWidth > 767) {
@@ -269,20 +269,6 @@ $(document).ready(function () {
         //hover in job box
 
         $(".jobs .allJobs .jobBox").mouseenter(function () {
-
-            $(this).find('.boxWithoutHover').fadeOut(0);
-            $(this).find('.boxHover').fadeIn(0);
-
-        }).mouseleave(function () {
-
-            $(this).find('.boxWithoutHover').fadeIn(0);
-            $(this).find('.boxHover').fadeOut(0);
-
-        });
-
-        //hover in course box
-
-        $(".courses .allCourses .courseBox").mouseenter(function () {
 
             $(this).find('.boxWithoutHover').fadeOut(0);
             $(this).find('.boxHover').fadeIn(0);
@@ -347,37 +333,9 @@ $(document).ready(function () {
 
     });
 
-    //active favorite star in course box
-    $(".courses .allCourses .courseBox .boxHover > span:last-of-type").on("click", function () {
-
-        $(this).toggleClass("glyphicon-star").toggleClass("glyphicon-star-empty").toggleClass("active");
-
-    });
-
-    //active rate stars in course boxes
-
-    $(".courses .allCourses .courseBox .boxHover .rate span").on("click", function () {
-
-        if ($(this).siblings().hasClass('glyphicon-star')) {
-            return;
-        }
-
-        $(this).parent().addClass('no-hover');
-        $(this).siblings().andSelf().addClass('no-hover');
-        $(this).prevAll().andSelf().addClass("glyphicon-star").removeClass("glyphicon-star-empty").addClass("active").css('cursor', 'auto');
-        $(this).nextAll().css('cursor', 'auto');
-
-    });
-
     //Adjust Shuffle Links
 
     $(".jobs .shuffle li").on('click', function () {
-
-        $(this).addClass('active').siblings().removeClass('active');
-
-    });
-
-    $(".courses .shuffle li").on('click', function () {
 
         $(this).addClass('active').siblings().removeClass('active');
 
@@ -618,16 +576,6 @@ $(document).ready(function () {
 
     });
 
-    
-    // courses page
-    $(".coursesPage .coursesContainer .activityCourse .takeCourse").click(function () {
-       
-        $(".takeCourse1").show();
-    });
-    $(".coursesPage .coursesContainer .activityCourse .courseDetails").click(function () {
-        window.open("View-Course-Details.php", "_blank");
-    });
-    
     //jobs page
     $(".coursesPage .jobsContainer .activityCourse .applyJob").click(function () {
         $(".applyBox").show();
@@ -638,12 +586,7 @@ $(document).ready(function () {
     $(".coursesPage .jobsContainer .activityCourse .jobDetails").click(function () {
         window.open("View-Job-Details.php", "_blank");
     });
-    
-    // view-course-details page
-    $(".viewCourseDetails .takeCourse").click(function () {
-        $(".takeCourse1").show();
-    });
-    
+
     // view-job-details page
     $(".viewJobDetails .applyJob").click(function () {
         $(".applyBox").show();
@@ -653,27 +596,7 @@ $(document).ready(function () {
         $(".compareBox").show();
     });
     
-    /* notification page */
-    $(".notification .notificationContent .tabsDetails #tab1Content .takeCourse").click(function () {
-        $(".takeCourse1").show();
-    });
-    
-    $(".notification .notificationContent .tabsDetails #tab2Content .compareSkills").click(function () {
-        $(".compareBox").show();
-    });
-    $(".notification .notificationContent .tabsDetails #tab2Content .applyJob").click(function () {
-        $(".applyBox").show();
-    });
-    $(".notification .notificationContent .tabsDetails #tab1Content .courseDetails").click(function () {
-        window.open("View-Course-Details.php", "_blank");
-    });
-    $(".notificationContent .tabsDetails #tab2Content .jobDetails").click(function () {
-        window.open("View-Job-Details.php", "_blank");
-    });
     /* profile page */
-    $(".profile .profileInfo .profileContent .profileAbout .tabsDetails .takeCourse").click(function () {
-        $(".takeCourse1").show();
-    });
     $(".profile .profileInfo .profileContent .profileAbout .tabsDetails .applyJob").click(function () {
         $(".applyBox").show();
     });
@@ -681,9 +604,6 @@ $(document).ready(function () {
         $(".compareBox").show();
     });
     
-    $(".profile .profileInfo .profileContent .profileAbout .tabsDetails .courseDetails").click(function () {
-        window.open("View-Course-Details.php", "_blank");
-    });
     $(".profile .profileInfo .profileContent .profileAbout .tabsDetails .jobDetails ").click(function () {
         window.open("View-Job-Details.php", "_blank");
     });
@@ -692,49 +612,6 @@ $(document).ready(function () {
         window.open("editProfile.php", "_blank");
     });
     // 
-    
-    // takeCourse Blocks
-
-    $('.courses .allCourses .courseBox .boxHover button').on('click', function () {
-
-        $('.takeCourse1').show();
-
-    });
-
-    $('.takeCourse1 .plans button:first-of-type').on('click', function () {
-
-        $('.takeCourse1').hide(0);
-
-    });
-
-    $('.takeCourse1 .plans button:last-of-type').on('click', function (event) {
-
-        event.preventDefault();
-        $('.takeCourse1').hide(0);
-        $('.takeCourse2').show();
-
-    });
-
-    $('.takeCourse1 .plans .tabs li').on('click', function () {
-
-        $(this).addClass('active').siblings().removeClass('active');
-        var dataTab = $(this).attr('data-tab');
-        $('.takeCourse1 .plans .content .' + dataTab).show(0).siblings().hide(0);
-
-    });
-
-    $('.takeCourse2 i').on('click', function () {
-
-        $('.takeCourse2').hide();
-
-    });
-
-    $('.takeCourse2 div p button').on('click', function () {
-
-        $('.takeCourse2').hide(0);
-        $('.takeCourse1').show();
-
-    });
 
     // Show ChangePassword Block
 

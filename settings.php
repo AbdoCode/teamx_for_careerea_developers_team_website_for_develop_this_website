@@ -159,21 +159,6 @@
                                         <button type="button" class="btn">Save</button>
                                     </form>
                                 </div>
-                                <div class="head">
-                                    <i class="fa fa-caret-right fa-fw fa-lg"></i>
-                                    <h5>Courses</h5>
-                                </div>
-                                <div class="subContent">
-                                    <form action="" method="post">
-                                        <input type="checkbox" class="selectAll" id="cAll"/><label for="cAll">Select All</label><br />
-                                        <input type="checkbox" id="cecap"/><label for="cecap">Notify me when it's time to continue my enrolled courses according their plans</label><br />
-                                        <input type="checkbox" id="cif"/><label for="cif">Notify me with every uploaded course in my interested fields</label><br />
-                                        <input type="checkbox" id="crs"/><label for="crs">Notify me with every uploaded course related with my skills</label><br />
-                                        <input type="checkbox" id="cec"/><label for="cec">Notify me with every update for my enrolled courses</label><br />
-                                        <button type="button" class="btn">cancel</button>
-                                        <button type="button" class="btn">Save</button>
-                                    </form>
-                                </div>
                             </div>
                         </div>
                         <div class="language">

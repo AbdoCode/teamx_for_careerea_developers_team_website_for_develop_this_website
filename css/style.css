@@ -10,7 +10,8 @@
 }
 
 .navbar-inverse .navbar-nav > li > a{
-    color: #FFF
+    color: #FFF;
+    border-top: 3px solid transparent
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
@@ -79,7 +80,7 @@
 }
 
 .dropdown{
-    margin-top: 11px;
+    margin-top: 6px;
     margin-left: 10px;
     display: inline-block
 }
@@ -100,29 +101,26 @@
     color: #FFF;
 }
 
-.dropdown-menu{
+.dropdown-menuProfile{
     background-color: #34495E;
     min-width: 200px
 }
 
-.navbar-right .dropdown-menu{
-    left: -16px;
-    margin-top: 22px
+.navbar-right .dropdown-menuProfile{
+    right: -44px;
+    margin-top: 23px
 }
 
-.navbar-right .dropdown-menu > i{
-    content: "";
+.navbar-right .dropdown-menuProfile > i{
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: -30px;
-    left: 20px;
+    top: -29px;
+    right: 20px;
     color: #34495E
 }
 
-.dropdown-menu > li > a{
+.dropdown-menuProfile > li > a{
     color: #FFF;
-    padding: 6px 20px;
+    padding: 6px 10px;
     -webkit-transition: padding 0.4s ease;
     -moz-transition: padding 0.4s ease;
     -o-transition: padding 0.4s ease;
@@ -130,36 +128,33 @@
     position: relative
 }
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus{
-    padding-left: 30px
+.dropdown-menuProfile > li > a:hover,
+.dropdown-menuProfile > li > a:focus{
+    padding-left: 20px
 }
 
-.dropdown-menu > li > a i{
+.dropdown-menuProfile > li > a i{
     display: inline-block;
     margin-right: 5px
 }
 
-.dropdown-menu > li > a span{
-    margin-left: 50px;
-    font-weight: bold
-}
-
-.dropdown-menu > li > a:hover i{
+.dropdown-menuProfile > li > a:hover i{
     color: #262626
 }
 
 .navbar .notificationGlobe{
     color: #FFF;
-    position: relative;
-    display: block;
-    margin-left: 10px;
-    margin-top: 10px;
+    position: relative
 }
 
-.navbar .notificationGlobe span{
+.navbar .notificationGlobe a > i{
+    position: relative;
+    top: 6px;
+}
+
+.navbar .notificationGlobe a > span{
     position: absolute;
-    top: 11px;
+    top: 3px;
     left: 18px;
     width: auto;
     height: 20px;
@@ -167,6 +162,56 @@
     padding: 0 4px;
     text-align: center;
     border-radius: 2px
+}
+
+.navbar .notificationGlobe .dropdown-menuNotification{
+    right: -30px;
+    background-color: #34495E;
+    margin-top: 29px;
+    width: 430px;
+    max-height: 500px;
+    padding: 0;
+    overflow: auto
+}
+
+.navbar .notificationGlobe > i{
+    position: absolute;
+    top: 30px;
+    right: -9px;
+    color: #34495E;
+    display: none
+}
+
+.navbar .notificationGlobe .dropdown-menuNotification li{
+    border-bottom: 1px solid #CCC;
+    padding: 10px;
+    height: 125px;
+    max-height: 125px;
+    cursor: pointer;
+    border-left: 6px solid transparent
+}
+
+.navbar .notificationGlobe .dropdown-menuNotification li:last-of-type{
+    border-bottom: 0
+}
+
+.navbar .notificationGlobe .dropdown-menuNotification li:hover{
+    border-left: 6px solid #C0392B
+}
+
+.navbar .notificationGlobe .dropdown-menuNotification li h4{
+    font-width: bold;
+    margin: 0
+}
+
+.navbar .notificationGlobe .dropdown-menuNotification li p{
+    margin: 2px 0 3px 5px;
+    max-height: 60px;
+    overflow: hidden
+}
+
+.navbar .notificationGlobe .dropdown-menuNotification li .itemInfo .itemDate{
+    font-weight: bold
 }
 
 /************************************************** End Navbar **************************************************/
@@ -637,237 +682,6 @@ header .box button{
 }
 
 /************************************************** End jobs **************************************************/
-
-/************************************************** Sperator between Jobs section and Courses section for style **************************************************/
-
-.sperator{
-    border: 3px solid #34495E
-}
-
-/************************************************** Start courses **************************************************/
-
-.courses{
-    padding-bottom: 30px
-}
-
-.courses h1{
-    margin: 30px 0;
-    font-size: 50px
-}
-
-.courses ul li{
-    display: inline-block;
-    border: 2px solid #34495E;
-    padding: 10px;
-    border-radius: 5px;
-    color: #34495E;
-    margin-right: 5px
-}
-
-.courses ul li:hover,
-.courses ul li.active{
-    background-color: #C0392B;
-    color: #FFF;
-    border: 2px solid #C0392B;
-    cursor: pointer
-}
-
-.courses .allCourses{
-    margin-top: 50px
-}
-
-.courses .allCourses .row > div{
-    padding: 0 10px
-}
-
-.courses .allCourses .courseBox{
-    border: 2px solid #34495E;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 20px 0;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    position: relative;
-    box-shadow: 5px 5px 10px #CCC;
-    overflow: hidden
-}
-
-.courses .allCourses .courseBox::before{
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-color: #C0392B;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom-right-radius: 100%;
-    border-top-left-radius: 3px;
-    display: none
-}
-
-.courses .allCourses .courseBox:hover{
-    -webkit-transform: scale(1.025);
-    -moz-transform: scale(1.025);
-    -o-transform: scale(1.025);
-    transform: scale(1.025)
-}
-
-.courses .allCourses .courseBox:hover::before{
-    display: block
-}
-
-.courses .allCourses .courseBox .boxWithoutHover{
-    height: 305px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .simpleContainer{
-    overflow: hidden;
-    height: 75px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .imgBlock{
-    width: 36%;
-    overflow: hidden;
-    text-align: center;
-    border-right: 2px solid #34495E;
-    float: left
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .imgBlock img{
-    width: 100%;
-    height: auto;
-    max-width: 100%
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .headersInfo{
-    float: left;
-    width: 64%;
-    height: 100%;
-    max-height: 100%
-}
-
-.courses .allCourses .courseBox .boxWithoutHover h4{
-    font-weight: bold;
-    color: #C0392B
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .allItem{
-    padding: 15px 0
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .allItem .item{
-    display: inline-block;
-    width: 32.333333%;
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .allItem .item .value{
-    color: #C0392B;
-    font-weight: bold;
-    font-size: 20px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .allItem .item .head{
-    font-weight: bold;
-    font-size: 16px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover h5{
-    text-align: left;
-    font-weight: bold;
-    margin-left: 20px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    height: 56px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover div.topPrerequisites span{
-    margin: 2px;
-    background-color: #EEE;
-    border: 1px solid #AAA;
-    border-radius: 3px;
-    padding: 1px 3px;
-    display: inline-block
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .rateBox{
-    margin-top: 5px;
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .rateBox .rateWord{
-    display: block;
-    font-size: 16px;
-    font-weight: bold
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .rateBox .rateWord span:last-of-type{
-    color: #C0392B
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .rateBox .rate .starWrapper{
-    position: relative;
-    white-space: nowrap;
-    display: inline-block;
-    color: #AAA;
-    font-size: 20px
-}
-
-.courses .allCourses .courseBox .boxWithoutHover .rateBox .rate .starWrapper .starTop{
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    color: #C0392B
-}
-
-.courses .allCourses .courseBox .boxHover{
-    display: none;
-    padding-top: 108px;
-    height: 305px
-}
-
-.courses .allCourses .courseBox .boxHover > span:first-of-type{
-    font-size: 25px;
-    font-weight: bold
-}
-
-.courses .allCourses .courseBox .boxHover > span:last-of-type{
-    font-size: 25px;
-    cursor: pointer
-}
-
-.courses .allCourses .courseBox .boxHover > span:last-of-type.active,
-.courses .allCourses .courseBox .boxHover > span:last-of-type:hover{
-    color: #C0392B
-}
-
-.courses .allCourses .courseBox .boxHover button{
-    width: 70%;
-    margin-top: 10px
-}
-
-.courses .allCourses .courseBox .boxHover button:hover{
-    background-color: #34495E;
-    color: #FFF
-}
-
-.courses .mix{
-    display: none
-}
-
-.courses .seeMore{
-    float: right;
-    margin-top: 10px;
-    margin-right: -6px
-}
-
-/************************************************** End courses **************************************************/
 
 /************************************************** Start forget password **************************************************/
 
@@ -1891,199 +1705,6 @@ header .box button{
 
 /************************************************** End Skills **************************************************/
 
-/************************************************** Start takeCourse Block **************************************************/
-
-.takeCourse1{
-    width: 400px;
-    background-color: #FFF;
-    color: #000;
-    z-index: 9999;
-    border: 3px solid #34495E;
-    display: none
-}
-
-.takeCourse1 h1{
-    background-color: #34495E;
-    color: #FFF;
-    margin: 0;
-    text-align: center;
-    font-weight: bold; 
-    padding: 25px 0 30px
-}
-
-.takeCourse1 .selectPlan{
-    padding: 0 10px;
-    margin: 20px 0 10px
-}
-
-.takeCourse1 .selectPlan p{
-    font-size: 18px;
-    margin-bottom: 0
-}
-
-.takeCourse1 .selectPlan form input{
-    margin-left: 10px
-}
-
-.takeCourse1 .selectPlan form label{
-    margin-left: 5px;
-    position: relative;
-    bottom: 2px;
-    cursor: pointer
-}
-
-.takeCourse1 .plans .tabs{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden
-}
-
-.takeCourse1 .plans .tabs li{
-    border-right: 2px solid #34495E;
-    border-top: 2px solid #34495E;
-    border-bottom: 2px solid #34495E;
-    display: block;
-    float: left;
-    padding: 10px 15px;
-    margin: 0;
-    font-weight: bold
-}
-
-.takeCourse1 .plans .tabs li:hover,
-.takeCourse1 .plans .tabs li.active{
-    cursor: pointer;
-    color: #FFF;
-    background-color: #34495E
-}
-
-.takeCourse1 .plans .content{
-    border-top: 2px solid #34495E;
-    margin-bottom: 20px;
-    position: relative;
-    bottom: 2px;
-    
-}
-
-.takeCourse1 .plans .content .planA > span,
-.takeCourse1 .plans .content .planB > span{
-    color: #C0392B;
-    font-weight: bold;
-    margin: 10px;
-    display: block
-}
-
-.takeCourse1 .plans .content .planA table,
-.takeCourse1 .plans .content .planB table{
-    width: 101%;
-    text-align: center
-}
-
-.takeCourse1 .plans .content .planA table th,
-.takeCourse1 .plans .content .planB table th{
-    text-align: center;
-    border: 2px solid #34495E;
-    border-left: 0
-}
-
-.takeCourse1 .plans .content .planA table td,
-.takeCourse1 .plans .content .planB table td{
-    width: 30%;
-    border: 2px solid #34495E;
-    border-left: 0;
-    padding: 4px 0
-}
-
-
-.takeCourse1 .plans .content .planA table td:nth-of-type(2),
-.takeCourse1 .plans .content .planB table td:nth-of-type(2){
-    width: 40%
-}
-
-.takeCourse1 .plans .content .planA table span,
-.takeCourse1 .plans .content .planB table span{
-    color: #C0392B
-}
-
-.takeCourse1 .plans .content .planB{
-    display: none
-}
-
-.takeCourse1 .plans button{
-    width: 75px;
-    margin-bottom: 20px
-}
-
-.takeCourse1 .plans button:hover{
-    color: #FFF;
-    background-color: #34495E
-}
-
-.takeCourse2{
-    width: 400px;
-    height: 300px;
-    background-color: #FFF;
-    color: #000;
-    z-index: 9999;
-    border-top: 3px solid #34495E;
-    border-bottom: 3px solid #34495E;
-    display: none
-}
-
-.takeCourse2 h1{
-    background-color: #34495E;
-    color: #FFF;
-    margin: 0;
-    padding: 20px 10px;
-    font-weight: bold;
-    text-align: center
-}
-
-.takeCourse2 i{
-    color: #FFF;
-    position: absolute;
-    top: 6px;
-    right: 1px
-}
-
-.takeCourse2 i:hover{
-    color: #C0392B;
-    cursor: pointer
-}
-
-.takeCourse2 > div{
-    padding: 20px  
-}
-
-.takeCourse2 div p{
-    font-size: 16px
-}
-
-.takeCourse2 div p button{
-    padding: 1px 5px;
-    margin-left: 3px
-}
-
-.takeCourse2 div p button:hover{
-    color: #FFF;
-    background-color: #34495E
-}
-
-.takeCourse2 div p a{
-    color: #C0392B;
-}
-
-.takeCourse2 div div button{
-    margin-top: 33px;
-    color: #000
-}
-
-.takeCourse2 div div button:hover{
-    color: #FFF;
-    background-color: #34495E
-}
-
-/************************************************** End takeCourse Block **************************************************/
 
 /************************************************** Start Settings **************************************************/
     
@@ -2719,45 +2340,16 @@ footer .copyRight span{
 
     .aboutUs h1,
     .partners h1,
-    .jobs h1,
-    .courses h1{
+    .jobs h1{
         font-size: 30px
     }
 
-    .jobs ul li,
-    .courses ul li{
+    .jobs ul li{
         margin-bottom: 5px
     }
 
     .jobs .allJobs .jobBox h5:nth-of-type(3){
         margin-left: 12px
-    }
-
-    .courses .allCourses .courseBox{
-        height: 445px
-    }
-
-    .courses .allCourses .courseBox .boxWithoutHover .allItem .item{
-        width: 31.333333%
-    }
-
-    .courses .allCourses .courseBox .boxWithoutHover p{
-        margin-bottom: 15px
-    }
-
-    .courses .allCourses .courseBox .boxHover{
-        padding: 0;
-        margin-top: 20px
-    }
-
-    .courses .allCourses .courseBox .boxHover > span:first-of-type,
-    .courses .allCourses .courseBox .boxHover > span:last-of-type{
-        font-size: 20px
-    }
-
-    .courses .allCourses .courseBox .boxHover button{
-        margin: 10px auto;
-        display: block
     }
 
     .compareBox,
@@ -2766,22 +2358,8 @@ footer .copyRight span{
     .addSkill,
     .editSkill,
     .pinSkill,
-    .takeCourse1,
-    .takeCourse2,
     .signInBlock{
         max-width: 100%
-    }
-
-    .takeCourse1{
-        margin: 20px auto
-    }
-
-    .takeCourse2 div p{
-        margin: 5px;
-    }
-
-    .takeCourse2 div div button{
-        margin-top: 10px
     }
 
     .signUp .form1,
@@ -2895,19 +2473,6 @@ footer .copyRight span{
 
     .dropdown .dropdown-menu .fa-caret-down{
         display: none
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    .courses .allCourses .courseBox .boxWithoutHover .allItem .item{
-        width: 31.3333333333%
-    }
-
-    .courses .allCourses .courseBox .boxHover > span:first-of-type,
-    .courses .allCourses .courseBox .boxHover > span:last-of-type{
-        font-size: 20px
     }
 
 }
