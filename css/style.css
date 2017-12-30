@@ -656,16 +656,19 @@ header .box button{
     margin-top: 45px
 }
 
-.jobBox .boxHover button:first-of-type{
+.jobBox .boxHover a{
     width: 60%;
-    margin: 20px auto 0
+    margin: 20px auto 0;
+    color: #000;
+    background-color: #DDD
 }
 
-.jobBox .boxHover button:last-of-type{
+.jobBox .boxHover button{
     width: 60%;
     margin: 10px auto 0
 }
 
+.jobBox .boxHover a:hover,
 .jobBox .boxHover button:hover{
     background-color: #34495E;
     color: #FFF

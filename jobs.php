@@ -145,8 +145,8 @@
                                                         <span class="value">20</span>
                                                     </div>
                                                 </div>
-                                                <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                                <button type="submit" class="btn">Compare with my skills</button>
+                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                                <button type="button" class="btn">Save</button>
 
                                             </div>
                                         </div>
@@ -166,8 +166,8 @@
                                                     <span class="value" >20</span>
                                                 </div>
                                             </div>
-                                            <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                            <button type="submit" class="btn">Compare with my skills</button>
+                                            <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                            <button type="button" class="btn">Save</button>
                                         </div>
                                     </div>
                                 </div>
@@ -218,8 +218,8 @@
                                                         <span class="value">20</span>
                                                     </div>
                                                 </div>
-                                                <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                                <button type="submit" class="btn">Compare with my skills</button>
+                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                                <button type="button" class="btn">Save</button>
 
                                             </div>
                                         </div>
@@ -239,8 +239,8 @@
                                                     <span class="value" >20</span>
                                                 </div>
                                             </div>
-                                            <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                            <button type="submit" class="btn">Compare with my skills</button>
+                                            <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                            <button type="button" class="btn">Save</button>
                                         </div>
                                     </div>
                                 </div>
@@ -291,8 +291,8 @@
                                                         <span class="value">20</span>
                                                     </div>
                                                 </div>
-                                                <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                                <button type="submit" class="btn">Compare with my skills</button>
+                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                                <button type="button" class="btn">Save</button>
 
                                             </div>
                                         </div>
@@ -312,8 +312,8 @@
                                                     <span class="value" >20</span>
                                                 </div>
                                             </div>
-                                            <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                            <button type="submit" class="btn">Compare with my skills</button>
+                                            <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                            <button type="button" class="btn">Save</button>
                                         </div>
                                     </div>
                                 </div>
@@ -364,8 +364,8 @@
                                                         <span class="value">20</span>
                                                     </div>
                                                 </div>
-                                                <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                                <button type="submit" class="btn">Compare with my skills</button>
+                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                                <button type="button" class="btn">Save</button>
 
                                             </div>
                                         </div>
@@ -385,8 +385,8 @@
                                                     <span class="value" >20</span>
                                                 </div>
                                             </div>
-                                            <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                            <button type="submit" class="btn">Compare with my skills</button>
+                                            <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                            <button type="button" class="btn">Save</button>
                                         </div>
                                     </div>
                                 </div>
@@ -437,8 +437,8 @@
                                                         <span class="value">20</span>
                                                     </div>
                                                 </div>
-                                                <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                                <button type="submit" class="btn">Compare with my skills</button>
+                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                                <button type="button" class="btn">Save</button>
 
                                             </div>
                                         </div>
@@ -458,8 +458,8 @@
                                                     <span class="value" >20</span>
                                                 </div>
                                             </div>
-                                            <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                            <button type="submit" class="btn">Compare with my skills</button>
+                                            <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                            <button type="button" class="btn">Save</button>
                                         </div>
                                     </div>
                                 </div>

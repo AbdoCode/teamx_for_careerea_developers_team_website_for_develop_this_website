@@ -17,7 +17,7 @@
                         <div class="photo text-center">
                             <img src="companies/pics/logo.png" width="300px"/>
                             <div style="position: relative" class="uploads">
-                                <label for="files_upload" class="btn btn-primary btn-sm">
+                                <label for="files_upload" class="btn btn-primary">
                                     <span class="glyphicon glyphicon-upload"></span> Change Photo
                                 </label>
                                 <input type="file" id="files_upload" class="btn btn-primary" accept="image/*">
@@ -29,7 +29,10 @@
                             <h2>Company Name</h2>
                             <span class="rate">
                                 <i class="fa fa-star"></i>
-                                3.9
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-full"></i>
+                                <i class="fa fa-star-o"></i>
                             </span>
                             <span class="review">19 Review</span>
                         </div>
@@ -230,8 +233,8 @@
                                                         <span class="value" >'. $comparedNumber .'</span>
                                                     </div>
                                                 </div>
-                                                <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                                <button type="submit" class="btn">Compare with my skills</button>  
+                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
+                                                <button type="button" class="btn">Save</button>        
                                             </div>
                                         </div>
                                     </div>';

@@ -53,6 +53,17 @@
 .add-job .hr textarea{width: 100%;resize: none}
 .add-job .task textarea{resize: horizontal}
 /************************************************** End Add-Job **************************************************/
+/************************************************** Start view-answers **************************************************/
+.view-answers{padding: 70px 0 10px}
+.view-answers .tab-content{padding: 20px 10px}
+.view-answers .panel-body p span{color:#C0392B;font-weight: bold}
+.view-answers #task .uploads{width: 100%}
+.view-answers #task .uploads label{width: 100%}
+.view-answers #task form{width: 90%;margin: auto}
+/************************************************** End view-answers **************************************************/
+/************************************************** Start LiveTable **************************************************/
+.live-table{padding: 70px 0 10px}
+/************************************************** End LiveTable **************************************************/
 
 
 

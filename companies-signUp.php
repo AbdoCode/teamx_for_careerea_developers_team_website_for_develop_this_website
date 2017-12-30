@@ -53,7 +53,7 @@
                     </div>
                 </form>
                 <div class="packages">
-                    <p>What package suites you best? <span>You can try it for free for 3 weeks.</span></p>
+                    <p>What package suites you best? <a class="btn btn-danger btn-xs">You can try it for free for 3 weeks.</a></p>
                     <div class="period">
                         <span>1 Month</span>
                         <span>3 Months</span>
