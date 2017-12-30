@@ -513,7 +513,7 @@ header .box button{
     padding: 0 10px
 }
 
-.jobs .allJobs .jobBox{
+.jobBox{
     border: 2px solid #34495E;
     border-radius: 5px;
     margin: 10px 0;
@@ -526,7 +526,7 @@ header .box button{
     overflow: hidden
 }
 
-.jobs .allJobs .jobBox::before{
+.jobBox::before{
     content: "";
     width: 30px;
     height: 30px;
@@ -539,29 +539,29 @@ header .box button{
     display: none
 }
 
-.jobs .allJobs .jobBox:hover{
+.jobBox:hover{
     -webkit-transform: scale(1.025);
     -moz-transform: scale(1.025);
     -o-transform: scale(1.025);
     transform: scale(1.025)
 }
 
-.jobs .allJobs .jobBox:hover::before{
+.jobBox:hover::before{
     display: block
 }
 
-.jobs .allJobs .jobBox .boxWithoutHover{
+.jobBox .boxWithoutHover{
     padding: 15px 0;
     height: 270px
 }
 
-.jobs .allJobs .jobBox .boxWithoutHover .simpleContainer{
+.jobBox .boxWithoutHover .simpleContainer{
     overflow: hidden;
     height: 75px;
     margin-bottom: 15px
 }
 
-.jobs .allJobs .jobBox .imgBlock{
+.jobBox .imgBlock{
     width: 36%;
     overflow: hidden;
     text-align: center;
@@ -569,41 +569,41 @@ header .box button{
     float: left;
 }
 
-.jobs .allJobs .jobBox .imgBlock img{
+.jobBox .imgBlock img{
     width: 100%;
     height: auto;
     max-width: 100%
 }
 
-.jobs .allJobs .jobBox .headersInfo{
+.jobBox .headersInfo{
     float: left;
     width: 64%;
     height: 100%;
     max-height: 100%
 }
 
-.jobs .allJobs .jobBox .headersInfo h5:first-of-type{
+.jobBox .headersInfo h5:first-of-type{
     font-size: 18px;
     color: #C0392B;
 }
 
-.jobs .allJobs .jobBox h5{
+.jobBox h5{
     font-weight: bold
 }
 
-.jobs .allJobs .jobBox .boxWithoutHover > h5{
+.jobBox .boxWithoutHover > h5{
     text-align: left;
     margin-left: 20px
 }
 
-.jobs .allJobs .jobBox div.topRequirment{
+.jobBox div.topRequirment{
     width: 80%;
     margin: auto;
     overflow: hidden;
     height: 56px
 }
 
-.jobs .allJobs .jobBox div.topRequirment span{
+.jobBox div.topRequirment span{
     margin: 2px;
     background-color: #EEE;
     border: 1px solid #AAA;
@@ -612,61 +612,61 @@ header .box button{
     display: inline-block
 }
 
-.jobs .allJobs .jobBox .allInfo{
+.jobBox .allInfo{
     padding-top: 10px
 }
 
-.jobs .allJobs .jobBox .info{
+.jobBox .info{
     width: 32.3333333%;
     display: inline-block
 }
 
-.jobs .allJobs .jobBox .info .head{
+.jobBox .info .head{
     font-weight: bold;
     font-size: 16px
 }
 
-.jobs .allJobs .jobBox .info .value{
+.jobBox .info .value{
     color: #C0392B;
     font-weight: bold;
     font-size: 18px
 }
 
-.jobs .allJobs .jobBox .boxHover{
+.jobBox .boxHover{
     display: none;
     position: relative;
     padding-top: 33px;
     height: 270px
 }
 
-.jobs .allJobs .jobBox .boxHover > span{
+.jobBox .boxHover > span{
     position: absolute;
     font-size: 25px;
     top: 16px;
     left: 34px
 }
 
-.jobs .allJobs .jobBox .boxHover > span span:hover,
-.jobs .allJobs .jobBox .boxHover > span span.active{
+.jobBox .boxHover > span span:hover,
+.jobBox .boxHover > span span.active{
     color: #C0392B;
     cursor: pointer
 }
 
-.jobs .allJobs .jobBox .boxHover .info{
+.jobBox .boxHover .info{
     margin-top: 45px
 }
 
-.jobs .allJobs .jobBox .boxHover button:first-of-type{
+.jobBox .boxHover button:first-of-type{
     width: 60%;
     margin: 20px auto 0
 }
 
-.jobs .allJobs .jobBox .boxHover button:last-of-type{
+.jobBox .boxHover button:last-of-type{
     width: 60%;
     margin: 10px auto 0
 }
 
-.jobs .allJobs .jobBox .boxHover button:hover{
+.jobBox .boxHover button:hover{
     background-color: #34495E;
     color: #FFF
 }
@@ -2348,7 +2348,7 @@ footer .copyRight span{
         margin-bottom: 5px
     }
 
-    .jobs .allJobs .jobBox h5:nth-of-type(3){
+    .jobBox h5:nth-of-type(3){
         margin-left: 12px
     }
 
@@ -2421,30 +2421,30 @@ footer .copyRight span{
         margin-top: 40px
     }
 
-    .jobs .allJobs .jobBox{
+    .jobBox{
         height: 500px
     }
 
-    .jobs .allJobs .jobBox .allInfo{
+    .jobBox .allInfo{
         padding-top: 0
     }
 
-    .jobs .allJobs .jobBox .boxWithoutHover > .allInfo .info{
+    .jobBox .boxWithoutHover > .allInfo .info{
         height: 71px;
         max-height: 71px;
         overflow: hidden
     }
 
-    .jobs .allJobs .jobBox .boxHover{
+    .jobBox .boxHover{
         padding-top: 0;
         height: auto;
     }
 
-    .jobs .allJobs .jobBox .boxHover .info{
+    .jobBox .boxHover .info{
         margin-top: 0
     }
 
-    .jobs .allJobs .jobBox .boxHover > span{
+    .jobBox .boxHover > span{
         top: 166px;
         left: 22px
     }

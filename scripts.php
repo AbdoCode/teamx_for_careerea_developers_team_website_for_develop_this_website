@@ -8,3 +8,4 @@
 <script src="js/jquery.fittext.js"></script>
 <script src="js/script2.js"></script>
 <script src="js/script.js"></script>
+<script src="js/scriptUpdated.js"></script>

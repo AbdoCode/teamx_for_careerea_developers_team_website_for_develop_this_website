@@ -1,9 +1,7 @@
 <?php
-
     session_start();
     include "php/init.php";
     $pageTitle = "Home";
-
 ?>
 <!DOCTYPE html>
 
@@ -165,7 +163,7 @@
                                             <div class="boxWithoutHover">
                                                 <div class="simpleContainer">
                                                     <div class="imgBlock">
-                                                        <img src="companies/pics/'. $companyLogo .'" />
+                                                        <img src="'. $companyLogo .'" />
                                                     </div>
                                                     <div class="headersInfo">
                                                         <h5>'. $jobTitle .'</h5>
@@ -293,7 +291,7 @@
                                                     <div class="boxWithoutHover">
                                                         <div class="simpleContainer">
                                                             <div class="imgBlock">
-                                                                <img src="companies/pics/'. $companyLogo .'" />
+                                                                <img src="'. $companyLogo .'" />
                                                             </div>
                                                             <div class="headersInfo">
                                                                 <h5>'. $jobTitle .'</h5>

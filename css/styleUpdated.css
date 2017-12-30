@@ -1,0 +1,69 @@
+/************************************************** Start Company Sign Up **************************************************/
+.companySignUp{min-height: 518px;padding: 100px 0 20px}
+.companySignUp .signMainForm{max-width: 500px;margin: auto}
+.companySignUp .packages{display: none}
+.companySignUp .packages > p{font-size: 26px}
+.companySignUp .packages > p > span{color: #C0392B}
+.companySignUp .period{ text-align: center; margin: 20px 0}
+.companySignUp .period span{ border: 1px solid #C0392B; padding: 10px 50px;cursor: pointer;border-radius: 3px}
+.companySignUp .period span:hover,
+.companySignUp .period span.active{ background-color: #C0392B;color: #FFF}
+.companySignUp .offer{border: 2px solid #C0392B;padding: 0 10px;text-align: center}
+.companySignUp .special{background-color: #C0392B; width: 100%;font-weight: bold;text-align: center;padding: 10px;color: #FFF}
+.companySignUp .offer > span{font-weight: bold;color: #C0392B;display: block}
+.companySignUp .offer > button{margin: 10px 0}
+.companySignUp .offer .benfits {text-align: left}
+.companySignUp .packages > button{margin-top: 10px}
+.companySignUp .accessForm{max-width: 500px;margin: auto;display: none}
+.companySignUp .accessForm p{font-size: 26px}
+.companySignUp .finalStep{max-width: 800px;margin: auto;display: none}
+.companySignUp .finalStep .final .form-control{display: inline-block;width: auto}
+.companySignUp .finalStep .reviewBlock{border: 1px solid #C0392B;background-color: #C0392B;color: #FFF;padding: 10px;border-radius: 8px}
+.companySignUp .finalStep .reviewBlock p span{float: right;display: none}
+.companySignUp .finalStep .reviewBlock a{display: none}
+/************************************************** End Company Sign Up **************************************************/
+/************************************************** Start companyProfile **************************************************/
+.companyProfile{padding: 80px 0 40px}
+.uploads{width: 100%}
+.uploads input{display: none}
+.companyProfile .info h2{font-weight: bold}
+.companyProfile .info span{display: block}
+.companyProfile .info .rate,
+.companyProfile .commentBox .rate{font-size: 18px;font-weight: bold;color: #C0392B}
+.companyProfile .info .review{font-size: 16px;font-weight: bold;margin-top: 10px}
+.companyProfile .followBlock {margin-top: 20px}
+.companyProfile .followBlock p{margin-top: 10px}
+.companyProfile .otherInfo{margin-top: 30px}
+.companyProfile .otherInfo .tab-content{padding: 20px 0}
+.companyProfile .aboutInfo label{display: block;font-size: 18px}
+.companyProfile .aboutInfo .social{list-style: none;overflow: hidden;padding: 0;margin: 0}
+.companyProfile .aboutInfo .social li{float: left;margin-right: 10px;color: #FFF;background-color: #C0392B;padding: 5px;border-radius: 50%;}
+.companyProfile .commentBox{width: 100%}
+/************************************************** End companyProfile **************************************************/
+/************************************************** Start Add-Job **************************************************/
+.add-job{padding: 70px 0 10px}
+.add-job div > .form-control{width: auto}
+.add-job .jobDetails{margin-top: 15px}
+.add-job .jobDetails .tab-content{padding: 20px 10px}
+.add-job .jobDetails .tab-content .type{padding: 15px 0}
+.add-job .jobDetails .tab-content .question{padding: 10px}
+.add-job .jobDetails .tab-content .question > .form-control{display: inline-block;margin-bottom: 10px}
+.add-job .jobDetails .tab-content .question .input-group{margin-bottom: 5px}
+.add-job .addQ{margin-bottom: 10px}
+.add-job .hr textarea{width: 100%;resize: none}
+.add-job .task textarea{resize: horizontal}
+/************************************************** End Add-Job **************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

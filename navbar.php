@@ -54,10 +54,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                     <span>Sign Up</span>
                 </button>
             </a>
+            <a href="companies-signUp.php">
+                <button type="button" class="signupLink navbar-right navbar-btn">
+                    <i class="fa fa-building fa-fw fa-lg" aria-hidden="true"></i>
+                    <span>Sign Up as company</span>
+                </button>
+            </a>
             <?php else:
                 echo '<div class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <img src="applicants/profile_pics/'. $ApplicantProfilePhoto .'" />
+                            <img src="'. $ApplicantProfilePhoto .'" />
                             <span>'. $ApplicantName .'</span>
                             <span class="caret"></span>
                         </a>

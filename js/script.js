@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     // overlay for whole page
 
-    $(".forgetPassword .form1 > span, .sign:first-of-type, .jobs .allJobs .jobBox .boxHover button:last-of-type, .jobs .allJobs .jobBox .boxHover button:first-of-type, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .addSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .arrangeSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .editSkillButton, .signUp .container > span, .settings .subSettings .content .security .changePasswordButton, .viewJobDetails .applyJob, .viewJobDetails .compareSkills, .profile .profileInfo .profileContent .profileAbout .tabsDetails .applyJob, .profile .profileInfo .profileContent .profileAbout .tabsDetails .compareSkills").on("click", function () {
+    $(".forgetPassword .form1 > span, .sign:first-of-type, .jobBox .boxHover button:last-of-type, .jobBox .boxHover button:first-of-type, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .addSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .arrangeSkillButton, .profile .profileInfo .profileContent .profileAbout .tabsDetails #tab1Content .editSkillButton, .signUp .container > span, .settings .subSettings .content .security .changePasswordButton, .viewJobDetails .applyJob, .viewJobDetails .compareSkills, .profile .profileInfo .profileContent .profileAbout .tabsDetails .applyJob, .profile .profileInfo .profileContent .profileAbout .tabsDetails .compareSkills").on("click", function () {
 
         var overlay = $('<div></div>').prependTo('body').attr('class', 'overlayForPage');
 
@@ -268,7 +268,7 @@ $(document).ready(function () {
 
         //hover in job box
 
-        $(".jobs .allJobs .jobBox").mouseenter(function () {
+        $(".jobBox").mouseenter(function () {
 
             $(this).find('.boxWithoutHover').fadeOut(0);
             $(this).find('.boxHover').fadeIn(0);
@@ -283,7 +283,7 @@ $(document).ready(function () {
     }
     //active favorite star in job box
 
-    $(".jobs .allJobs .jobBox .boxHover > span span").click(function () {
+    $(".jobBox .boxHover > span span").click(function () {
 
         $(this).toggleClass("glyphicon-star").toggleClass("glyphicon-star-empty").toggleClass("active");
 
@@ -291,7 +291,7 @@ $(document).ready(function () {
 
     // Show Compare Box
 
-    $(".jobs .allJobs .jobBox .boxHover button:last-of-type").on('click', function () {
+    $(".jobBox .boxHover button:last-of-type").on('click', function () {
 
         $(".compareBox").fadeIn();
 
@@ -305,7 +305,7 @@ $(document).ready(function () {
 
     // Show Apply Box
 
-    $(".jobs .allJobs .jobBox .boxHover button:first-of-type").on('click', function () {
+    $(".jobBox .boxHover button:first-of-type").on('click', function () {
 
         $(".applyBox").fadeIn();
 
