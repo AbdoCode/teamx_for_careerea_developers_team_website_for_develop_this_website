@@ -29,34 +29,54 @@
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="technical">
                             <form>
-                                <div class="type">
-                                    <input type="radio" value="photo" name="question" id="photo"/>
-                                    <label for="photo">Photo Question</label>
-                                    <input type="radio" value="theoretical" name="question" id="theoretical"/>
-                                    <label for="theoretical">Theoretical Question</label>
-                                </div>
-                                <div class="question">
-                                    <label>1-</label>
-                                    <input type="text" placeholder="Type Your Question" class="form-control" />
-                                    <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1">A</span>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1">B</span>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1">C</span>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-addon" id="basic-addon1">D</span>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="btn btn-primary">
-                                        Next
-                                        <i class="fa fa-chevron-right fa-fw"></i>
+                                <div>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#Theoretical" aria-controls="Theoretical" role="tab" data-toggle="tab">Theoretical Question</a></li>
+                                        <li role="presentation"><a href="#Photo" aria-controls="Photo" role="tab" data-toggle="tab">Photo Question</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="Theoretical">
+                                            <a class="btn btn-primary pull-right addQ">
+                                                <i class="fa fa-plus-circle"></i>
+                                                Add Question
+                                            </a>
+                                            <div class="allQusetion">
+                                                <div class="question">
+                                                    <label>1-</label>
+                                                    <input type="text" placeholder="Type Your Question" class="form-control" />
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1">A</span>
+                                                        <input type="text" class="form-control">
+                                                        <input type="radio" name="rightAnswer"/>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1">B</span>
+                                                        <input type="text" class="form-control">
+                                                        <input type="radio" name="rightAnswer" />
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1">C</span>
+                                                        <input type="text" class="form-control">
+                                                        <input type="radio" name="rightAnswer" />
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1">D</span>
+                                                        <input type="text" class="form-control">
+                                                        <input type="radio" name="rightAnswer" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="Photo">
+                                            <div class="photoQuestion">
+                                                <div style="position: relative" class="uploads">
+                                                    <label for="files_upload" class="btn btn-primary btn-sm">
+                                                        <span class="glyphicon glyphicon-upload"></span> Upload Photo
+                                                    </label>
+                                                    <input type="file" id="files_upload" class="btn btn-primary" accept="image/*">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -70,7 +90,7 @@
                                 <div class="clearfix"></div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Question title</h3>
+                                        <h3 class="panel-title"><span>1- </span>Question title</h3>
                                     </div>
                                     <div class="panel-body">
                                         <textarea class="form-control" rows="8"></textarea>
@@ -118,11 +138,6 @@
                         </div>
                         <div role="tabpanel" class="tab-pane" id="finish">
                             <div class="finish">
-                                <a class="btn btn-primary pull-right addQ">
-                                    <i class="fa fa-plus-circle"></i>
-                                    Add Question
-                                </a>
-                                <div class="clearfix"></div>
                                 <select class="form-control">
                                     <option value="" selected disabled>Right Answer</option>
                                     <option value=""></option>

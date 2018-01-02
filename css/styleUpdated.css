@@ -46,12 +46,15 @@
 .add-job .jobDetails{margin-top: 15px}
 .add-job .jobDetails .tab-content{padding: 20px 10px}
 .add-job .jobDetails .tab-content .type{padding: 15px 0}
-.add-job .jobDetails .tab-content .question{padding: 10px}
+.add-job .jobDetails .tab-content .question{padding: 20px}
 .add-job .jobDetails .tab-content .question > .form-control{display: inline-block;margin-bottom: 10px}
+.add-job .jobDetails .tab-content .question .form-control ~ input{margin: 10px 10px 0}
 .add-job .jobDetails .tab-content .question .input-group{margin-bottom: 5px}
+.add-job .photoQuestion{padding: 100px 0}
 .add-job .addQ{margin-bottom: 10px}
 .add-job .hr textarea{width: 100%;resize: none}
 .add-job .task textarea{resize: horizontal}
+.add-job .finish{margin: 30px 0 250px}
 /************************************************** End Add-Job **************************************************/
 /************************************************** Start view-answers **************************************************/
 .view-answers{padding: 70px 0 10px}
@@ -64,17 +67,3 @@
 /************************************************** Start LiveTable **************************************************/
 .live-table{padding: 70px 0 10px}
 /************************************************** End LiveTable **************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
