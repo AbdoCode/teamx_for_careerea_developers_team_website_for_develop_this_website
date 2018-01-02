@@ -12,7 +12,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $contactmsg = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
     $formErrors = array();
-
     if(strlen($contactuser) <= 3){
 
         $formErrors[] = 'Username must be larger than <strong>3</strong> characters';
