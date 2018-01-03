@@ -95,8 +95,10 @@ if (isset($_POST['signIn'])) {
 
                 if(isset($_SESSION['userID']))
                     echo'<li><a href="profile.php?user_id='.$_SESSION['userID'].'"><i class="fa fa-user fa-fw fa-lg"></i>Profile</a></li>';
-                else
+                else{
                     echo'<li><a href="companyProfile.php?company_id='.$_SESSION['companyID'].'"><i class="fa fa-user fa-fw fa-lg"></i>Profile</a></li>';
+                    echo'<li><a href="add-job.php"><i class="fa fa-user fa-fw fa-lg"></i>Post New Job</a></li>';
+                }
 
                             echo'<li><a href="settings.php"><i class="fa fa-wrench fa-fw fa-lg"></i>Settings</a></li>
                             <li><a href="php/logout.php"><i class="fa fa-sign-out fa-fw fa-lg"></i>Logout</a></li>

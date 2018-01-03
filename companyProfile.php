@@ -2,6 +2,24 @@
     session_start();
     include "php/init.php";
     $pageTitle = "Profile";
+
+$companyName = '';
+$companySize = '';
+$companyIndustry = '';
+
+if(isset($_GET['company_id'])) {
+    $companyId = $_GET['company_id'];
+
+    $getCompanyDetails = $connect->prepare("SELECT * from companies WHERE company_ID = '".$companyId."' ");
+
+    $getCompanyDetails->execute();
+    if($row = $getCompanyDetails->fetch(PDO::FETCH_ASSOC)) {
+        $companyName = $row['name'];
+        $companySize = $row['company_size'];
+        $companyIndustry = $row['industry'];
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +44,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="info">
-                            <h2>Company Name</h2>
+                            <h2><?php echo $companyName;?></h2>
                             <span class="rate">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -61,12 +79,12 @@
                                     <label>
                                         <i class="fa fa-archive fa-fw"></i>
                                         <span>Hired: </span>
-                                        <span>15</span>
+                                        <span>0</span>
                                     </label>
                                     <label>
                                         <i class="fa fa-bars fa-fw"></i>
                                         <span>Job posts: </span>
-                                        <span>35</span>
+                                        <span>0</span>
                                     </label>
                                     <label>
                                         <i class="fa fa-map-marker fa-fw"></i>
@@ -82,22 +100,22 @@
                                     </label>
                                     <label>
                                         <i class="fa fa-globe fa-fw"></i>
-                                        <span>www.company.com</span>
+                                        <span>www.dell.com</span>
                                     </label>
                                     <label>
                                         <span>Size:</span>
-                                        <span>100 - 500</span>
+                                        <span><?php echo $companySize; ?></span>
                                     </label>
                                     <label>
-                                        <span>Industry</span> /
-                                        <span>Software</span>
+                                        <span>Industry: </span>
+                                        <span><?php echo $companyIndustry; ?></span>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div>
                                     <h2>About</h2>
-                                    <p>This is Company Details This is Company Details This is Company Details This is Company Details This is Company Details This is Company Details This is Company Details This is Company Details This is Company Details </p>
+                                    <p> Dell is founded by Michel Dell at 1997 </p>
                                 </div>
                             </div>
                         </div>
@@ -253,39 +271,7 @@
                                             <i class="fa fa-star fa-fw"></i>
                                             3.9
                                         </span>
-                                            <p class="lead">This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="commentBox">
-                                    <div class="col-sm-2">
-                                        <img src="applicants/profile_pics/abdelrahmanamer64@gmaillll.comScreenshot_2.png" class="img-responsive img-circle" width="100px" />
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <div class="commentRate">
-                                        <span class="rate">
-                                            <i class="fa fa-star fa-fw"></i>
-                                            3.9
-                                        </span>
-                                            <p class="lead">This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="commentBox">
-                                    <div class="col-sm-2">
-                                        <img src="applicants/profile_pics/abdelrahmanamer64@gmaillll.comScreenshot_2.png" class="img-responsive img-circle" width="100px" />
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <div class="commentRate">
-                                        <span class="rate">
-                                            <i class="fa fa-star fa-fw"></i>
-                                            3.9
-                                        </span>
-                                            <p class="lead">This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment This is Comment </p>
+                                            <p class="lead">In the past 3 years i found out i would have never get experienced unless i got hired by DELL </p>
                                         </div>
                                     </div>
                                 </div>
