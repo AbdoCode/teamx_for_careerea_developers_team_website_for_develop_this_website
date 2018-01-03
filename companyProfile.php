@@ -184,7 +184,7 @@ if(isset($_GET['company_id'])) {
                                             <div class="boxWithoutHover">
                                                 <div class="simpleContainer">
                                                     <div class="imgBlock">
-                                                        <img src="'. $companyLogo .'" />
+                                                        <img src="companies/pics/'. $companyLogo .'" />
                                                     </div>
                                                     <div class="headersInfo">
                                                         <h5>'. $jobTitle .'</h5>

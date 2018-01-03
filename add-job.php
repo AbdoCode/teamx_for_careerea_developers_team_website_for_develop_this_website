@@ -45,8 +45,7 @@ if(isset($_POST['right_answer'])) {
                         <li role="presentation"><a href="#task" aria-controls="task" role="tab" data-toggle="tab">Task</a></li>
                         <?php
                         if(isset($_SESSION['companyID']))
-                            echo'
-                        <li> role="presentation"><a href="#finish" aria-controls="finish" role="tab" data-toggle="tab">Finish</a></li>';
+                            echo'<li role="presentation"><a href="#finish" aria-controls="finish" role="tab" data-toggle="tab">Finish</a></li>';
                         ?>
                     </ul>
                     <div class="tab-content">
