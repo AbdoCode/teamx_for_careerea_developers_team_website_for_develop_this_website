@@ -1,32 +1,39 @@
 <?php
 
-    session_start();
-    include "php/init.php";
-    $pageTitle = "Job Name";
+session_start();
+include "php/init.php";
+$pageTitle = "Job Name";
+
+$jobId = '';
+
+
+if(isset($_GET['job_id'])) {
+    $jobId = $_GET['job_id'];
+}
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
     <?php require 'head.php'; ?>
     <body>
-    
         <?php include 'navbar.php'; ?>
         
         <!-- Start Section View Job Details -->
         <section class="viewJobDetails">
             <div class="container">
                 <div class="row">
-                    <?php include 'applyBox-compareBox.php'; ?>
+
                     <div class="col-sm-9 col-xs-12 thumbnail">
                         <div class="col-xs-3">
                             <img class="img-responsive" src="images/profile/activity/dell.png" alt="Dell">
                         </div>
                         <div class="col-xs-9">
-                            <h1 class="courseInfo"> Job Title</h1>
+
                             <h3> Andrriod Developer </h3>
-                            <h2 class="courseInfo">Company Name </h2>
+
                             <h3> IBM </h3>
-                            <h2 class="courseInfo">Location</h2>
+
                             <h3>6-october</h3>
                         </div>
                         <div class="col-xs-12">
@@ -46,21 +53,18 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class=" viewCourseFormMobile text-center visible-xs">
-                                <button class="formButton btn btn-danger btn-lg applyJob">Apply </button>  
-                                <button class="formButton btn btn-danger btn-lg compareSkills">Compare With my Skills</button>
-                                <button class="formButton bnn btn-danger btn-lg followButton">Follow</button>
-                            </div> 
                         </div>
                     </div>
                     <div class="col-sm-3 hidden-xs">
-                        <div class="viewCourseForm text-center">
-                            <button class="formButton btn btn-danger btn-lg applyJob">Apply</button>  
-                            <button class="formButton btn btn-danger btn-lg compareSkills">Compare With my Skills</button> 
-                            <button class="formButton bnn btn-danger btn-lg followButton">Follow</button>
-                            <p class="lead followText">"Follow To Be Notified with Every Job Posted By This Company"</p>
-                        </div> 
-                    </div> 
+
+                        <?php
+                        if(!isset($_SESSION['companyID']))
+                        echo'<div class="viewCourseForm text-center">
+                            <a href="add-job.php?job_id='.$jobId.'"> <button class="formButton btn btn-primary btn-lg">Apply </button></a>
+                        </div>';
+                        ?>
+
+                    </div>
                     <div class="col-sm-9 col-xs-12">
                         <div class="viewCourseTabs">
                             <ul class="myTabs nav nav-tabs">

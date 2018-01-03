@@ -1,7 +1,11 @@
 <?php
     session_start();
     include "php/init.php";
-    $pageTitle = "Add Job";
+ $pageTitle = "Add Job";
+
+if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
+    header('Location: signUp.php');
+
 ?>
 
 <!DOCTYPE html>

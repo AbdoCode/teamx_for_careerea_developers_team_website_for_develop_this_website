@@ -12,18 +12,18 @@
         </tr>
         <tr>
             <td>
-                <ol>
+                <ul>
                     <a href="http://php.net" target="_blank"><li>php</li></a>
                     <a href="https://www.w3schools.com/html" target="_blank"><li>HTML</li></a>
                     <a href="https://www.w3schools.com/css" target="_blank"><li>CSS</li></a>
                     <a href="https://www.w3schools.com/js" target="_blank"><li>JavaScript</li></a>
-                </ol>
+                </ul>
             </td>
             <td>
-                <ol>
+                <ul>
                     <a href="https://laravel.com" target="_blank"><li>Laravel</li></a>
                     <a href="http://php.net/manual/en/book.pdo.php" target="_blank"><li>PDO</li></a>
-                </ol>
+                </ul>
             </td>
         </tr>
     </table>

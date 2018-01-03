@@ -2,6 +2,8 @@
     session_start();
     include "php/init.php";
     $pageTitle = "Sign Up For Companies";
+
+
 ?>
 
 <!DOCTYPE html>
@@ -17,43 +19,45 @@
             <div class="container">
                 <form class="form-horizontal signMainForm" id="form1">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Company Name" />
+                        <input type="text" class="form-control" placeholder="Company Name" name="company_name" />
                     </div>
                     <div class="form-group">
-                        <select class="form-control">
+                        <select class="form-control" name="company_size">
                             <option value="" selected disabled>Company Size</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="1-11">1-11</option>
+                            <option value="12-40">12-40</option>
+                            <option value="41-100">41-100</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <select class="form-control">
+                        <select class="form-control" name="industry">
                             <option value="" selected disabled>Industry</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="web development">Web Development</option>
+                            <option value="mobile development">Mobile Development</option>
+                            <option value="software development">Software Development</option>
+                            <option value="digital design">Digital Design</option>
+                            <option value="online recruitment">Online Recruitment</option>
+                            <option value="real state">Real Estate</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <select class="form-control">
+                        <select class="form-control" name="location">
                             <option value="" selected disabled>Location</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="cairo">Cairo</option>
+                            <option value="giza">Giza</option>
+                            <option value="maadi">Maadi</option>
+                            <option value="nasr">Nasr City</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Phone Number" />
+                        <input type="text" class="form-control" placeholder="Phone Number" name="phone"/>
                     </div>
                     <div class="form-group">
                         <button type="button" class="col-sm-4 col-sm-offset-4 btn btn-primary">Next</button>
                     </div>
                 </form>
                 <div class="packages">
-                    <p>What package suites you best? <a class="btn btn-danger btn-xs">You can try it for free for 3 weeks.</a></p>
+                    <p>What package suites you best? <a class="btn btn-success btn-sm">You can try it for free for 3 weeks.</a></p>
                     <div class="period">
                         <span>1 Month</span>
                         <span>3 Months</span>
@@ -62,92 +66,81 @@
                     </div>
                     <div class="offers">
                         <div class="col-sm-3">
-                            <div class="special">Most Selected</div>
                             <div class="offer">
                                 <h2>Economy</h2>
-                                <p>This is Economy</p>
-                                <span>10$/Month</span>
+                                <p>Suitable for Startups</p>
+                                <span>10$ / Month</span>
                                 <button class="btn btn-default">Choose</button>
                                 <div class="benfits">
                                     <label>Benfits</label>
-                                    <ol>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ol>
+                                    <ul>
+                                        <li>2 jobs per month</li>
+                                        <li>View 50 Applicants in the Live Table</li>
+                                        <li>Choose 10 applicants to go from Technical to Hr</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="special">Best Selling</div>
                             <div class="offer">
-                                <h2>Economy</h2>
-                                <p>This is Economy</p>
-                                <span>10$/Month</span>
+                                <h2>Silver</h2>
+                                <p>Suitable for small business</p>
+                                <span>40$ / Month</span>
                                 <button class="btn btn-default">Choose</button>
                                 <div class="benfits">
                                     <label>Benfits</label>
-                                    <ol>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ol>
+                                    <ul>
+                                        <li>4 jobs per month</li>
+                                        <li>View 100 Applicants in the Live Table</li>
+                                        <li>Choose 20 applicants to go from Technical to Hr</li>
+                                        <li>Choose 10 applicants to go from HR to Task</li>
+                                        <li>Choose 5 applicants to send them a task</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="offer">
-                                <h2>Economy</h2>
-                                <p>This is Economy</p>
-                                <span>10$/Month</span>
+                                <h2>Gold</h2>
+                                <p>Suitable for Medium Business</p>
+                                <span>100$ / Month</span>
                                 <button class="btn btn-default">Choose</button>
                                 <div class="benfits">
                                     <label>Benfits</label>
-                                    <ol>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ol>
+                                    <ul>
+                                        <li>8 jobs per month</li>
+                                        <li>View 150 Applicants in the Live Table</li>
+                                        <li>Choose 50 applicants to go from Technical to Hr</li>
+                                        <li>Choose 30 applicants to go from HR to Task</li>
+                                        <li>Choose 20 applicants to send them a task</li>
+                                        <li>Choose 4 jobs To be added to Careerea Hot Jobs Section</li>
+                                        <li>Choose 2 jobs To be pushed as a notifications to every applicant who live in company region and interested in company industry</li>
+
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="offer">
-                                <h2>Economy</h2>
-                                <p>This is Economy</p>
-                                <span>10$/Month</span>
+                                <h2>Ultimate</h2>
+                                <p>Suitable for Large Corporations / Factories</p>
+                                <span>200$ / Month</span>
                                 <button class="btn btn-default">Choose</button>
                                 <div class="benfits">
                                     <label>Benfits</label>
-                                    <ol>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ol>
+                                    <ul>
+                                        <li>15 jobs per month</li>
+                                        <li>View 250 Applicants per job in the Live Table</li>
+                                        <li>Choose 150 applicants per job to go from Technical to Hr</li>
+                                        <li>Choose 100 applicants per job to go from HR to Task</li>
+                                        <li>Choose 80 applicants per job to send them a task</li>
+                                        <li>Choose 10 jobs To be added to Careerea Hot Jobs Section</li>
+                                        <li>Review Applicant Tasks by seniors in the field of job post</li>
+                                        <li>Put company logo in Careerea Home page in Partners section</li>
+                                        <li>Push all Jobs as notifications to Company followers</li>
+                                        <li>Push all Jobs as notifications to every applicant who live in company region and have the job skills or experience level</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
