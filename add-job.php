@@ -6,6 +6,12 @@
 if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
     header('Location: signUp.php');
 
+if(isset($_POST['right_answer'])) {
+
+    echo'<script>alert("'.$_POST['rightAnswer'].'")</script>';
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -18,10 +24,11 @@ if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
             <div class="container">
                 <select class="form-control">
                     <option value="" selected disabled>Job Title</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="">Software Developer</option>
+                    <option value="">Web Developer</option>
+                    <option value="">Graphic Designer</option>
+                    <option value="">Software Tester</option>
+
                 </select>
                 <div class="jobDetails">
                     <ul class="nav nav-tabs" role="tablist">
@@ -32,7 +39,7 @@ if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="technical">
-                            <form>
+                            <form method="post">
                                 <div>
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li role="presentation" class="active"><a href="#Theoretical" aria-controls="Theoretical" role="tab" data-toggle="tab">Theoretical Question</a></li>
@@ -51,24 +58,34 @@ if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="basic-addon1">A</span>
                                                         <input type="text" class="form-control">
-                                                        <input type="radio" name="rightAnswer"/>
+                                                        <label>
+                                                        <input type="radio" value="1a" name="rightAnswer"/> Right answer
+                                                            </label>
                                                     </div>
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="basic-addon1">B</span>
                                                         <input type="text" class="form-control">
-                                                        <input type="radio" name="rightAnswer" />
+                                                        <label>
+                                                            <input type="radio" value="1b" name="rightAnswer"/> Right answer
+                                                        </label>
                                                     </div>
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="basic-addon1">C</span>
                                                         <input type="text" class="form-control">
-                                                        <input type="radio" name="rightAnswer" />
+                                                        <label>
+                                                            <input type="radio" value="1c" name="rightAnswer"/> Right answer
+                                                        </label>
                                                     </div>
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="basic-addon1">D</span>
                                                         <input type="text" class="form-control">
-                                                        <input type="radio" name="rightAnswer" />
+                                                        <label>
+                                                            <input type="radio" value="1d" name="rightAnswer"/> Right answer
+                                                        </label>
                                                     </div>
+
                                                 </div>
+                                                <input type="submit" class="btn btn-primary" name="right_answer" value="submmit">
                                             </div>
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="Photo">
@@ -85,6 +102,7 @@ if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
                                 </div>
                             </form>
                         </div>
+
                         <div role="tabpanel" class="tab-pane" id="hr">
                             <div class="hr">
                                 <a class="btn btn-primary pull-right addQ">
@@ -102,6 +120,7 @@ if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
                                 </div>
                             </div>
                         </div>
+
                         <div role="tabpanel" class="tab-pane" id="task">
                             <div class="task">
                                 <form class="form-horizontal">
@@ -142,13 +161,9 @@ if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID']))
                         </div>
                         <div role="tabpanel" class="tab-pane" id="finish">
                             <div class="finish">
-                                <select class="form-control">
-                                    <option value="" selected disabled>Right Answer</option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                </select>
+
+                                Number of Technical Questions: <br> <br>
+                                Number of HR Questions:
                             </div>
                         </div>
                     </div>
