@@ -1,18 +1,32 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
+if (isset($_POST['signIn'])) {
     $email = $_POST['email'];
     $password = $_POST['pass'];
     $encPassword = sha1($password);
+    $userType = $_POST['user_type'];
+    $sqlStatement = '';
 
-    $stmt = $connect->prepare("SELECT applicant_ID, email, password FROM applicants WHERE (email = '$email' OR phone = '$email') AND password = '$encPassword'");
+    if($userType == 'company')
+        $sqlStatement = "SELECT * FROM companies WHERE email = '$email' AND password = '$password'";
+    else
+        $sqlStatement = "SELECT * FROM applicants WHERE (email = '$email' OR phone = '$email') AND password = '$encPassword'";
+
+    $stmt = $connect->prepare($sqlStatement);
     $stmt->execute();
     $row = $stmt->fetch();
     $check = $stmt-> rowCount();
 
     if ($check > 0) {
-        $_SESSION['userID'] = $row['applicant_ID'];
-        header("Location: index.php");
+        if($userType == 'applicant') {
+            $_SESSION['userID'] = $row['applicant_ID'];
+            header("Location: index.php");
+        }
+        else{
+            $_SESSION['companyID'] = $row['company_ID'];
+            header("Location: companyProfile.php?company_id=".$_SESSION['companyID']."");
+        }
+
     } else {
         echo '<style>.signInBlock{display: block}</style>';
         $notify = '<div class="alert alert-danger custom-alert">Invalid <strong>Email</strong> or <strong>Password</strong>.</div>';
@@ -43,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                 <li><a href="index.php#partners">Partners</a></li>
                 <li <?php if (basename($_SERVER['PHP_SELF']) == 'jobs.php') echo 'class="active"' ?>><a href="jobs.php">Jobs</a></li>
             </ul>
-            <?php if(!isset($_SESSION['userID'])): ?>
+            <?php if(!isset($_SESSION['userID']) && !isset($_SESSION['companyID'])): ?>
             <button type="button" class="sign navbar-right navbar-btn">
                 <i class="fa fa-sign-in fa-fw fa-lg" aria-hidden="true"></i>
                 <span>Login</span>
@@ -61,16 +75,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
                 </button>
             </a>
             <?php else:
+
                 echo '<div class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <img src="'. $ApplicantProfilePhoto .'" />
-                            <span>'. $ApplicantName .'</span>
-                            <span class="caret"></span>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">';
+
+
+                if(isset($_SESSION['userID']))
+                    echo'<img src="applicants/profile_pics/'. $ApplicantProfilePhoto .'" />
+                        <span>'. $ApplicantName .'</span>';
+                else
+                    //echo'<script>alert("'.$companyProfilePhoto.'")</script>';
+                    echo'<img src="companies/pics/'.$companyProfilePhoto.'" />
+                        <span>'.$companyName.'</span>';
+
+                            echo'<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menuProfile">
-                            <i class="fa fa-caret-down fa-fw fa-3x"></i>
-                            <li><a href="profile.php"><i class="fa fa-user fa-fw fa-lg"></i>Profile</a></li>
-                            <li><a href="settings.php"><i class="fa fa-wrench fa-fw fa-lg"></i>Settings</a></li>
+                            <i class="fa fa-caret-down fa-fw fa-3x"></i>';
+
+                if(isset($_SESSION['userID']))
+                    echo'<li><a href="profile.php?user_id='.$_SESSION['userID'].'"><i class="fa fa-user fa-fw fa-lg"></i>Profile</a></li>';
+                else
+                    echo'<li><a href="companyProfile.php?company_id='.$_SESSION['companyID'].'"><i class="fa fa-user fa-fw fa-lg"></i>Profile</a></li>';
+
+                            echo'<li><a href="settings.php"><i class="fa fa-wrench fa-fw fa-lg"></i>Settings</a></li>
                             <li><a href="php/logout.php"><i class="fa fa-sign-out fa-fw fa-lg"></i>Logout</a></li>
                         </ul>
                     </div>
@@ -159,6 +187,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signIn'])) {
             <input class="passwordField" type="password" placeholder="Password" name="pass" />
             <span class="glyphicon glyphicon-eye-open"></span>
         </div>
+        <select  id="user" class="form-control" name="user_type">
+            <option value="applicant">I am an Applicant</option>
+            <option value="company">I am a Company</option>
+        </select><br>
         <?php
             if(isset($notify)) {
                 echo $notify;

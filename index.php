@@ -17,7 +17,7 @@
                 <div class="container">
                     <div class="box">
                         <h1 id="heading-fit">Careerea</h1><br />
-                        <h1>Find and learn more skills to apply for most convenient job</h1>
+                        <h1>Know yourself before companies know you</h1>
                         <a href="jobs.php"><button class="btn btn-success">Jobs</button></a>
                     </div>
                 </div>
@@ -101,7 +101,6 @@
         <!-- End partners -->
         
         <!-- Start Jobs -->
-        <?php include 'applyBox-compareBox.php'; ?>
         <section class="jobs">
             <div class="container">
                 <h1>Jobs</h1>
@@ -229,8 +228,8 @@
                                                         <span class="value" >'. $comparedNumber .'</span>
                                                     </div>
                                                 </div>
-                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
-                                                <button type="button" class="btn">Save</button>  
+                                                <a href="View-Job-Details.php?job_id=1" type="button" class="btn" name="view">View</a><br />
+                                                <a href="save.php?job_id=" type="button" class="btn" name="save">Save</a>
                                             </div>
                                         </div>
                                     </div>';
@@ -336,8 +335,8 @@
                                                                     <span class="value">' . $comparedNumber . '</span>
                                                                 </div>
                                                             </div>
-                                                            <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
-                                                            <button type="button" class="btn">Save</button>        
+                                                            <a href="View-Job-Details.php?job_id=" type="button" class="btn" name="apply">View</a><br />
+                                                            <a href="save.php?job_id=" type="button" class="btn" name="save">Save</a>
                                                         </div>
                                                     </div>
                                                     <div class="boxHover">
@@ -356,8 +355,8 @@
                                                                 <span class="value">' . $comparedNumber . '</span>
                                                             </div>
                                                         </div>
-                                                        <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
-                                                        <button type="button" class="btn">Save</button>        
+                                                        <a href="View-Job-Details.php?job_id=" type="button" class="btn" name="apply">View</a><br />
+                                                        <a href="save.php?job_id=" type="button" class="btn" name="save">Save</a>
                                                     </div>
                                                 </div>
                                             </div>';
