@@ -204,12 +204,12 @@
                                                             <span class="value">'. $appliedNumber .'</span>
                                                         </div>
                                                         <div class="info">
-                                                            <span class="head">Compared</span><br />
+                                                            <span class="head">Hired</span><br />
                                                             <span class="value">'. $comparedNumber .'</span>
                                                         </div>
                                                     </div>
                                                     <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="apply">View</a><br />
-                                                    <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="apply">Save</a>
+                                                    <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="apply">Save</a>
                                                 </div>
                                             </div>
                                             <div class="boxHover">
@@ -224,12 +224,12 @@
                                                         <span class="value" >'. $appliedNumber .'</span>
                                                     </div>
                                                     <div class="info">
-                                                        <span class="head">Compared</span><br />
+                                                        <span class="head">Hired</span><br />
                                                         <span class="value" >'. $comparedNumber .'</span>
                                                     </div>
                                                 </div>
                                                 <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="view">View</a><br />
-                                                <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
+                                                <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
                                             </div>
                                         </div>
                                     </div>';
@@ -331,12 +331,12 @@
                                                                     <span class="value">' . $appliedNumber . '</span>
                                                                 </div>
                                                                 <div class="info">
-                                                                    <span class="head">Compared</span><br />
+                                                                    <span class="head">Hired</span><br />
                                                                     <span class="value">' . $comparedNumber . '</span>
                                                                 </div>
                                                             </div>
                                                             <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="apply">View</a><br />
-                                                            <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
+                                                            <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
                                                         </div>
                                                     </div>
                                                     <div class="boxHover">
@@ -351,12 +351,12 @@
                                                                 <span class="value">' . $appliedNumber . '</span>
                                                             </div>
                                                             <div class="info">
-                                                                <span class="head">Compared</span><br />
+                                                                <span class="head">Hired</span><br />
                                                                 <span class="value">' . $comparedNumber . '</span>
                                                             </div>
                                                         </div>
                                                         <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="apply">View</a><br />
-                                                        <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
+                                                        <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
                                                     </div>
                                                 </div>
                                             </div>';

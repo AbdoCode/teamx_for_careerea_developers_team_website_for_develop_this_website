@@ -5,10 +5,17 @@ include "php/init.php";
 $pageTitle = "Job Name";
 
 $jobId = '';
-
+$jobTitle = '';
 
 if(isset($_GET['job_id'])) {
     $jobId = $_GET['job_id'];
+
+    $getJobDetails = $connect->prepare("SELECT * from jobs WHERE job_ID = '".$jobId."' ");
+
+    $getJobDetails->execute();
+    if($row = $getJobDetails->fetch(PDO::FETCH_ASSOC)) {
+        $jobTitle = $row['job_title'];
+    }
 }
 
 ?>
@@ -30,11 +37,11 @@ if(isset($_GET['job_id'])) {
                         </div>
                         <div class="col-xs-9">
 
-                            <h3> Andrriod Developer </h3>
+                            <h3> <?php echo $jobTitle;?> </h3>
 
-                            <h3> IBM </h3>
+                            <h3> e-Finance </h3>
 
-                            <h3>6-october</h3>
+                            <h3>Smart Village</h3>
                         </div>
                         <div class="col-xs-12">
                             <div class="text-center">

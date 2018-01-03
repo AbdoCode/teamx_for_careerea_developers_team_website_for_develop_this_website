@@ -226,12 +226,12 @@ if(isset($_GET['company_id'])) {
                                                             <span class="value">'. $appliedNumber .'</span>
                                                         </div>
                                                         <div class="info">
-                                                            <span class="head">Compared</span><br />
+                                                            <span class="head">Hired</span><br />
                                                             <span class="value">'. $comparedNumber .'</span>
                                                         </div>
                                                     </div>
-                                                    <button  type="submit" class="btn" name="apply">Apply</button><br />
-                                                    <button type="submit" class="btn">Compare with my skills</button>        
+                                                    <a href="View-Job-Details.php" type="button" class="btn" name="apply">Details</a><br />
+                                                <a href="live-table.php" type="button" class="btn" name="apply">Live Table</a>
                                                 
                                                 </div>
                                             </div>
@@ -247,12 +247,12 @@ if(isset($_GET['company_id'])) {
                                                         <span class="value" >'. $appliedNumber .'</span>
                                                     </div>
                                                     <div class="info">
-                                                        <span class="head">Compared</span><br />
+                                                        <span class="head">Hired</span><br />
                                                         <span class="value" >'. $comparedNumber .'</span>
                                                     </div>
                                                 </div>
-                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
-                                                <button type="button" class="btn">Save</button>        
+                                                <a href="View-Job-Details.php" type="button" class="btn" name="apply">Details</a><br />
+                                                <a href="live-table.php" type="button" class="btn" name="apply">Live Table</a>
                                             </div>
                                         </div>
                                     </div>';
