@@ -4,20 +4,41 @@
     $pageTitle = "Sign Up For Companies";
 
 
+if(isset($_POST['add_company']))
+{
+    $companyName = $_POST['company_name'];
+    $companySize = $_POST['company_size'];
+    $companyIndustry = $_POST['industry'];
+    $companyLocation = $_POST['location'];
+    $companyPhone = $_POST['phone'];
+    $companyEmail = $_POST['email'];
+    $companyPassword = $_POST['password'];
+    //$companyPhone = $_POST['phone'];
+    $addedBy = '1';
+    $logo = 'logo.png';
+
+    $addCompany = "INSERT INTO companies(name, email, password, location,logo,company_size, industry, phone, admin_ID)
+VALUES ('$companyName','$companyEmail','$companyPassword','$companyLocation','$logo','$companySize','$companyIndustry','$companyPhone','$addedBy')";
+    
+    $connect -> exec($addCompany);
+    $companyId = $connect->lastInsertId();
+    $_SESSION['companyID'] = $companyId;
+    header("Location: companyProfile.php?company_id=$companyId");
+}
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
     <?php require 'head.php'; ?>
     <body>
-
     <?php include 'navbar.php'; ?>
 
         <!-- Company SignUp -->
 
         <div class="companySignUp">
             <div class="container">
-                <form class="form-horizontal signMainForm" id="form1">
+                <form class="form-horizontal signMainForm" id="form1" method="post">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Company Name" name="company_name" />
                     </div>
@@ -150,13 +171,13 @@
                 <form class="form-horizontal accessForm">
                     <p>Write your access information</p>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" form="form1"/>
+                        <input type="email" class="form-control" placeholder="Email" form="form1" name="email"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password" form="form1"/>
+                        <input type="password" class="form-control" placeholder="Password" form="form1" name="password"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Confirm Password" form="form1"/>
+                        <input type="password" class="form-control" placeholder="Confirm Password" form="form1" name="confirm_password"/>
                     </div>
                     <div class="form-group">
                         <button type="button" class="col-sm-4 col-sm-offset-4 btn btn-primary">Next</button>
@@ -195,10 +216,8 @@
                     </div>
                     <div class="col-sm-5">
                         <div class="reviewBlock">
-                            <p class="lead">Sub total:<span>100$</span></p>
-                            <p class="lead">Taxes:<span>20$</span></p>
-                            <p class="lead">Total:<span>120$</span></p>
-                            <a href="profile.php" type="submit" class="btn btn-success btn-block" form="form1">Checkout</a>
+                            <p class="lead">Total:<span>100 $</span></p>
+                            <input class="btn btn-success btn-block" type="submit" value="Checkout" form="form1" name="add_company"/>
                         </div>
                     </div>
                 </form>
