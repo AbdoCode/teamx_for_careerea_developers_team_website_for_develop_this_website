@@ -162,7 +162,7 @@
                                             <div class="boxWithoutHover">
                                                 <div class="simpleContainer">
                                                     <div class="imgBlock">
-                                                        <img src="'. $companyLogo .'" />
+                                                        <img src="companies/pics/'. $companyLogo .'" />
                                                     </div>
                                                     <div class="headersInfo">
                                                         <h5>'. $jobTitle .'</h5>
@@ -208,8 +208,8 @@
                                                             <span class="value">'. $comparedNumber .'</span>
                                                         </div>
                                                     </div>
-                                                    <a href="View-Job-Details.php" type="button" class="btn" name="apply">View</a><br />
-                                                    <button type="button" class="btn">Save</button>
+                                                    <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="apply">View</a><br />
+                                                    <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="apply">Save</a>
                                                 </div>
                                             </div>
                                             <div class="boxHover">
@@ -228,8 +228,8 @@
                                                         <span class="value" >'. $comparedNumber .'</span>
                                                     </div>
                                                 </div>
-                                                <a href="View-Job-Details.php?job_id=1" type="button" class="btn" name="view">View</a><br />
-                                                <a href="save.php?job_id=" type="button" class="btn" name="save">Save</a>
+                                                <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="view">View</a><br />
+                                                <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
                                             </div>
                                         </div>
                                     </div>';
@@ -289,7 +289,7 @@
                                                     <div class="boxWithoutHover">
                                                         <div class="simpleContainer">
                                                             <div class="imgBlock">
-                                                                <img src="'. $companyLogo .'" />
+                                                                <img src="companies/pics/'. $companyLogo .'" />
                                                             </div>
                                                             <div class="headersInfo">
                                                                 <h5>'. $jobTitle .'</h5>
@@ -335,8 +335,8 @@
                                                                     <span class="value">' . $comparedNumber . '</span>
                                                                 </div>
                                                             </div>
-                                                            <a href="View-Job-Details.php?job_id=" type="button" class="btn" name="apply">View</a><br />
-                                                            <a href="save.php?job_id=" type="button" class="btn" name="save">Save</a>
+                                                            <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="apply">View</a><br />
+                                                            <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
                                                         </div>
                                                     </div>
                                                     <div class="boxHover">
@@ -355,8 +355,8 @@
                                                                 <span class="value">' . $comparedNumber . '</span>
                                                             </div>
                                                         </div>
-                                                        <a href="View-Job-Details.php?job_id=" type="button" class="btn" name="apply">View</a><br />
-                                                        <a href="save.php?job_id=" type="button" class="btn" name="save">Save</a>
+                                                        <a href="View-Job-Details.php?job_id='.$jobId.'" type="button" class="btn" name="apply">View</a><br />
+                                                        <a href="save.php?job_id='.$jobId.'" type="button" class="btn" name="save">Save</a>
                                                     </div>
                                                 </div>
                                             </div>';

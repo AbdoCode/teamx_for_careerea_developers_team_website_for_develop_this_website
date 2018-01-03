@@ -4,6 +4,13 @@
     include "php/init.php";
     $pageTitle = "Jobs";
 
+$searchCondition = '';
+
+if(isset($_POST['search_condition']))
+{
+    $searchCondition = $_POST['search_condition'];
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +27,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <form class="form-inline text-center" method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
-                                <input name="search" class="form-control input-lg inputSearchMain " type="text" placeholder="Course name.../ Course Title"/>
+                                <input name="search_condition" value="<?php echo $searchCondition; ?>" class="form-control input-lg inputSearchMain " type="text" placeholder="Job Title / Company Name"/>
                                 <div class="mainSearchButtonBox">
                                     <button name="searchCourse" class="btn btn-lg searchButton text-center"><i class="fa fa-search fa-lg fa-fw"></i> Search </button>
                                     <a class="btn btn-lg showFilterMobile visible-xs"><i class="fa fa-search fa-lg fa-fw"></i> Filter Search </a>
