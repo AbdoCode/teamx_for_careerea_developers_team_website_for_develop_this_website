@@ -7,7 +7,7 @@
     if (isset($_SESSION['userID'])) {
         $sessionUser = $_SESSION['userID'];
 
-        $profileData = $connect->prepare("SELECT name, profile_photo FROM applicants WHERE applicant_ID = ?");
+        $profileData = $connect->prepare("SELECT name, profile_photo FROM Applicants WHERE applicant_ID = ?");
         $profileData->execute(array($_SESSION['userID']));
         $row = $profileData->fetch();
 
