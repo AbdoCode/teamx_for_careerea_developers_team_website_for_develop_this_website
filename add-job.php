@@ -120,10 +120,15 @@ if(isset($_POST['right_answer'])) {
 
                         <div role="tabpanel" class="tab-pane" id="hr">
                             <div class="hr">
+                    <?php
+                    if(isset($_SESSION['companyID']))
+                        echo'
                                 <a class="btn btn-primary pull-right addQ">
                                     <i class="fa fa-plus-circle"></i>
                                     Add Question
-                                </a>
+                                </a>';
+                    ?>
+
                                 <div class="clearfix"></div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
